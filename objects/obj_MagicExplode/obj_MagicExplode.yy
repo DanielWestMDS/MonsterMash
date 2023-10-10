@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "BloodWitch",
+  "name": "obj_MagicExplode",
   "spriteId": {
-    "name": "BloodWitchTemplate",
-    "path": "sprites/BloodWitchTemplate/BloodWitchTemplate.yy",
+    "name": "spr_MagicExplode",
+    "path": "sprites/spr_MagicExplode/spr_MagicExplode.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,8 +25,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
