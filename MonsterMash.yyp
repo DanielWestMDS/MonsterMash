@@ -4,6 +4,9 @@
   "name": "MonsterMash",
   "resources": [
     {"id":{"name":"sire","path":"sprites/sire/sire.yy",},"order":0,},
+    {"id":{"name":"BloodWitch","path":"objects/BloodWitch/BloodWitch.yy",},"order":0,},
+    {"id":{"name":"BloodTemplate","path":"sprites/BloodTemplate/BloodTemplate.yy",},"order":2,},
+    {"id":{"name":"BloodWitchTemplate","path":"sprites/BloodWitchTemplate/BloodWitchTemplate.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
