@@ -3,7 +3,10 @@
   "resourceVersion": "1.6",
   "name": "MonsterMash",
   "resources": [
-    {"id":{"name":"sire","path":"sprites/sire/sire.yy",},"order":0,},
+    {"id":{"name":"ts_terrain","path":"tilesets/ts_terrain/ts_terrain.yy",},"order":0,},
+    {"id":{"name":"spr_terrain","path":"sprites/spr_terrain/spr_terrain.yy",},"order":1,},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"spr_sire","path":"sprites/spr_sire/spr_sire.yy",},"order":0,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
