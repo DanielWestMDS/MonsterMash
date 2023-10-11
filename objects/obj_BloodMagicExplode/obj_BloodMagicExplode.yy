@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Player",
-  "spriteId": {
-    "name": "spr_Sire",
-    "path": "sprites/spr_Sire/spr_Sire.yy",
-  },
+  "name": "obj_BloodMagicExplode",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -24,9 +21,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
