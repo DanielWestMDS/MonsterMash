@@ -32,3 +32,11 @@ if (key_right - key_left > 0)
 {
 	image_xscale = 1;
 }
+
+if (keyboard_check_pressed(vk_space))
+{
+	blank = instance_create_layer
+}
+
+
+
