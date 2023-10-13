@@ -4,7 +4,7 @@
   "name": "MonsterMash",
   "resources": [
     {"id":{"name":"ts_terrain","path":"tilesets/ts_terrain/ts_terrain.yy",},"order":0,},
-    {"id":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"order":8,},
+    {"id":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"order":3,},
     {"id":{"name":"obj_Button_Quit","path":"objects/obj_Button_Quit/obj_Button_Quit.yy",},"order":2,},
     {"id":{"name":"obj_Button_Play","path":"objects/obj_Button_Play/obj_Button_Play.yy",},"order":0,},
     {"id":{"name":"spr_BloodMagicExplode","path":"sprites/spr_BloodMagicExplode/spr_BloodMagicExplode.yy",},"order":5,},
@@ -24,7 +24,6 @@
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":0,},
     {"id":{"name":"obj_Button_Options","path":"objects/obj_Button_Options/obj_Button_Options.yy",},"order":1,},
     {"id":{"name":"spr_BoneAttack","path":"sprites/spr_BoneAttack/spr_BoneAttack.yy",},"order":10,},
-    {"id":{"name":"obj_DoorBloodWitchExit","path":"objects/obj_DoorBloodWitchExit/obj_DoorBloodWitchExit.yy",},"order":7,},
     {"id":{"name":"spr_Sire","path":"sprites/spr_Sire/spr_Sire.yy",},"order":0,},
     {"id":{"name":"fnt_MenuText","path":"fonts/fnt_MenuText/fnt_MenuText.yy",},"order":0,},
     {"id":{"name":"obj_TestEnemy","path":"objects/obj_TestEnemy/obj_TestEnemy.yy",},"order":11,},
@@ -48,9 +47,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"r_MainMenu","path":"rooms/r_MainMenu/r_MainMenu.yy",},},
     {"roomId":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},},
     {"roomId":{"name":"r_BloodWitch","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},},
-    {"roomId":{"name":"r_MainMenu","path":"rooms/r_MainMenu/r_MainMenu.yy",},},
     {"roomId":{"name":"r_Pause","path":"rooms/r_Pause/r_Pause.yy",},},
   ],
   "Folders": [

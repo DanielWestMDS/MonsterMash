@@ -9,5 +9,3 @@ if (timer <= 0)
 	var _inst = instance_create_layer(x, y, "Magic", obj_magic) // create the bullet 
 }
 
-
-
