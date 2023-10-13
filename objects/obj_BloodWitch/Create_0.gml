@@ -10,6 +10,3 @@ hp = 10;
 
 time = 100;
 timer = time;
-
-
-
