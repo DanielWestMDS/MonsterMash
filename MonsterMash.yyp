@@ -31,6 +31,7 @@
     {"id":{"name":"obj_BloodMagic","path":"objects/obj_BloodMagic/obj_BloodMagic.yy",},"order":3,},
     {"id":{"name":"spr_BloodWitch","path":"sprites/spr_BloodWitch/spr_BloodWitch.yy",},"order":3,},
     {"id":{"name":"r_MainMenu","path":"rooms/r_MainMenu/r_MainMenu.yy",},"order":3,},
+    {"id":{"name":"obj_Control","path":"objects/obj_Control/obj_Control.yy",},"order":12,},
     {"id":{"name":"obj_Door","path":"objects/obj_Door/obj_Door.yy",},"order":5,},
     {"id":{"name":"obj_DoorBloodWitchEnter","path":"objects/obj_DoorBloodWitchEnter/obj_DoorBloodWitchEnter.yy",},"order":6,},
     {"id":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},"order":0,},

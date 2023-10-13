@@ -6,3 +6,6 @@ currentXSpeed = 0;
 currentYSpeed = 0;
 
 health = 10;
+
+BoneAttackTimer = 2;
+BoneAttackTimerCurrent = 0;
