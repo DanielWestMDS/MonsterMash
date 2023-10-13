@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_BloodWitch",
-  "spriteId": {
-    "name": "spr_BloodWitch",
-    "path": "sprites/spr_BloodWitch/spr_BloodWitch.yy",
-  },
+  "name": "obj_BloodMagicExplode",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
