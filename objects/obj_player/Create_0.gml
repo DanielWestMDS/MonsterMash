@@ -4,3 +4,7 @@
 maxSpeed = 2;
 currentXSpeed = 0;
 currentYSpeed = 0;
+
+BoneAttackTimer = 2;
+BoneAttackTimerCurrent = 0;
+
