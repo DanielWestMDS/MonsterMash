@@ -23,31 +23,47 @@ if (place_free(x, y + currentYSpeed))
 	y += currentYSpeed;
 }
 
-if (key_right - key_left < 0)
+if (currentXSpeed < 0)
 {
-	image_angle = 180
-	image_yscale = -1
+	image_angle = 180;
+	image_yscale = -1;
 }
 
-if (key_right - key_left > 0)
+if (currentXSpeed > 0)
 {
-	image_angle = 0
-	image_yscale = 1
+	image_angle = 0;
+	image_yscale = 1;
 }
 
-
-if (keyboard_check_pressed(vk_space))
+if (currentYSpeed < 0)
 {
-	
-	bone = instance_create_layer(x, y, layer,obj_BoneAttack)
-	if(bone != noone)
-	{	
-			show_debug_message("bone shoot")
-			//audio_play_sound(sfx_pew, 1, false, 1);
-			bone.direction = image_angle
-			bone.image_angle = image_angle
-			bone.speed = 5
+	image_angle = 90;
+}
+
+if (currentYSpeed > 0)
+{
+	image_angle = 270;
+}
+
+BoneAttackTimerCurrent += 0.1;
+
+if (keyboard_check(vk_space))
+{
+	if (BoneAttackTimerCurrent > BoneAttackTimer)
+	{
+		BoneAttackTimerCurrent = 0;
+		bone = instance_create_layer(x, y, layer,obj_BoneAttack)
+		if(bone != noone)
+		{	
+				show_debug_message("bone shoot");
+				//audio_play_sound(sfx_pew, 1, false, 1);
+				bone.direction = image_angle;
+				bone.image_angle = image_angle;
+				bone.speed = 5;
+		}
 	}
+	
+	
 }
 
 
