@@ -7,6 +7,10 @@ key_left = keyboard_check(vk_left);
 key_up = keyboard_check(vk_up);
 key_down = keyboard_check(vk_down);	
 
+currentXSpeed = key_right - key_left;
+currentYSpeed = key_down - key_up;
+
+
 if (place_free(x + key_right - key_left, y))
 {
 	x += key_right - key_left;
@@ -15,4 +19,14 @@ if (place_free(x + key_right - key_left, y))
 if (place_free(x, y + key_down - key_up))
 {
 	y += key_down - key_up;
+}
+
+if (key_right - key_left < 0)
+{
+	image_xscale = -1;
+}
+
+if (key_right - key_left > 0)
+{
+	image_xscale = 1;
 }
