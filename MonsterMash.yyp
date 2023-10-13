@@ -32,8 +32,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"r_BloodWitch","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},},
     {"roomId":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},},
+    {"roomId":{"name":"r_BloodWitch","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
