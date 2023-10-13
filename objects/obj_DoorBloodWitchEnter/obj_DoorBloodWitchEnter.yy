@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Door",
-  "spriteId": {
-    "name": "spr_DoorCollision",
-    "path": "sprites/spr_DoorCollision/spr_DoorCollision.yy",
-  },
+  "name": "obj_DoorBloodWitchEnter",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -24,9 +21,7 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
