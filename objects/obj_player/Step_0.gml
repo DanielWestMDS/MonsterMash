@@ -67,4 +67,7 @@ if (keyboard_check(vk_space))
 }
 
 
-
+if (health <= 0)
+{
+	instance_destroy();
+}
