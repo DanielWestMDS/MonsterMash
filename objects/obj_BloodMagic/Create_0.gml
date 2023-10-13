@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-range = 60;
+range = 600;
 
 function magic_destroy()
 {
