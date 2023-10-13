@@ -25,17 +25,29 @@ if (place_free(x, y + currentYSpeed))
 
 if (key_right - key_left < 0)
 {
-	image_xscale = -1;
+	image_angle = 180
+	image_yscale = -1
 }
 
 if (key_right - key_left > 0)
 {
-	image_xscale = 1;
+	image_angle = 0
+	image_yscale = 1
 }
+
 
 if (keyboard_check_pressed(vk_space))
 {
-	blank = instance_create_layer
+	
+	bone = instance_create_layer(x, y, layer,obj_BoneAttack)
+	if(bone != noone)
+	{	
+			show_debug_message("bone shoot")
+			//audio_play_sound(sfx_pew, 1, false, 1);
+			bone.direction = image_angle
+			bone.image_angle = image_angle
+			bone.speed = 5
+	}
 }
 
 
