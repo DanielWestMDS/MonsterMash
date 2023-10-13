@@ -10,15 +10,17 @@ key_down = keyboard_check(vk_down);
 currentXSpeed = key_right - key_left;
 currentYSpeed = key_down - key_up;
 
+currentXSpeed *= maxSpeed;
+currentYSpeed *= maxSpeed;
 
-if (place_free(x + key_right - key_left, y))
+if (place_free(x + currentXSpeed, y))
 {
-	x += key_right - key_left;
+	x += currentXSpeed;
 }
 
-if (place_free(x, y + key_down - key_up))
+if (place_free(x, y + currentYSpeed))
 {
-	y += key_down - key_up;
+	y += currentYSpeed;
 }
 
 if (key_right - key_left < 0)
