@@ -24,7 +24,6 @@
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},"order":0,},
     {"id":{"name":"obj_Button_Options","path":"objects/obj_Button_Options/obj_Button_Options.yy",},"order":1,},
     {"id":{"name":"spr_BoneAttack","path":"sprites/spr_BoneAttack/spr_BoneAttack.yy",},"order":10,},
-    {"id":{"name":"obj_DoorBloodWitchExit","path":"objects/obj_DoorBloodWitchExit/obj_DoorBloodWitchExit.yy",},"order":7,},
     {"id":{"name":"spr_Sire","path":"sprites/spr_Sire/spr_Sire.yy",},"order":0,},
     {"id":{"name":"fnt_MenuText","path":"fonts/fnt_MenuText/fnt_MenuText.yy",},"order":0,},
     {"id":{"name":"obj_TestEnemy","path":"objects/obj_TestEnemy/obj_TestEnemy.yy",},"order":11,},
