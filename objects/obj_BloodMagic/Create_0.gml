@@ -6,9 +6,5 @@ range = 600;
 function magic_destroy()
 {
 	speed = 0;
-	instance_change(obj_MagicExplode, false);
+	instance_change(obj_BloodMagicExplode, false);
 }
-
-
-
-

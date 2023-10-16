@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_BloodWitch",
   "spriteId": {
-    "name": "spr_BloodWitchTemplate",
-    "path": "sprites/spr_BloodWitchTemplate/spr_BloodWitchTemplate.yy",
+    "name": "spr_BloodWitch",
+    "path": "sprites/spr_BloodWitch/spr_BloodWitch.yy",
   },
   "solid": false,
   "visible": true,

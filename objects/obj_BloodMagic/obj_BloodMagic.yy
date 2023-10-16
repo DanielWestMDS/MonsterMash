@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_BloodMagic",
   "spriteId": {
-    "name": "spr_BloodTemplate",
-    "path": "sprites/spr_BloodTemplate/spr_BloodTemplate.yy",
+    "name": "spr_BloodMagic",
+    "path": "sprites/spr_BloodMagic/spr_BloodMagic.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,6 +27,7 @@
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
   ],
   "properties": [],
   "overriddenProperties": [],
