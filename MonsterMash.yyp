@@ -15,7 +15,7 @@
     {"id":{"name":"spr_DoorCollision","path":"sprites/spr_DoorCollision/spr_DoorCollision.yy",},"order":6,},
     {"id":{"name":"spr_DoorBloodWitchEnter","path":"sprites/spr_DoorBloodWitchEnter/spr_DoorBloodWitchEnter.yy",},"order":7,},
     {"id":{"name":"obj_BloodMagicExplode","path":"objects/obj_BloodMagicExplode/obj_BloodMagicExplode.yy",},"order":4,},
-    {"id":{"name":"BloodWitchForward","path":"sprites/BloodWitchForward/BloodWitchForward.yy",},"order":14,},
+    {"id":{"name":"spr_BloodWitchForward","path":"sprites/spr_BloodWitchForward/spr_BloodWitchForward.yy",},"order":14,},
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"order":1,},
     {"id":{"name":"obj_BoneAttack","path":"objects/obj_BoneAttack/obj_BoneAttack.yy",},"order":10,},
     {"id":{"name":"spr_TestEnemy","path":"sprites/spr_TestEnemy/spr_TestEnemy.yy",},"order":11,},
