@@ -1,11 +1,9 @@
 /// Instantiate variables
 
 depth = 70;
+health = 3;
 
-fire_rate = 10;
-can_fire = true;
-
-hp = 10;
+hp = 3;
 
 time = 100;
 timer = time;
