@@ -74,7 +74,7 @@ if (keyboard_check(vk_space))
 				{
 					bone.direction = 180;
 				}
-				else if (currentXSpeed > 0)
+				else if (sprite_index == spr_PlayerSide)
 				{
 					bone.direction = 0;
 				}
