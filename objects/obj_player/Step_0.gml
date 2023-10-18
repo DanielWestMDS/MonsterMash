@@ -25,24 +25,29 @@ if (place_free(x, y + currentYSpeed))
 
 if (currentXSpeed < 0)
 {
-	image_angle = 180;
-	image_yscale = -1;
+	//image_angle = 180;
+	//image_yscale = -1;
+	sprite_index = spr_PlayerSide;
+	image_xscale = 1;
 }
 
 if (currentXSpeed > 0)
 {
-	image_angle = 0;
-	image_yscale = 1;
+	//image_angle = 0;
+	sprite_index = spr_PlayerSide;
+	image_xscale = -1;
 }
 
 if (currentYSpeed < 0)
 {
-	image_angle = 90;
+	sprite_index = spr_PlayerUp;
+	image_xscale = 1;
 }
 
 if (currentYSpeed > 0)
 {
-	image_angle = 270;
+	sprite_index = spr_PlayerDown;
+	image_xscale = 1;
 }
 
 BoneAttackTimerCurrent += 0.1;
@@ -57,8 +62,28 @@ if (keyboard_check(vk_space))
 		{	
 				show_debug_message("bone shoot");
 				//audio_play_sound(sfx_pew, 1, false, 1);
-				bone.direction = image_angle;
-				bone.image_angle = image_angle;
+				if (sprite_index == spr_PlayerDown)
+				{
+					bone.direction = 270;
+				}
+				else if (sprite_index == spr_PlayerUp)
+				{
+					bone.direction = 90;
+				}
+				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
+				{
+					bone.direction = 180;
+				}
+				else if (currentXSpeed > 0)
+				{
+					bone.direction = 0;
+				}
+				else
+				{
+					bone.direction = 270;
+				}
+				//bone.direction = image_angle;
+				bone.image_angle = bone.direction;
 				bone.speed = 5;
 		}
 	}

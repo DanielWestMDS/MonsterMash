@@ -58,6 +58,15 @@ if (global.bGameRunning)
 	{
 		instance_destroy();	
 	}
+	
+	if (being_hit)
+	{
+		hit_timer--;
+		if (hit_timer <= 0)
+		{
+			being_hit = false;
+		}
+	}
 }
 else
 {

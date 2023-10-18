@@ -3,5 +3,6 @@
 
 hp--;
 
-
+being_hit = true;
+hit_timer = 10;
 
