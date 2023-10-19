@@ -14,7 +14,6 @@ if (gamePause == true)
 {
 	//draw_set_font(font0);
 	//draw_set_halign(fa_center);
-	
-	draw_sprite(spr_PauseBackground, 1, camera_get_view_border_x(view_camera[0]) - 400, camera_get_view_border_y(view_camera[0]) - 400);
+
 	draw_text(get_Middle_X, get_Middle_Y, "Game Paused");
 }

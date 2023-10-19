@@ -37,6 +37,7 @@
     {"id":{"name":"spr_Sire","path":"sprites/spr_Sire/spr_Sire.yy",},"order":0,},
     {"id":{"name":"fnt_MenuText","path":"fonts/fnt_MenuText/fnt_MenuText.yy",},"order":0,},
     {"id":{"name":"obj_TestEnemy","path":"objects/obj_TestEnemy/obj_TestEnemy.yy",},"order":11,},
+    {"id":{"name":"obj_MenuBackground","path":"objects/obj_MenuBackground/obj_MenuBackground.yy",},"order":4,},
     {"id":{"name":"r_Pause","path":"rooms/r_Pause/r_Pause.yy",},"order":4,},
     {"id":{"name":"obj_BloodMagic","path":"objects/obj_BloodMagic/obj_BloodMagic.yy",},"order":3,},
     {"id":{"name":"spr_BloodWitch","path":"sprites/spr_BloodWitch/spr_BloodWitch.yy",},"order":3,},
