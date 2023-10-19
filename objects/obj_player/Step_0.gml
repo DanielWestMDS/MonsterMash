@@ -107,6 +107,7 @@ if (keyboard_check(ord("C")))
 {
 	if (GolemAttackTimerCurrent > GolemAttackTimer)
 	{
+		audio_play_sound(snd_ZaHando, 1, false);
 		GolemAttackTimerCurrent = 0;
 		golemAttack = instance_create_layer(x, y, layer,obj_GolemAttack)
 		if(golemAttack != noone)
@@ -135,6 +136,7 @@ if (keyboard_check(ord("C")))
 				}
 				//bone.direction = image_angle;
 				golemAttack.image_angle = golemAttack.direction;
+				//golemAttack.speed = 1;
 		}
 	}
 	
