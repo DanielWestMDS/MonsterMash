@@ -101,9 +101,11 @@ if (keyboard_check(vk_space))
 	
 }
 
+GolemAttackTimerCurrent += 0.1;
+
 if (keyboard_check(ord("C")))
 {
-	if (GoelmAttackTimerCurrent > GolemAttackTimer)
+	if (GolemAttackTimerCurrent > GolemAttackTimer)
 	{
 		GolemAttackTimerCurrent = 0;
 		golemAttack = instance_create_layer(x, y, layer,obj_GolemAttack)
@@ -113,27 +115,26 @@ if (keyboard_check(ord("C")))
 				//audio_play_sound(sfx_pew, 1, false, 1);
 				if (sprite_index == spr_PlayerDown)
 				{
-					golemAttack.y = 25;
+					golemAttack.y += 25;
 				}
 				else if (sprite_index == spr_PlayerUp)
 				{
-					golemAttack.direction = 90;
+					golemAttack.y += -25;
 				}
 				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
 				{
-					golemAttack.direction = 180;
+					golemAttack.x += -25;
 				}
 				else if (sprite_index == spr_PlayerSide)
 				{
-					golemAttack.direction = 0;
+					golemAttack.x += 25;
 				}
 				else
 				{
-					golemAttack.direction = 270;
+					golemAttack.y += 25;
 				}
 				//bone.direction = image_angle;
-				bone.image_angle = bone.direction;
-				bone.speed = 5;
+				golemAttack.image_angle = golemAttack.direction;
 		}
 	}
 	
