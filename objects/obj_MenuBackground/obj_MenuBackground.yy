@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Button_Quit",
+  "name": "obj_MenuBackground",
   "spriteId": {
-    "name": "spr_button",
-    "path": "sprites/spr_button/spr_button.yy",
+    "name": "spr_PauseBackground",
+    "path": "sprites/spr_PauseBackground/spr_PauseBackground.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_MenuManager",
-    "path": "objects/obj_MenuManager/obj_MenuManager.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,13 +25,10 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Quit",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Menu Stuff",
     "path": "folders/Objects/Menu Stuff.yy",
