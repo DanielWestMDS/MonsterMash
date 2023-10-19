@@ -7,29 +7,23 @@ enum legState
 	witch
 };
 
-
-
-
 enum torsoState
 {
 	base,
 	blobby
 };
 
-
-
 enum armState
 {
 	base,
 	iron_golem
 };
+	GolemAttackTimer = 3;
+	GolemAttackTimerCurrent = 0;
+	
 	
 	BoneAttackTimer = 3;
 	BoneAttackTimerCurrent = 0;
-	
-	GolemAttackTimer = 2;
-	GolemAttackTimerCurrent = 0;
-	
 	currentXSpeed = 0;
 	currentYSpeed = 0;
 	

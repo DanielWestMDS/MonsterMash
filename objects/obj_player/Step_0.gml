@@ -97,45 +97,47 @@ if (keyboard_check(vk_space))
 				bone.speed = 5;
 		}
 	}
+	
+	
 }
 
 if (keyboard_check(ord("C")))
 {
-	if (GolemAttackTimerCurrent > GolemAttackTimer)
+	if (GoelmAttackTimerCurrent > GolemAttackTimer)
 	{
 		GolemAttackTimerCurrent = 0;
 		golemAttack = instance_create_layer(x, y, layer,obj_GolemAttack)
 		if(golemAttack != noone)
 		{	
+				show_debug_message("bone shoot");
+				//audio_play_sound(sfx_pew, 1, false, 1);
 				if (sprite_index == spr_PlayerDown)
 				{
-					golemAttack.y += 50;
-					golemAttack.direction = 270;
+					golemAttack.y = 25;
 				}
 				else if (sprite_index == spr_PlayerUp)
 				{
-					golemAttack.y += -50;
 					golemAttack.direction = 90;
 				}
 				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
 				{
-					golemAttack.x += 50;
 					golemAttack.direction = 180;
 				}
 				else if (sprite_index == spr_PlayerSide)
 				{
-					golemAttack.x += -50;
 					golemAttack.direction = 0;
 				}
 				else
 				{
-					golemAttack.y += 50;
 					golemAttack.direction = 270;
 				}
 				//bone.direction = image_angle;
-				golemAttack.image_angle = golemAttack.direction;
+				bone.image_angle = bone.direction;
+				bone.speed = 5;
 		}
 	}
+	
+	
 }
 
 
