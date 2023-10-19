@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (leg == legState.base)
+{
+	maxSpeed = 2;
+}
+if (leg == legState.witch)
+{
+	maxSpeed = 3;
+}
+
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 
@@ -17,6 +26,7 @@ if (place_free(x + currentXSpeed, y))
 {
 	x += currentXSpeed;
 }
+
 
 if (place_free(x, y + currentYSpeed))
 {

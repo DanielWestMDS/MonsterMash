@@ -56,7 +56,9 @@ if (global.bGameRunning)
 	
 	if (hp <= 0)
 	{
-		instance_destroy();	
+		obj_Player.leg = legState.witch;
+		instance_destroy();
+		
 	}
 	
 	if (being_hit)
