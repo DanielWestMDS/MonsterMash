@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Door",
+  "name": "obj_MainRoomDoor",
   "spriteId": {
     "name": "spr_DoorCollision",
     "path": "sprites/spr_DoorCollision/spr_DoorCollision.yy",
@@ -30,7 +30,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Doors",
+    "path": "folders/Objects/Doors.yy",
   },
 }
