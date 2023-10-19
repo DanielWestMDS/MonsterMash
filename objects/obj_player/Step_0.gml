@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (global.leg == legState.base)
+{
+	global.maxSpeed = 2.0;
+}
+if (global.leg == legState.witch)
+{
+	global.maxSpeed = 2.5;
+}
+
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
 
@@ -10,13 +19,14 @@ key_down = keyboard_check(vk_down);
 currentXSpeed = key_right - key_left;
 currentYSpeed = key_down - key_up;
 
-currentXSpeed *= maxSpeed;
-currentYSpeed *= maxSpeed;
+currentXSpeed *= global.maxSpeed;
+currentYSpeed *= global.maxSpeed;
 
 if (place_free(x + currentXSpeed, y))
 {
 	x += currentXSpeed;
 }
+
 
 if (place_free(x, y + currentYSpeed))
 {

@@ -1,11 +1,50 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-maxSpeed = 2;
-currentXSpeed = 0;
-currentYSpeed = 0;
+enum legState
+{
+	base,
+	witch
+};
 
-health = 3;
 
-BoneAttackTimer = 2;
-BoneAttackTimerCurrent = 0;
+
+
+enum torsoState
+{
+	base,
+	blobby
+};
+
+
+
+enum armState
+{
+	base,
+	iron_golem
+};
+	
+	
+	
+
+	BoneAttackTimer = 3;
+	BoneAttackTimerCurrent = 0;
+	
+
+	
+	currentXSpeed = 0;
+	currentYSpeed = 0;
+	
+
+	
+	if (health == 100)
+	{
+		health = 3;
+		global.maxSpeed = 2.0;
+		
+		global.arm = armState.base;
+		global.torso = torsoState.base;
+		global.leg = legState.base;
+	}
+	
+	
