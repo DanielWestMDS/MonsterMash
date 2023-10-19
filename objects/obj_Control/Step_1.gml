@@ -17,5 +17,6 @@ if (keyboard_check_released(vk_escape))
 		gamePause = true;
 		instance_deactivate_layer("Instances");
 		instance_deactivate_layer("Magic");
+		instance_create_layer()
 	}
 }
