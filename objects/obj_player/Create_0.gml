@@ -5,7 +5,7 @@ maxSpeed = 2;
 currentXSpeed = 0;
 currentYSpeed = 0;
 
-health = 10;
+health = 3;
 
 BoneAttackTimer = 2;
 BoneAttackTimerCurrent = 0;

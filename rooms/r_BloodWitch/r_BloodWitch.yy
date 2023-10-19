@@ -22,8 +22,8 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AC74D76_1","properties":[],"isDnd":false,"objectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40C45445","properties":[],"isDnd":false,"objectId":{"name":"obj_BloodWitch","path":"objects/obj_BloodWitch/obj_BloodWitch.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":704.0,"y":416.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7DD905A","properties":[],"isDnd":false,"objectId":{"name":"obj_BloodWitchDoor","path":"objects/obj_BloodWitchDoor/obj_BloodWitchDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":192.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_570C2FE0","properties":[],"isDnd":false,"objectId":{"name":"obj_BloodWitchDoor","path":"objects/obj_BloodWitchDoor/obj_BloodWitchDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":192.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_27F15415","properties":[],"isDnd":false,"objectId":{"name":"obj_MainRoomDoor","path":"objects/obj_MainRoomDoor/obj_MainRoomDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":128.0,"y":192.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_659F321D","properties":[],"isDnd":false,"objectId":{"name":"obj_MainRoomDoor","path":"objects/obj_MainRoomDoor/obj_MainRoomDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":192.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Collision","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14C0FFF4_1","properties":[],"isDnd":false,"objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":128.0,},
@@ -45,9 +45,9 @@
     {"name":"inst_1E4AD16E_1","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
     {"name":"inst_64E47FD7_1","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
     {"name":"inst_40C45445","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
-    {"name":"inst_7DD905A","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
-    {"name":"inst_570C2FE0","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
     {"name":"inst_88C7948","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
+    {"name":"inst_27F15415","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
+    {"name":"inst_659F321D","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
