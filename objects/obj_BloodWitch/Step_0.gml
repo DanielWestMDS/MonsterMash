@@ -3,6 +3,7 @@
 if (global.bGameRunning)
 {
 	
+	// projectile firing
 	if (timer <= 0)
 	{
 		// remember to add sound file
@@ -17,6 +18,7 @@ if (global.bGameRunning)
 	}
 	timer--;
 	
+	// movement
 	if (distance_to_object(obj_Player) > 70)
 	{
 		speed = 2;
@@ -54,8 +56,10 @@ if (global.bGameRunning)
 		image_xscale = 1
 	}
 	
+
 	if (hp <= 0)
 	{
+		// leg ability enabled
 		//obj_Player.leg = legState.witch;
 		global.leg = legState.witch;
 		//global.maxSpeed = 4;
@@ -63,6 +67,7 @@ if (global.bGameRunning)
 		
 	}
 	
+	// hit flash
 	if (being_hit)
 	{
 		hit_timer--;
