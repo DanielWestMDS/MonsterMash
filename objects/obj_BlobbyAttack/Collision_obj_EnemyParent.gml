@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-Timer = 1;
-TimerCurrent = 0;
+instance_change(obj_BlobbyDestroy, false);
+
+
+

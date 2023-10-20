@@ -18,8 +18,10 @@ enum armState
 	base,
 	iron_golem
 };
-	GolemAttackTimer = 3;
-	GolemAttackTimerCurrent = 0;
+	RunStamina = 0;
+	
+	BlobbyAttackTimer = 3;
+	BlobbyAttackTimerCurrent = 0;
 	
 	
 	BoneAttackTimer = 3;
@@ -35,5 +37,4 @@ enum armState
 		global.torso = torsoState.base;
 		global.leg = legState.base;
 	}
-	
 	
