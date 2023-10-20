@@ -35,6 +35,7 @@
     {"id":{"name":"spr_Collision","path":"sprites/spr_Collision/spr_Collision.yy",},"order":2,},
     {"id":{"name":"spr_BlobbyDestroy","path":"sprites/spr_BlobbyDestroy/spr_BlobbyDestroy.yy",},"order":12,},
     {"id":{"name":"spr_Terrain","path":"sprites/spr_Terrain/spr_Terrain.yy",},"order":1,},
+    {"id":{"name":"sha_Invincible","path":"shaders/sha_Invincible/sha_Invincible.yy",},"order":1,},
     {"id":{"name":"obj_BloodWitch","path":"objects/obj_BloodWitch/obj_BloodWitch.yy",},"order":2,},
     {"id":{"name":"spr_BloodMagic","path":"sprites/spr_BloodMagic/spr_BloodMagic.yy",},"order":4,},
     {"id":{"name":"obj_Blobby","path":"objects/obj_Blobby/obj_Blobby.yy",},"order":12,},
@@ -60,6 +61,7 @@
     {"id":{"name":"spr_PauseBackground","path":"sprites/spr_PauseBackground/spr_PauseBackground.yy",},"order":0,},
     {"id":{"name":"obj_BloodWitchDoor","path":"objects/obj_BloodWitchDoor/obj_BloodWitchDoor.yy",},"order":0,},
     {"id":{"name":"obj_DoorBloodWitchEnter","path":"objects/obj_DoorBloodWitchEnter/obj_DoorBloodWitchEnter.yy",},"order":5,},
+    {"id":{"name":"spr_Lives","path":"sprites/spr_Lives/spr_Lives.yy",},"order":18,},
     {"id":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},"order":0,},
   ],
   "Options": [

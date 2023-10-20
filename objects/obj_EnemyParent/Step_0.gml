@@ -46,5 +46,6 @@ if (global.bGameRunning)
 }
 else
 {
+	sprite_index = idleSprite;
 	speed = 0;
 }

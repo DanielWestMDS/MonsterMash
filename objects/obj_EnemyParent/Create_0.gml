@@ -11,5 +11,6 @@ hit_timer = 0;
 sideSprite = spr_Sire;
 downSprite = spr_Sire;
 upSprite = spr_Sire;
+idleSprite = spr_Sire;
 
 
