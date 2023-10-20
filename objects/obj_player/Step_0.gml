@@ -202,9 +202,19 @@ else
 	show_debug_message("invincibility false");
 }
 
-
+// hit flash
+if (being_hit)
+{
+	hit_timer--;
+	if (hit_timer <= 0)
+	{
+		being_hit = false;
+	}
+}
 
 if (health <= 0)
 {
 	instance_destroy();
 }
+
+

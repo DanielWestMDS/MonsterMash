@@ -1,13 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-sideSprite = spr_BlobbySide;
-upSprite = spr_BlobbyDown;
-downSprite = spr_BlobbyUp;
 
 // timers
-time = 100;
-blobTimer = time;
+time = 24;
+blobTimer = 0;
 chargeTimer = time;
+chargeCooldown = 0;
+
+charging = false;
+colliding = false;
+
+followRadius = 60;
 
 enum attackState
 {
@@ -23,3 +26,7 @@ stance = attackState.idle;
 // Inherit the parent event
 event_inherited();
 
+sideSprite = spr_BlobbySide;
+upSprite = spr_BlobbyDown;
+downSprite = spr_BlobbyUp;
+idleSprite = spr_BlobbyIdle;

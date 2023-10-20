@@ -43,4 +43,7 @@ enum armState
 		global.leg = legState.base;
 		global.invincible = false;
 	}
-	
+
+//hit flash
+being_hit = false;
+hit_timer = 0;
