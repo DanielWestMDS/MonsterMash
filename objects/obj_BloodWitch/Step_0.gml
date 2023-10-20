@@ -18,7 +18,7 @@ if (global.bGameRunning)
 	}
 	magicTimer--;
 	
-	if (!(global.arm == base && global.leg == base && global.torso == base))
+	if (!(global.arm == armState.base && global.leg == armState.base && global.torso == armState.base))
 	{
 		if (stunTimer <= 0)
 		{
