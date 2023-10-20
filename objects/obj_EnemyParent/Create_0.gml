@@ -7,3 +7,4 @@ maxHp = 10;
 
 being_hit = false;
 hit_timer = 0;
+
