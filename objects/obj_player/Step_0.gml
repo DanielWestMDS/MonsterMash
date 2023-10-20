@@ -1,26 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-//if (global.leg == legState.base)
-//{
-//	global.maxSpeed = 2
-//}
-//if (global.leg == legState.witch)
-//{
-//	global.maxSpeed = 3;
-//}
-
 global.leg =legState.witch;
-
-//if (keyboard_check(ord("N")))
-//{
-//	global.leg = legState.base
-//}
-
-//if (keyboard_check(ord("M")))
-//{
-//	global.leg =legState.witch
-//}
 
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
@@ -169,7 +150,7 @@ if (keyboard_check(vk_shift))
 		RunStamina += -1.5;
 	}
 	
-	if RunStamina > 10
+	if RunStamina > 1
 	{
 		if (global.leg == legState.witch)
 		{
@@ -190,6 +171,37 @@ else
 {
 	global.maxSpeed = 2;
 }
+
+InvincibleTimerCurrent += 0.1;
+if (keyboard_check(ord("Z")))
+{
+	if (global.leg == legState.witch)
+	{
+		if (InvincibleTimerCurrent > InvincibleTimer)
+		{
+			InvincibleTimerCurrent = 0;
+			show_debug_message("invincibility");
+			global.invincible = true;
+			InvincibleTimerDurationCurrent = 0;
+		}
+	}
+}
+
+if (global.invincible == true)
+{
+	show_debug_message("invincibility true");
+	InvincibleTimerDurationCurrent += 0.1;
+	if (InvincibleTimerDurationCurrent > InvincibleTimerDuration)
+	{
+		global.invincible = false;
+		show_debug_message("invincibility ran out");
+	}
+}
+else
+{
+	show_debug_message("invincibility false");
+}
+
 
 
 if (health <= 0)

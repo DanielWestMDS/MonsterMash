@@ -2,4 +2,7 @@
 // You can write your code in this editor
 
 magic_destroy();
-health--;
+if (global.invincible == false)
+{
+	health--;
+}
