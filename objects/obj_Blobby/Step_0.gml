@@ -3,6 +3,8 @@
 
 /// @description Insert description here
 // You can write your code in this editor
+if (global.bGameRunning)
+{
 
 	if (distance_to_object(obj_Player) > 70)
 	{
@@ -34,6 +36,7 @@
 		sprite_index = spr_BlobbyDown;
 		image_xscale = 1
 	}
+}
 
 // Inherit the parent event
 event_inherited();
