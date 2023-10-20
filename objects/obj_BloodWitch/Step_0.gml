@@ -4,7 +4,7 @@ if (global.bGameRunning)
 {
 	
 	// projectile firing
-	if (timer <= 0)
+	if (magicTimer <= 0)
 	{
 		// remember to add sound file
 		//audio_play_sound(ToBeAdded, 1, false);
@@ -14,9 +14,23 @@ if (global.bGameRunning)
 		Magic.direction = point_direction(x, y, obj_Player.x, obj_Player.y);
 	
 	
-		timer = 100;
+		magicTimer = 100;
 	}
-	timer--;
+	magicTimer--;
+	
+	if (!(global.arm == armState.base && global.leg == armState.base && global.torso == armState.base))
+	{
+		if (stunTimer <= 0)
+		{
+			global.maxSpeed = 0;
+			if (stunTimer <= -120)
+			{
+				global.maxSpeed = tempSpeed;
+				stunTimer = 200;
+			}
+		}
+		stunTimer--;
+	}
 	
 	// movement
 	if (distance_to_object(obj_Player) > 70)

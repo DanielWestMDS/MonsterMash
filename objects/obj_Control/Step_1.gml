@@ -7,12 +7,15 @@ if (keyboard_check_released(vk_escape))
 {
 	if (gamePause)
 	{
+		if (health > 0)
+		{
 		global.bGameRunning = true;
 		gamePause = false;
 		instance_activate_layer("Instances");
 		instance_activate_layer("Magic");
 		instance_destroy(obj_Button_Quit);
 		instance_destroy(obj_MenuBackground);
+		}
 	}
 	else
 	{
