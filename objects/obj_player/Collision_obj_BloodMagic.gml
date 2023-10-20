@@ -3,4 +3,5 @@
 if (global.invincible == false)
 {
 	health--;
+	
 }
