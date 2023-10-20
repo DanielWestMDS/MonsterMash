@@ -4,6 +4,11 @@ sideSprite = spr_BlobbySide;
 upSprite = spr_BlobbyDown;
 downSprite = spr_BlobbyUp;
 
+// timers
+time = 100;
+blobTimer = time;
+chargeTimer = time;
+
 enum attackState
 {
 	idle,
@@ -12,6 +17,8 @@ enum attackState
 	// move back a little then charge really fast into player damaging them
 	charge
 }
+
+stance = attackState.idle;
 
 // Inherit the parent event
 event_inherited();
