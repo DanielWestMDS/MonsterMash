@@ -23,6 +23,11 @@ enum armState
 	BlobbyAttackTimer = 3;
 	BlobbyAttackTimerCurrent = 0;
 	
+	InvincibleTimer = 10;
+	InvincibleTimerCurrent = 0;
+	
+	InvincibleTimerDuration = 5;
+	InvincibleTimerDurationCurrent = 0;
 	
 	BoneAttackTimer = 3;
 	BoneAttackTimerCurrent = 0;
@@ -36,5 +41,6 @@ enum armState
 		global.arm = armState.base;
 		global.torso = torsoState.base;
 		global.leg = legState.base;
+		global.invincible = false;
 	}
 	
