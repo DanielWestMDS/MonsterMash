@@ -18,6 +18,8 @@ enum armState
 	base,
 	iron_golem
 };
+	RunStamina = 0;
+	
 	BlobbyAttackTimer = 3;
 	BlobbyAttackTimerCurrent = 0;
 	

@@ -1,14 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (global.leg == legState.base)
-{
-	global.maxSpeed = 2
-}
-if (global.leg == legState.witch)
-{
-	global.maxSpeed = 3;
-}
+//if (global.leg == legState.base)
+//{
+//	global.maxSpeed = 2
+//}
+//if (global.leg == legState.witch)
+//{
+//	global.maxSpeed = 3;
+//}
+
+global.leg =legState.witch;
 
 //if (keyboard_check(ord("N")))
 //{
@@ -153,8 +155,40 @@ if (keyboard_check(ord("C")))
 				//golemAttack.speed = 1;
 		}
 	}
+}
+
+if (RunStamina < 50)
+{
+	RunStamina += 0.5;
+}
+
+if (keyboard_check(vk_shift))
+{
+	if RunStamina >= 0
+	{
+		RunStamina += -1.5;
+	}
 	
-	
+	if RunStamina > 10
+	{
+		if (global.leg == legState.witch)
+		{
+			global.maxSpeed = 3;
+
+		}
+		else
+		{
+			global.maxSpeed = 2;
+		}
+	}
+	else
+	{
+		global.maxSpeed = 2;
+	}
+}
+else
+{
+	global.maxSpeed = 2;
 }
 
 
