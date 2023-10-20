@@ -1,14 +1,26 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (global.leg == legState.base)
-{
-	global.maxSpeed = 2.0;
-}
-if (global.leg == legState.witch)
-{
-	global.maxSpeed = 2.5;
-}
+//if (global.leg == legState.base)
+//{
+//	global.maxSpeed = 2
+//}
+//if (global.leg == legState.witch)
+//{
+//	global.maxSpeed = 3;
+//}
+
+global.leg =legState.witch;
+
+//if (keyboard_check(ord("N")))
+//{
+//	global.leg = legState.base
+//}
+
+//if (keyboard_check(ord("M")))
+//{
+//	global.leg =legState.witch
+//}
 
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
@@ -22,11 +34,14 @@ currentYSpeed = key_down - key_up;
 currentXSpeed *= global.maxSpeed;
 currentYSpeed *= global.maxSpeed;
 
+
+// normalise if moving both directions
+//(currentXSpeed*currentYSpeed)/2 
+
 if (place_free(x + currentXSpeed, y))
 {
 	x += currentXSpeed;
 }
-
 
 if (place_free(x, y + currentYSpeed))
 {
@@ -60,8 +75,9 @@ if (currentYSpeed > 0)
 	image_xscale = 1;
 }
 
-BoneAttackTimerCurrent += 0.1;
 
+// bone shooting
+BoneAttackTimerCurrent += 0.1;
 if (keyboard_check(vk_space))
 {
 	if (BoneAttackTimerCurrent > BoneAttackTimer)
@@ -101,46 +117,78 @@ if (keyboard_check(vk_space))
 	
 }
 
-GolemAttackTimerCurrent += 0.1;
 
+BlobbyAttackTimerCurrent += 0.1;
 if (keyboard_check(ord("C")))
 {
-	if (GolemAttackTimerCurrent > GolemAttackTimer)
+	if (BlobbyAttackTimerCurrent > BlobbyAttackTimer)
 	{
 		audio_play_sound(snd_ZaHando, 1, false);
-		GolemAttackTimerCurrent = 0;
-		golemAttack = instance_create_layer(x, y, layer,obj_GolemAttack)
-		if(golemAttack != noone)
+		BlobbyAttackTimerCurrent = 0;
+		blobbyAttack = instance_create_layer(x, y, layer,obj_BlobbyAttack)
+		if(blobbyAttack != noone)
 		{	
 				show_debug_message("bone shoot");
 				//audio_play_sound(sfx_pew, 1, false, 1);
 				if (sprite_index == spr_PlayerDown)
 				{
-					golemAttack.y += 25;
+					blobbyAttack.y += 25;
 				}
 				else if (sprite_index == spr_PlayerUp)
 				{
-					golemAttack.y += -25;
+					blobbyAttack.y += -25;
 				}
 				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
 				{
-					golemAttack.x += -25;
+					blobbyAttack.x += -25;
 				}
 				else if (sprite_index == spr_PlayerSide)
 				{
-					golemAttack.x += 25;
+					blobbyAttack.x += 25;
 				}
 				else
 				{
-					golemAttack.y += 25;
+					blobbyAttack.y += 25;
 				}
 				//bone.direction = image_angle;
-				golemAttack.image_angle = golemAttack.direction;
+				blobbyAttack.image_angle = blobbyAttack.direction;
 				//golemAttack.speed = 1;
 		}
 	}
+}
+
+if (RunStamina < 50)
+{
+	RunStamina += 0.5;
+}
+
+if (keyboard_check(vk_shift))
+{
+	if RunStamina >= 0
+	{
+		RunStamina += -1.5;
+	}
 	
-	
+	if RunStamina > 10
+	{
+		if (global.leg == legState.witch)
+		{
+			global.maxSpeed = 3;
+
+		}
+		else
+		{
+			global.maxSpeed = 2;
+		}
+	}
+	else
+	{
+		global.maxSpeed = 2;
+	}
+}
+else
+{
+	global.maxSpeed = 2;
 }
 
 

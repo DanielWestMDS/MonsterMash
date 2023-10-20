@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_GolemDestroy",
+  "name": "obj_BlobbyAttack",
   "spriteId": {
-    "name": "spr_GolemDestroy",
-    "path": "sprites/spr_GolemDestroy/spr_GolemDestroy.yy",
+    "name": "spr_BlobbyAttack",
+    "path": "sprites/spr_BlobbyAttack/spr_BlobbyAttack.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,7 +25,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
