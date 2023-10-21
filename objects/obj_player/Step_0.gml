@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-global.leg =legState.witch;
+//global.leg = legState.witch;
 
 key_right = keyboard_check(vk_right);
 key_left = keyboard_check(vk_left);
@@ -102,13 +102,16 @@ if (keyboard_check(vk_space))
 BlobbyAttackTimerCurrent += 0.1;
 if (keyboard_check(ord("C")))
 {
-	if (BlobbyAttackTimerCurrent > BlobbyAttackTimer)
+	if (global.arm == armState.blobby)
 	{
-		audio_play_sound(snd_ZaHando, 1, false);
-		BlobbyAttackTimerCurrent = 0;
-		blobbyAttack = instance_create_layer(x, y, layer,obj_BlobbyAttack)
-		if(blobbyAttack != noone)
-		{	
+		if (BlobbyAttackTimerCurrent > BlobbyAttackTimer)
+		{
+			audio_play_sound(snd_ZaHando, 1, false);
+			BlobbyAttackTimerCurrent = 0;
+			blobbyAttack = instance_create_layer(x, y, layer,obj_BlobbyAttack)
+			
+			if(blobbyAttack != noone)
+			{	
 				show_debug_message("bone shoot");
 				//audio_play_sound(sfx_pew, 1, false, 1);
 				if (sprite_index == spr_PlayerDown)
@@ -134,6 +137,7 @@ if (keyboard_check(ord("C")))
 				//bone.direction = image_angle;
 				blobbyAttack.image_angle = blobbyAttack.direction;
 				//golemAttack.speed = 1;
+			}
 		}
 	}
 }
@@ -175,7 +179,7 @@ else
 InvincibleTimerCurrent += 0.1;
 if (keyboard_check(ord("Z")))
 {
-	if (global.leg == legState.witch)
+	if (global.torso == torsoState.iron_golem)
 	{
 		if (InvincibleTimerCurrent > InvincibleTimer)
 		{

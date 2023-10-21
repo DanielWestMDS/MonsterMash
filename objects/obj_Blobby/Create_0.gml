@@ -26,6 +26,7 @@ stance = attackState.idle;
 // Inherit the parent event
 event_inherited();
 
+// set sprites
 sideSprite = spr_BlobbySide;
 upSprite = spr_BlobbyDown;
 downSprite = spr_BlobbyUp;

@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+maxhp = 3;
 
 enum legState
 {
@@ -10,13 +11,13 @@ enum legState
 enum torsoState
 {
 	base,
-	blobby
+	iron_golem
 };
 
 enum armState
 {
 	base,
-	iron_golem
+	blobby
 };
 	RunStamina = 0;
 	
@@ -36,7 +37,7 @@ enum armState
 	
 	if (health == 100)
 	{
-		health = 3;
+		health = maxhp;
 		global.maxSpeed = 2.0;
 		global.arm = armState.base;
 		global.torso = torsoState.base;

@@ -77,6 +77,7 @@ if (global.bGameRunning)
 		//obj_Player.leg = legState.witch;
 		global.leg = legState.witch;
 		//global.maxSpeed = 4;
+		health = obj_Player.maxhp;
 		instance_destroy();
 		
 	}

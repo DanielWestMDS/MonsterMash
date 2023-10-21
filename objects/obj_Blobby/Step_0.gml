@@ -53,6 +53,7 @@ if (global.bGameRunning)
 		{
 			direction = point_direction(x, y, obj_Player.x, obj_Player.y);
 			speed = -0.5;
+			audio_play_sound(snd_look, 1, false, 1, 0.5);
 		}
 		else if (chargeTimer <= 0)
 		{
@@ -66,7 +67,7 @@ if (global.bGameRunning)
 		if (charging == true)
 		{
 			direction = point_direction(x, y, obj_Player.x, obj_Player.y);
-			speed = 10;
+			speed = 8;
 			chargeTimer = 180;
 			charging = false;
 		}
@@ -103,6 +104,12 @@ if (Blobby != noone)
 else
 {
 	colliding = false;
+}
+
+if (hp == 0)
+{
+	global.arm = armState.blobby;
+	health = obj_Player.maxhp;
 }
 
 }
