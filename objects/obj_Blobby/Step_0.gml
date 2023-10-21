@@ -86,32 +86,31 @@ if (global.bGameRunning)
 	chargeTimer--;
 		// -- Charge Attack -- //
 
-// deal damage if colliding with player
-var Blobby = instance_place(x, y, obj_Player);
-
-if (Blobby != noone)
-{
-	show_debug_message("hit by blobby I think");
-	//instance_change(obj_BlobbyDestroy, false);
-	if (colliding = false)
+	// deal damage if colliding with player
+	var Blobby = instance_place(x, y, obj_Player);
+	
+	if (Blobby != noone)
 	{
-		health--;
-		obj_Player.being_hit = true;
-		obj_Player.hit_timer = 10;
+		show_debug_message("hit by blobby I think");
+		//instance_change(obj_BlobbyDestroy, false);
+		if (colliding = false)
+		{
+			health--;
+			obj_Player.being_hit = true;
+			obj_Player.hit_timer = 10;
+		}
+		colliding = true;
 	}
-	colliding = true;
-}
-else
-{
-	colliding = false;
-}
-
-if (hp == 0)
-{
-	global.arm = armState.blobby;
-	health = obj_Player.maxhp;
-}
-
+	else
+	{
+		colliding = false;
+	}
+	
+	if (hp == 0)
+	{
+		global.arm = armState.blobby;
+		health = global.maxhp;
+	}
 }
 // Inherit the parent event
 event_inherited();

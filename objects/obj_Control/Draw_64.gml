@@ -6,8 +6,8 @@ draw_text(0,50, "Lives : " + string(health));
 if (health == 0)
 {
 	global.bGameRunning = false;
-	draw_set_color(c_red);
-	draw_text(600,300, "You lose");
+	//draw_set_color(c_red);
+	//draw_text(600,300, "You lose");
 }
 
 if (gamePause == true)

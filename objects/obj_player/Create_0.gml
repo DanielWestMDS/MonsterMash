@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-maxhp = 3;
+global.maxhp = 3;
 
 enum legState
 {
@@ -37,7 +37,7 @@ enum armState
 	
 	if (health == 100)
 	{
-		health = maxhp;
+		health = global.maxhp;
 		global.maxSpeed = 2.0;
 		global.arm = armState.base;
 		global.torso = torsoState.base;

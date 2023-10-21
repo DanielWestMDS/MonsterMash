@@ -2,13 +2,19 @@
 // You can write your code in this editor
 
 // larger number = longer wait between invincibility
-InvincibleTimer = 100;
+InvincibleTimer = 400;
 InvincibleTimerCurrent = 0;
 
-InvincibleTimerDuration = 100;
+InvincibleTimerDuration = 300;
 InvincibleTimerDurationCurrent = 0;
 
 golemInvicible = false;
+
+doingPowerUp = false;
+attacking = false;
+
+// for time between attacks
+cooldown = 50;
 
 // Inherit the parent event
 event_inherited();

@@ -14,6 +14,18 @@ if (golemInvicible)
 	shader_set_uniform_f(_uniMix, _mix);
 }
 
-// Inherit the parent event
-event_inherited();
+draw_self();
+if (hp < maxHp) {
+	draw_healthbar(x-30, y-36, x+30, y-34, (hp/maxHp)*100, c_black, c_red, c_green, 0, true, true);
+}
+
+// hit flash
+if (being_hit && !golemInvicible)
+{
+	shader_set(sha_Flash);
+}
+
+draw_self();
+
+shader_reset();
 

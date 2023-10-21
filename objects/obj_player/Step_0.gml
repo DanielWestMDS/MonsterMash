@@ -67,35 +67,33 @@ if (keyboard_check(vk_space))
 		bone = instance_create_layer(x, y, layer,obj_BoneAttack)
 		if(bone != noone)
 		{	
-				show_debug_message("bone shoot");
-				//audio_play_sound(sfx_pew, 1, false, 1);
-				if (sprite_index == spr_PlayerDown)
-				{
-					bone.direction = 270;
-				}
-				else if (sprite_index == spr_PlayerUp)
-				{
-					bone.direction = 90;
-				}
-				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
-				{
-					bone.direction = 180;
-				}
-				else if (sprite_index == spr_PlayerSide)
-				{
-					bone.direction = 0;
-				}
-				else
-				{
-					bone.direction = 270;
-				}
-				//bone.direction = image_angle;
-				bone.image_angle = bone.direction;
-				bone.speed = 5;
+			show_debug_message("bone shoot");
+			//audio_play_sound(sfx_pew, 1, false, 1);
+			if (sprite_index == spr_PlayerDown)
+			{
+				bone.direction = 270;
+			}
+			else if (sprite_index == spr_PlayerUp)
+			{
+				bone.direction = 90;
+			}
+			else if (sprite_index == spr_PlayerSide && image_xscale == 1)
+			{
+				bone.direction = 180;
+			}
+			else if (sprite_index == spr_PlayerSide)
+			{
+				bone.direction = 0;
+			}
+			else
+			{
+				bone.direction = 270;
+			}
+			//bone.direction = image_angle;
+			bone.image_angle = bone.direction;
+			bone.speed = 5;
 		}
 	}
-	
-	
 }
 
 
