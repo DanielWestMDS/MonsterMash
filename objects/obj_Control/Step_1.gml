@@ -33,6 +33,7 @@ if (health = 0)
 {
 	if (happenOnce)
 	{
+		happenOnce = false;
 		global.bGameRunning = false;
 		instance_create_layer(vx, vy, "Obstacles", obj_MenuBackground);
 		instance_create_layer(vx + 170, vy + 100, "Obstacles", obj_Button_PlayAgain);
