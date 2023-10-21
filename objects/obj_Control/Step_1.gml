@@ -31,9 +31,12 @@ if (keyboard_check_released(vk_escape))
 
 if (health = 0)
 {
+	if (happenOnce)
+	{
 		global.bGameRunning = false;
-		instance_create_layer(vx + 170, vy + 100, "Obstacles", obj_Button_PlayAgain);
 		instance_create_layer(vx, vy, "Obstacles", obj_MenuBackground);
-		health = 3;
+		instance_create_layer(vx + 170, vy + 100, "Obstacles", obj_Button_PlayAgain);
+		//health = 3;
 		//draw_sprite(spr_PauseBackground, 1, camera_get_view_border_x(view_camera[0]) - 400, camera_get_view_border_y(view_camera[0]) - 400);
+	}
 }

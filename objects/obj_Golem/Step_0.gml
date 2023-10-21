@@ -23,6 +23,13 @@ if (golemInvicible == true)
 	}
 }
 
+if (hp == 0)
+{
+	global.torso = torsoState.iron_golem;	
+	obj_Player.maxhp++;
+	health = obj_Player.maxhp;
+}
+
 // Inherit the parent event
 event_inherited();
 

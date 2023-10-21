@@ -14,3 +14,8 @@ tempSpeed = global.maxSpeed;
 
 being_hit = false;
 hit_timer = 0;
+
+sideSprite = spr_BloodWitchSide;
+upSprite = spr_BloodWitchForward;
+downSprite = spr_BloodWitchBack;
+idleSprite = spr_BloodWitch;
