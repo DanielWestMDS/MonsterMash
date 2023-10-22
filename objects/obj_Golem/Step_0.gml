@@ -3,9 +3,29 @@
 
 if (global.bGameRunning)
 {	
+	// follow player if they run away
 	if (!attacking)
 	{
-		if (golemInvicible == true)
+		if (sprite_index == spr_GolemAttack)
+		{
+			speed = 0;
+		}
+		else if (distance_to_object(obj_Player) > 60)
+		{
+			speed = 0.8;
+			direction = point_direction(x, y, obj_Player.x, obj_Player.y);
+		}
+		else
+		{
+			speed = 0;	
+		}
+	}
+	
+	// prevent buff and attack from overriding each other
+	if (sprite_index != spr_GolemAttack)
+	{
+		
+		if (golemInvicible)
 		{
 			if (!doingPowerUp)
 			{
@@ -36,15 +56,33 @@ if (global.bGameRunning)
 		}
 		cooldown--;
 	}
-	else
+	
+	if (sprite_index != spr_GolemInvincible)
 	{
-		
+		if (attackTimer >= 100)
+		{
+			if (attacking)
+			{
+				instance_create_layer(x, y, "Instances", obj_Shockwave);
+				instance_create_layer(x, y, "Instances", obj_ScreenShake);
+				attackTimer = 0;
+				attacking = false;
+			}
+			else
+			{
+				sprite_index = spr_GolemAttack;
+			}
+		}
+		else
+		{
+			attackTimer++;
+		}
 	}
 	
 	if (hp <= 0)
 	{
 		global.torso = torsoState.iron_golem;	
-		obj_Player.maxhp++;
+		global.maxhp++;
 		health = global.maxhp;
 		instance_destroy();
 	}
@@ -59,7 +97,7 @@ if (global.bGameRunning)
 		}
 	}
 	
-	if (sprite_index != spr_GolemInvincible)
+	if (sprite_index != spr_GolemInvincible && sprite_index != spr_GolemAttack)
 	{
 		// movement animations
 		// right
@@ -87,7 +125,7 @@ if (global.bGameRunning)
 			image_xscale = 1;
 		}
 		
-		if (speed == 0 && sprite_index != spr_GolemInvincible)
+		if (speed == 0)
 		{
 			sprite_index = idleSprite;
 			image_xscale = 1;

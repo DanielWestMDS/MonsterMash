@@ -19,8 +19,9 @@ if (global.bGameRunning)
 	{
 		show_debug_message("hit by blobby I think");
 		//instance_change(obj_BlobbyDestroy, false);
-		if (colliding = false)
+		if (colliding = false && global.invincible == false)
 		{
+			instance_create_layer(x, y, "Obstacles", obj_ScreenShake);
 			health--;
 			obj_Player.being_hit = true;
 			obj_Player.hit_timer = 10;

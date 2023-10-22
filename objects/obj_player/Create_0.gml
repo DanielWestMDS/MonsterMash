@@ -40,7 +40,7 @@ enum armState
 		health = global.maxhp;
 		global.maxSpeed = 2.0;
 		global.arm = armState.base;
-		global.torso = torsoState.base;
+		global.torso = torsoState.iron_golem;
 		global.leg = legState.base;
 		global.invincible = false;
 	}
@@ -48,3 +48,21 @@ enum armState
 //hit flash
 being_hit = false;
 hit_timer = 0;
+
+// invincible shader
+_uniUV         = shader_get_uniform(sha_Invincible, "u_uv");
+_uniTime       = shader_get_uniform(sha_Invincible, "u_time");
+_uniSpeed      = shader_get_uniform(sha_Invincible, "u_speed");
+_uniSection    = shader_get_uniform(sha_Invincible, "u_section");
+_uniSaturation = shader_get_uniform(sha_Invincible, "u_saturation"); 
+_uniBrightness = shader_get_uniform(sha_Invincible, "u_brightness");
+_uniMix        = shader_get_uniform(sha_Invincible, "u_mix");
+
+_time  = 0;
+_speed = 1.0;
+_section = 0.5;
+_saturation = 0.7;
+_brightness = 0.8;
+_mix = 0.5;
+
+_mix = 0.5;

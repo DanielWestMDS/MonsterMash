@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-shakeDuration = 20;
+shakeDuration = 10;
 
 alarm[0] = shakeDuration;
 

@@ -8,7 +8,7 @@ if (global.bGameRunning)
 	{
 		if (distance_to_object(obj_Player) > followRadius)
 		{
-			speed = 2;
+			speed = 2.3;
 			direction = point_direction(x, y, obj_Player.x, obj_Player.y);
 		}
 		else
@@ -93,8 +93,9 @@ if (global.bGameRunning)
 	{
 		show_debug_message("hit by blobby I think");
 		//instance_change(obj_BlobbyDestroy, false);
-		if (colliding = false)
+		if (colliding = false && global.invincible == false)
 		{
+			instance_create_layer(x, y, "Obstacles", obj_ScreenShake);
 			health--;
 			obj_Player.being_hit = true;
 			obj_Player.hit_timer = 10;

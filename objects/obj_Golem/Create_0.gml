@@ -8,6 +8,8 @@ InvincibleTimerCurrent = 0;
 InvincibleTimerDuration = 300;
 InvincibleTimerDurationCurrent = 0;
 
+attackTimer = 0;
+
 golemInvicible = false;
 
 doingPowerUp = false;
