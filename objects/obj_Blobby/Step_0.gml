@@ -17,9 +17,9 @@ if (global.bGameRunning)
 		}
 	}
 		// -- Blob Attack -- //
-	if (blobTimer <= 0 && stance == attackState.idle && distance_to_object(obj_Player) <= followRadius)
+	if (blobTimer <= 0 && stance == attackState.idle)
 	{
-		if (instance_number(obj_BlobEnemy) <= 0)
+		if (instance_number(obj_BlobEnemy) <= 0 || blobTimer <= -100)
 		{
 			stance = attackState.blobs;
 		}	
@@ -32,7 +32,7 @@ if (global.bGameRunning)
 			instance_create_layer(self.x + random_range(-50, 50),self.y + random_range(-50, 50), "Magic", obj_BlobEnemy);
 		}
 		stance = attackState.idle;
-		blobTimer = 1000;
+		blobTimer = 700;
 	}
 	blobTimer--;
 		// -- Blob Attack -- //

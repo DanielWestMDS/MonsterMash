@@ -18,15 +18,18 @@ if (global.bGameRunning)
 	}
 	magicTimer--;
 	
+	// movement stun
 	if (!(global.arm == armState.base && global.leg == armState.base && global.torso == armState.base))
 	{
 		if (stunTimer <= 0)
 		{
 			global.maxSpeed = 0;
+			instance_create_layer(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), "Magic", obj_LockEffect)
 			if (stunTimer <= -120)
 			{
 				global.maxSpeed = tempSpeed;
 				stunTimer = 200;
+				instance_destroy(obj_LockEffect);
 			}
 		}
 		stunTimer--;
