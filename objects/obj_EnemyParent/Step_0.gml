@@ -44,7 +44,7 @@ if (global.bGameRunning)
 		image_xscale = 1
 	}
 	
-	if (speed = 0)
+	if (speed = 0 && sprite_index != idleSprite)
 	{
 		sprite_index = idleSprite;
 		image_xscale = 1

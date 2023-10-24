@@ -61,8 +61,7 @@ if (global.bGameRunning)
 		global.leg = legState.witch;
 		//global.maxSpeed = 4;
 		health = global.maxhp;
-		instance_destroy();
-		
+		instance_create_layer(x,y, "Instances", obj_DeadBloodWitch);
 	}
 	
 	// hit flash

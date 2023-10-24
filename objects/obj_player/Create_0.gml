@@ -39,7 +39,7 @@ enum armState
 	{
 		health = global.maxhp;
 		global.maxSpeed = 2.0;
-		global.arm = armState.blobby;
+		global.arm = armState.base;
 		global.torso = torsoState.base;
 		global.leg = legState.base;
 		global.invincible = false;
