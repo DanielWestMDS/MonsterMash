@@ -4,7 +4,7 @@
   "name": "snd_combat_theme",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.49,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
