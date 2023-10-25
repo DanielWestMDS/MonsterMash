@@ -29,7 +29,7 @@ if (global.bGameRunning)
 		if (colliding = false && global.invincible == false)
 		{
 			instance_create_layer(x, y, "Obstacles", obj_ScreenShake);
-			health--;
+			health -= 0.5;
 			obj_Player.being_hit = true;
 			obj_Player.hit_timer = 10;
 		}
