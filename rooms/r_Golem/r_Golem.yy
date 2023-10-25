@@ -27,7 +27,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14C0FFF4_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1E4AD16E_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64E47FD7_1_1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":256.0,"y":192.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_88C7948_1_1","properties":[],"isDnd":false,"objectId":{"name":"obj_Control","path":"objects/obj_Control/obj_Control.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":608.0,"y":320.0,},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"TerrainTiles","tilesetId":{"name":"ts_terrain","path":"tilesets/ts_terrain/ts_terrain.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":43,"SerialiseHeight":24,"TileCompressedData":[
 -88,48,1,42,-12,48,1,42,-11,48,1,42,-66,48,1,40,-42,48,1,40,-11,48,1,42,-15,48,1,42,-14,48,1,40,-124,48,1,42,-7,48,1,42,-4,48,1,
@@ -45,7 +44,6 @@
     {"name":"inst_64E47FD7_1_1_1","path":"rooms/r_Golem/r_Golem.yy",},
     {"name":"inst_27F15415_1_1","path":"rooms/r_Golem/r_Golem.yy",},
     {"name":"inst_659F321D_1_1","path":"rooms/r_Golem/r_Golem.yy",},
-    {"name":"inst_88C7948_1_1","path":"rooms/r_Golem/r_Golem.yy",},
     {"name":"inst_72C12745","path":"rooms/r_Golem/r_Golem.yy",},
   ],
   "inheritCreationOrder": false,

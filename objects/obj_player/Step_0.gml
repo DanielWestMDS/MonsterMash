@@ -216,6 +216,7 @@ if (being_hit)
 
 if (health <= 0)
 {
+	global.bGameRunning = false;
 	instance_destroy();
 }
 

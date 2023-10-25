@@ -12,5 +12,8 @@ get_Middle_Y = round(camera_get_view_height(view_camera[0])/2);
 // for if player instance destroyed
 global.bGameRunning = true;
 
+global.bloodWitchDead = false;
+global.blobbyDead = false;
+global.golemDead = false;
 
 

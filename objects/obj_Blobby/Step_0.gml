@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (global.bGameRunning)
+if (global.bGameRunning && global.blobbyDead == false)
 {
 	// follow player if they run away
 	if (stance == attackState.idle)
@@ -109,9 +109,14 @@ if (global.bGameRunning)
 	
 	if (hp == 0)
 	{
+		global.blobbyDead = true;
 		global.arm = armState.blobby;
 		health = global.maxhp;
 	}
+}
+else if (global.blobbyDead)
+{
+	hp = 0;	
 }
 // Inherit the parent event
 event_inherited();

@@ -2,6 +2,8 @@
 // You can write your code in this editor
 global.maxhp = 3;
 
+global.bGameRunning = true;
+
 enum legState
 {
 	base,

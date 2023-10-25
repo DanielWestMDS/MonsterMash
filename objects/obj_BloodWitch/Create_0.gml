@@ -1,4 +1,12 @@
 /// Instantiate variables
+if (global.bloodWitchDead == true)
+{
+	
+}
+else
+{
+	global.bloodWitchDead = false;
+}
 
 depth = 70;
 

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (global.bGameRunning)
+if (global.bGameRunning && global.bloodWitchDead == false)
 {
 	
 	// projectile firing
@@ -56,8 +56,8 @@ if (global.bGameRunning)
 
 	if (hp <= 0)
 	{
+		global.bloodWitchDead = true;
 		// leg ability enabled
-		//obj_Player.leg = legState.witch;
 		global.leg = legState.witch;
 		//global.maxSpeed = 4;
 		health = global.maxhp;
@@ -73,6 +73,11 @@ if (global.bGameRunning)
 			being_hit = false;
 		}
 	}
+}
+else if (global.bloodWitchDead)
+{
+	hp = 0;
+	instance_create_layer(x,y, "Instances", obj_DeadBloodWitch);	
 }
 else
 {
