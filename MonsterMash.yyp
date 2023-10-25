@@ -3,7 +3,9 @@
   "resourceVersion": "1.6",
   "name": "MonsterMash",
   "resources": [
+    {"id":{"name":"scr_macros","path":"scripts/scr_macros/scr_macros.yy",},"order":1,},
     {"id":{"name":"obj_bird","path":"objects/obj_bird/obj_bird.yy",},"order":18,},
+    {"id":{"name":"obj_Hearts","path":"objects/obj_Hearts/obj_Hearts.yy",},"order":4,},
     {"id":{"name":"spr_Bird","path":"sprites/spr_Bird/spr_Bird.yy",},"order":13,},
     {"id":{"name":"ts_terrain","path":"tilesets/ts_terrain/ts_terrain.yy",},"order":0,},
     {"id":{"name":"spr_LockEffect","path":"sprites/spr_LockEffect/spr_LockEffect.yy",},"order":6,},
@@ -61,6 +63,7 @@
     {"id":{"name":"spr_Golem","path":"sprites/spr_Golem/spr_Golem.yy",},"order":3,},
     {"id":{"name":"snd_Irongolem_theme","path":"sounds/snd_Irongolem_theme/snd_Irongolem_theme.yy",},"order":1,},
     {"id":{"name":"obj_LockEffect","path":"objects/obj_LockEffect/obj_LockEffect.yy",},"order":21,},
+    {"id":{"name":"spr_Hearts","path":"sprites/spr_Hearts/spr_Hearts.yy",},"order":0,},
     {"id":{"name":"spr_GolemSide","path":"sprites/spr_GolemSide/spr_GolemSide.yy",},"order":0,},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":0,},
     {"id":{"name":"snd_ZaHando","path":"sounds/snd_ZaHando/snd_ZaHando.yy",},"order":0,},
@@ -147,6 +150,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Sprites/player.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":7,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Health Bar","folderPath":"folders/Sprites/Health Bar.yy","order":14,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

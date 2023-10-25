@@ -1,0 +1,3 @@
+
+#macro UI_MARGIN 100
+#macro UI_HEALTHSEPARATION 100
