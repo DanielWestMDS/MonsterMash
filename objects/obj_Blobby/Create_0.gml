@@ -5,7 +5,7 @@
 time = 24;
 blobTimer = 0;
 chargeTimer = time;
-chargeCooldown = 0;
+chargeCooldown = 200;
 
 charging = false;
 colliding = false;
@@ -28,6 +28,9 @@ event_inherited();
 
 // set sprites
 sideSprite = spr_BlobbySide;
-upSprite = spr_BlobbyDown;
-downSprite = spr_BlobbyUp;
+upSprite = spr_BlobbyUp;
+downSprite = spr_BlobbyDown;
 idleSprite = spr_BlobbyIdle;
+
+maxHp = 17;
+hp = 17;

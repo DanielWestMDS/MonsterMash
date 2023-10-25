@@ -12,6 +12,13 @@ if (global.bGameRunning)
 	timer--;
 	speed = 1;
 	
+	// don't leave room boundries
+	if (self.x > 700 || self.x < 0 || self.y < 0 || self.y > 500)
+	{
+		direction = point_direction(x, y, obj_Player.x, obj_Player.y);
+	}
+	
+	
 	// deal damage if colliding with player
 	var player = instance_place(x, y, obj_Player);
 
