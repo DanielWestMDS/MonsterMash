@@ -11,4 +11,4 @@ dialog.add(spr_Character_Bird, "Use arrow keys to move");
 dialog.add(spr_Character_Bird, "Press spacebar to shoot");
 dialog.add(spr_Character_Player, "What are arrow keys and spacebar?");
 dialog.add(spr_Character_Bird, "Nope don't care to test you..");
-dialog.add(spr_Character_Bird, "I will give you everything I have");
+dialog.add(spr_Character_BirdBoss, "I will give you everything I have");
