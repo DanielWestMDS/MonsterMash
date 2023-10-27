@@ -3,6 +3,10 @@
 
 if (global.bGameRunning)
 {	
+	if (global.golemDead)
+	{
+		hp = 0;
+	}
 	// follow player if they run away
 	if (!attacking)
 	{
@@ -85,6 +89,7 @@ if (global.bGameRunning)
 		global.maxhp++;
 		health = global.maxhp;
 		instance_destroy();
+		global.golemDead = true;
 	}
 	
 	// hit flash

@@ -3,15 +3,20 @@
 
 // timers
 time = 24;
-//rockTimer = 0;
 laserTimer = time;
 laserCooldown = 40;
-laserStartup = 15;
+laserStartup = 0;
 
+rockTime = 50;
+rockTimer = 50;
+rockStartup = 0;
+rockCooldown = 40;
 
 colliding = false;
 
 laserOn = false;
+rockOn = false;
+armor = true;
 
 enum monsterKingState
 {
@@ -30,6 +35,9 @@ event_inherited();
 
 hp = 100;
 maxHp = 100;
+
+armorHp = 30;
+maxArmorHp = 30;
 
 sideSprite = spr_MonsterKingSide;
 downSprite = spr_MonsterKingDown;

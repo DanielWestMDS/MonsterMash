@@ -71,6 +71,7 @@ if (keyboard_check(vk_space))
 	{
 		BoneAttackTimerCurrent = 0;
 		bone = instance_create_layer(x, y, layer,obj_BoneAttack)
+		audio_play_sound(snd_bone, 1, false, 1, 0.2);
 		if(bone != noone)
 		{	
 			show_debug_message("bone shoot");

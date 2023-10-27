@@ -46,6 +46,7 @@
     {"id":{"name":"spr_BlobbyAttack","path":"sprites/spr_BlobbyAttack/spr_BlobbyAttack.yy",},"order":11,},
     {"id":{"name":"spr_GolemUp","path":"sprites/spr_GolemUp/spr_GolemUp.yy",},"order":2,},
     {"id":{"name":"obj_ScreenShake","path":"objects/obj_ScreenShake/obj_ScreenShake.yy",},"order":19,},
+    {"id":{"name":"snd_bone","path":"sounds/snd_bone/snd_bone.yy",},"order":3,},
     {"id":{"name":"spr_Character_Player","path":"sprites/spr_Character_Player/spr_Character_Player.yy",},"order":17,},
     {"id":{"name":"spr_BloodWitchForward","path":"sprites/spr_BloodWitchForward/spr_BloodWitchForward.yy",},"order":4,},
     {"id":{"name":"spr_MonsterKingDown","path":"sprites/spr_MonsterKingDown/spr_MonsterKingDown.yy",},"order":1,},
