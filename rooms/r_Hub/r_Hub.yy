@@ -73,6 +73,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6EF06DC8","properties":[],"isDnd":false,"objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":64.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_46F0C785","properties":[],"isDnd":false,"objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":96.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_232454E1","properties":[],"isDnd":false,"objectId":{"name":"obj_Control","path":"objects/obj_Control/obj_Control.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":224.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2609CE94","properties":[],"isDnd":false,"objectId":{"name":"obj_MonsterKingDoor","path":"objects/obj_MonsterKingDoor/obj_MonsterKingDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":32.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"TerrainTiles","tilesetId":{"name":"ts_terrain","path":"tilesets/ts_terrain/ts_terrain.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":17,"SerialiseHeight":9,"TileCompressedData":[
 -7,40,-2,89,-9,40,-14,48,-3,40,2,48,42,-12,48,-2,40,
@@ -138,6 +139,7 @@
     {"name":"inst_282E70","path":"rooms/r_Hub/r_Hub.yy",},
     {"name":"inst_644B36E1","path":"rooms/r_Hub/r_Hub.yy",},
     {"name":"inst_75F7C631","path":"rooms/r_Hub/r_Hub.yy",},
+    {"name":"inst_2609CE94","path":"rooms/r_Hub/r_Hub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

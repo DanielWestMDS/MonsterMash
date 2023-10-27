@@ -11,7 +11,7 @@
 event_inherited();
 
 
-sideSprite = spr_MonsterKing;
-downSprite = spr_Sire;
-upSprite = spr_Sire;
-idleSprite = spr_Sire;
+sideSprite = spr_MonsterKingSide;
+downSprite = spr_MonsterKingDown;
+upSprite = spr_MonsterKingUp;
+idleSprite = spr_MonsterKing;
