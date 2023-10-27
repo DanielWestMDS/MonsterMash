@@ -30,3 +30,8 @@ if (room == r_Tutorial)
 {
 	audio_play_sound(snd_mainmenu, 0, true);
 }
+
+if (room == r_Boss)
+{
+	audio_play_sound(final_boss_rec, 0, true);
+}
