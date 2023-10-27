@@ -32,6 +32,7 @@
     {"id":{"name":"spr_DoorCollision","path":"sprites/spr_DoorCollision/spr_DoorCollision.yy",},"order":3,},
     {"id":{"name":"spr_PlayerDown","path":"sprites/spr_PlayerDown/spr_PlayerDown.yy",},"order":2,},
     {"id":{"name":"spr_BlobEnemy","path":"sprites/spr_BlobEnemy/spr_BlobEnemy.yy",},"order":4,},
+    {"id":{"name":"obj_BossDoor","path":"objects/obj_BossDoor/obj_BossDoor.yy",},"order":5,},
     {"id":{"name":"obj_BodyDoor","path":"objects/obj_BodyDoor/obj_BodyDoor.yy",},"order":3,},
     {"id":{"name":"spr_BlobbyIdle","path":"sprites/spr_BlobbyIdle/spr_BlobbyIdle.yy",},"order":0,},
     {"id":{"name":"snd_slime_boss","path":"sounds/snd_slime_boss/snd_slime_boss.yy",},"order":5,},
