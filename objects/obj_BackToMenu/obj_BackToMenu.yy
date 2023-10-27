@@ -6,7 +6,7 @@
     "name": "spr_button",
     "path": "sprites/spr_button/spr_button.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
