@@ -12,6 +12,7 @@
     {"id":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"order":3,},
     {"id":{"name":"obj_Button_Quit","path":"objects/obj_Button_Quit/obj_Button_Quit.yy",},"order":2,},
     {"id":{"name":"acr_init","path":"scripts/acr_init/acr_init.yy",},"order":1,},
+    {"id":{"name":"obj_MonsterKing","path":"objects/obj_MonsterKing/obj_MonsterKing.yy",},"order":6,},
     {"id":{"name":"r_Boss","path":"rooms/r_Boss/r_Boss.yy",},"order":9,},
     {"id":{"name":"obj_BlobbyAttack","path":"objects/obj_BlobbyAttack/obj_BlobbyAttack.yy",},"order":1,},
     {"id":{"name":"spr_BloodWitchSide","path":"sprites/spr_BloodWitchSide/spr_BloodWitchSide.yy",},"order":5,},
