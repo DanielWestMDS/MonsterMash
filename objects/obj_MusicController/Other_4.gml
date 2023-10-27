@@ -3,7 +3,7 @@
 
 if (room == r_MainMenu)
 {
-audio_play_sound(snd_mainmenu, 0, true);
+	audio_play_sound(snd_mainmenu, 0, true);
 }
 
 if (room == r_Hub)

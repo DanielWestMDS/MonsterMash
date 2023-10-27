@@ -5,4 +5,4 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(r_MainMenu);
+room_goto(r_OptionsMenu);
