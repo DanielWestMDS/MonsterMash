@@ -4,6 +4,7 @@
 var _playerHealth = health;
 var _playerHealthMax = global.maxhp;
 var _playerHealthFrac = frac(_playerHealth);
+_playerHealth -= _playerHealthFrac;
 
 for (var i = 1; i <= _playerHealthMax; i++)
 {
@@ -12,3 +13,4 @@ for (var i = 1; i <= _playerHealthMax; i++)
 	UI_MARGIN + ((i-1) * UI_HEALTHSEPARATION),
 	UI_MARGIN)
 }
+
