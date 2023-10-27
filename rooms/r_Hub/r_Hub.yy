@@ -76,9 +76,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2609CE94","properties":[],"isDnd":false,"objectId":{"name":"obj_MonsterKingDoor","path":"objects/obj_MonsterKingDoor/obj_MonsterKingDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":32.0,"y":32.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"TerrainTiles","tilesetId":{"name":"ts_terrain","path":"tilesets/ts_terrain/ts_terrain.yy",},"x":0,"y":0,"tiles":{"TileDataFormat":1,"SerialiseWidth":17,"SerialiseHeight":9,"TileCompressedData":[
--7,40,-2,89,-9,40,-14,48,-3,40,2,48,42,-12,48,-2,40,
-1,89,-14,48,-3,40,-14,48,3,89,40,40,-14,48,-3,40,-14,
-48,-3,40,-14,48,-9,40,-2,89,-8,40,],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
+-7,40,1,89,-10,40,-14,48,-3,40,2,48,42,-12,48,-3,40,
+-14,48,-2,40,-16,48,-2,40,-14,48,-3,40,-14,48,-3,40,-14,
+48,-9,40,1,48,-9,40,],},"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","spriteId":null,"colour":4278190080,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":15.0,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":300,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
   ],
   "inheritLayers": false,

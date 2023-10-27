@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_BackToMenu",
+  "name": "obj_Button_PauseMusic",
   "spriteId": {
     "name": "spr_button",
     "path": "sprites/spr_button/spr_button.yy",
@@ -33,7 +33,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Back",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Pause",},
   ],
   "parent": {
     "name": "Menu Stuff",

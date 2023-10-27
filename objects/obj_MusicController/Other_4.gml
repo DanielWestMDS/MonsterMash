@@ -1,9 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 if (room == r_MainMenu)
 {
+	if (MainMenuMusic == true)
+	{
 	audio_play_sound(snd_mainmenu, 0, true);
+	MainMenuMusic = false;
+	}
 }
 
 if (room == r_Hub)
