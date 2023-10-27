@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function Dialogue() constructor{
 	_dialogs = [];
+	
 	add = function(_sprite, _message)
 	{
 		array_push(_dialogs,
@@ -12,9 +13,13 @@ function Dialogue() constructor{
 		
 	}
 	
+	
 	pop = function ()
 	{
-		var _t = array_first(_dialogs);
+		
+		//var _t = array_first(_dialogs);
+		var _t = array_get(_dialogs, 0);
+		
 		array_delete(_dialogs, 0, 1);
 		return _t;
 	}
