@@ -5,8 +5,5 @@ draw_line(x,y, xEnd, yEnd);
 
 for (j = 0; j < length_laser; j++)
 {
-	draw_sprite_ext();
+	//draw_sprite_ext();
 }
-
-
-
