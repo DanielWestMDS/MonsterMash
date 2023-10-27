@@ -12,5 +12,12 @@ for (i = 0; i < maxLength; i++)
 {
 	xEnd = x + lengthdir_x(i, direction);
 	yEnd = y + lengthdir_y(i, direction);
+	
+	length_laser = i;
+	
+	if (collision_point(xEnd, yEnd, obj_Wall, 0, 0)) 
+	{
+		break;	
+	}
 }
 
