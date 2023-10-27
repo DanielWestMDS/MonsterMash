@@ -2,11 +2,16 @@
 // You can write your code in this editor
 
 
+
+
+
+
+
 // Inherit the parent event
 event_inherited();
 
-// sprites
-sideSprite = spr_MonsterKingSide;
-downSprite = spr_MonsterKingDown;
-upSprite = spr_MonsterKingUp;
-idleSprite = spr_MonsterKing;
+
+sideSprite = spr_Sire;
+downSprite = spr_Sire;
+upSprite = spr_Sire;
+idleSprite = spr_Sire;
