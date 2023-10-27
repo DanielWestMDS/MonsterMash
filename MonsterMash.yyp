@@ -101,6 +101,7 @@
     {"id":{"name":"obj_DialogSampleA","path":"objects/obj_DialogSampleA/obj_DialogSampleA.yy",},"order":26,},
     {"id":{"name":"obj_MonsterKing","path":"objects/obj_MonsterKing/obj_MonsterKing.yy",},"order":6,},
     {"id":{"name":"spr_BlobbyUp","path":"sprites/spr_BlobbyUp/spr_BlobbyUp.yy",},"order":1,},
+    {"id":{"name":"spr_Character_BirdBoss","path":"sprites/spr_Character_BirdBoss/spr_Character_BirdBoss.yy",},"order":13,},
     {"id":{"name":"r_MainMenu","path":"rooms/r_MainMenu/r_MainMenu.yy",},"order":3,},
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},"order":0,},
     {"id":{"name":"obj_Control","path":"objects/obj_Control/obj_Control.yy",},"order":9,},

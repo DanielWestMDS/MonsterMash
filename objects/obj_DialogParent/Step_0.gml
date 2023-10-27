@@ -1,10 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (showing_dialog == false)
-{
-	if(dialog.count() <= 0)
-	{
+if (showing_dialog == false){
+	if(dialog.count() <= 0){
 		instance_destroy();
 		return;
 	}

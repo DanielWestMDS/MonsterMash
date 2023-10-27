@@ -13,9 +13,13 @@ function Dialogue() constructor{
 		
 	}
 	
+	
 	pop = function ()
 	{
-		var _t = array_first(_dialogs);
+		
+		//var _t = array_first(_dialogs);
+		var _t = array_get(_dialogs, 0);
+		
 		array_delete(_dialogs, 0, 1);
 		return _t;
 	}
