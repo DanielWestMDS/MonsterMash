@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-happenOnce = true;
+//happenOnce = true;
 
 // for pausing
 gamePause = false;
@@ -15,5 +15,6 @@ global.bGameRunning = true;
 global.bloodWitchDead = false;
 global.blobbyDead = false;
 global.golemDead = false;
+global.monsterKingDead = false;
 
 
