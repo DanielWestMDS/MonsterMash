@@ -11,9 +11,16 @@ if (global.bGameRunning && global.monsterKingDead == false)
 	}
 	
 	if (stance == monsterKingState.laser)
-	{
-		//alarm[0] = true;
-		audio_play_sound(snd_look, 1, false);
+	{	
+		if (time >= 0 && laserStartup <= 0)
+		{
+			audio_play_sound(snd_look, 1, false, 1, 0.5);
+		}
+		else if (laserStartup <= 0)
+		{
+			laserOn = true;
+		}
+		
 		if (laserOn)
 		{
 			laserCooldown++;
@@ -39,8 +46,9 @@ if (global.bGameRunning && global.monsterKingDead == false)
 	{
 		instance_destroy(obj_Laser);
 		laserOn = false;
+		laserStartup = 15;
+		laserTimer--;
 	}
-	laserTimer--;
 }
 
 // Inherit the parent event

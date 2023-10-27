@@ -5,12 +5,12 @@
 time = 24;
 //rockTimer = 0;
 laserTimer = time;
-laserCooldown = 200;
+laserCooldown = 40;
+laserStartup = 15;
+
 
 colliding = false;
 
-alarm[0] = 10;
-alarm_set(0, 10);
 laserOn = false;
 
 enum monsterKingState
@@ -29,6 +29,7 @@ stance = attackState.idle;
 event_inherited();
 
 hp = 100;
+maxHp = 100;
 
 sideSprite = spr_MonsterKingSide;
 downSprite = spr_MonsterKingDown;
