@@ -33,7 +33,7 @@
   ],
   "properties": [],
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Music",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Back",},
   ],
   "parent": {
     "name": "Menu Stuff",

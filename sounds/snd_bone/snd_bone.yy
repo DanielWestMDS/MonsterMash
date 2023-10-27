@@ -11,8 +11,8 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "agSFX",
+    "path": "audiogroups/agSFX",
   },
   "soundFile": "snd_bone.mp3",
   "duration": 1.018776,

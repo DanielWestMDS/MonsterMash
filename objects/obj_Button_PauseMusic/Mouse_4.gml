@@ -5,11 +5,11 @@
 // Inherit the parent event
 event_inherited();
 
-if (global.music == true)
+if (audio_is_paused(agMusic))
 {
-	global.music = false;
+	audio_resume_sound(agMusic);	
 }
-else if (global.music == false)
+else
 {
-	global.music = true
+	audio_pause_sound(agMusic);
 }
