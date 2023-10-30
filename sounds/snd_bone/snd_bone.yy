@@ -17,7 +17,7 @@
   "soundFile": "snd_bone.mp3",
   "duration": 1.018776,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

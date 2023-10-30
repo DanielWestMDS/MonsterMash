@@ -3,9 +3,10 @@
 
 if (room == r_MainMenu || room == r_OptionsMenu)
 {
-	//rahhhhhhhhhhhhhhhhhhhhhhhhhhh
+	// raaaaaaaaaaaaaaaaaaaaaah
 }
 else
 {
 	audio_stop_all();
 }
+

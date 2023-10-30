@@ -36,7 +36,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Pause",},
   ],
   "parent": {
-    "name": "Menu Stuff",
-    "path": "folders/Objects/Menu Stuff.yy",
+    "name": "Options Menu",
+    "path": "folders/Objects/Menu Stuff/Options Menu.yy",
   },
 }

@@ -11,32 +11,32 @@ if (room == r_MainMenu)
 	}
 }
 
-if (room == r_Hub)
+if (room == r_Hub && global.musicisplaying == true)
 {
 	audio_play_sound(snd_combat_theme, 0, true);
 }
 
-if (room == r_Blobby)
+if (room == r_Blobby && global.musicisplaying == true)
 {
 	audio_play_sound(snd_slime_boss, 0, true);
 }
 
-if (room == r_BloodWitch)
+if (room == r_BloodWitch && global.musicisplaying == true)
 {
 	audio_play_sound(snd_witch_theme, 0, true);
 }
 
-if (room == r_Golem)
+if (room == r_Golem && global.musicisplaying == true)
 {
 	audio_play_sound(snd_Irongolem_theme, 0, true);
 }
 
-if (room == r_Tutorial)
+if (room == r_Tutorial && global.musicisplaying == true)
 {
 	audio_play_sound(snd_mainmenu, 0, true);
 }
 
-if (room == r_Boss)
+if (room == r_Boss && global.musicisplaying == true)
 {
 	audio_play_sound(final_boss_rec, 0, true);
 }

@@ -17,7 +17,7 @@
   "soundFile": "snd_look.mp3",
   "duration": 1.906939,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }

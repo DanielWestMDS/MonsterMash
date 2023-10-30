@@ -17,7 +17,7 @@
   "soundFile": "snd_ZaHando.mp3",
   "duration": 2.951837,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "SFX",
+    "path": "folders/Sounds/SFX.yy",
   },
 }
