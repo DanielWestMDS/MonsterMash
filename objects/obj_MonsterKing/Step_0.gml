@@ -11,7 +11,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			// -- Laser Attack -- //
 	if (stance == monsterKingState.laser)
 	{	
-		if (time >= 0 && laserStartup >= 0)
+		if (time >= 0)
 		{
 			audio_play_sound(snd_look, 1, false, 1, 0.5);
 		}
@@ -27,7 +27,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			
 			if !(instance_exists(obj_Laser))
 			{
-				instance_create_layer(mouse_x, mouse_y, "Magic", obj_Laser);
+				instance_create_layer(x, y, "Magic", obj_Laser);
 			}
 			
 			// number is how long laser lasts
@@ -97,8 +97,46 @@ if (global.bGameRunning && global.monsterKingDead == false)
 				// -- rock attack -- //
 				
 				// -- flame attack -- //	
+	if (stance == monsterKingState.laser)
+	{	
+		if (flameTime >= 0 && flameStartup >= 0)
+		{
+			audio_play_sound(snd_look, 1, false, 1, 0.5);
+		}
+		else if (flameTime <= 0)
+		{
+			flameOn = true;
+		}
+		flameTime--;
+		
+		if (flameOn)
+		{
+			flameCooldown++;
+
+			instance_create_layer(x, y, "Magic", obj_Flame);
+			
+			// number is how long laser lasts
+			if (flameCooldown >= 20)
+			{
+				// reset members after attack finishes
+				flameTime = 14;
+				flameTimer = 100;
+				flameCooldown = 0;
+				stance = monsterKingState.idle;
+			}
+		}
+	}
+	else
+	{
+		instance_destroy(obj_Laser);
+		flameOn = false;
+		flameStartup = 15;
+		flameTimer--;
+	}
+	rockTimer--;
+			// -- flame attack -- //
 	
-	
+	// only get damaged if armor broken
 	if (armorHp <= 0)
 	{
 		armor = false;	
