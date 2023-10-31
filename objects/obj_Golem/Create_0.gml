@@ -26,8 +26,8 @@ hp = 100;
 tempHP = hp;
 
 sideSprite = spr_GolemSide;
-upSprite = spr_GolemDown;
-downSprite = spr_GolemUp;
+upSprite = spr_GolemUp;
+downSprite = spr_GolemDown;
 idleSprite = spr_Golem;
 
 // shader
