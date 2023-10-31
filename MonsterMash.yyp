@@ -132,6 +132,7 @@
     {"id":{"name":"ts_BloodWitch_Terrain","path":"tilesets/ts_BloodWitch_Terrain/ts_BloodWitch_Terrain.yy",},"order":1,},
     {"id":{"name":"obj_MainRoomDoor","path":"objects/obj_MainRoomDoor/obj_MainRoomDoor.yy",},"order":1,},
     {"id":{"name":"spr_GolemMini1","path":"sprites/spr_GolemMini1/spr_GolemMini1.yy",},"order":3,},
+    {"id":{"name":"r_Witch_Corridor","path":"rooms/r_Witch_Corridor/r_Witch_Corridor.yy",},"order":11,},
     {"id":{"name":"spr_PauseBackground","path":"sprites/spr_PauseBackground/spr_PauseBackground.yy",},"order":0,},
     {"id":{"name":"spr_MainRoom_Terrain","path":"sprites/spr_MainRoom_Terrain/spr_MainRoom_Terrain.yy",},"order":20,},
     {"id":{"name":"obj_DialogParent","path":"objects/obj_DialogParent/obj_DialogParent.yy",},"order":25,},
@@ -141,6 +142,7 @@
     {"id":{"name":"spr_MonsterKingUp","path":"sprites/spr_MonsterKingUp/spr_MonsterKingUp.yy",},"order":3,},
     {"id":{"name":"obj_BloodMini","path":"objects/obj_BloodMini/obj_BloodMini.yy",},"order":2,},
     {"id":{"name":"obj_TutorialDoor","path":"objects/obj_TutorialDoor/obj_TutorialDoor.yy",},"order":4,},
+    {"id":{"name":"obj_WitchCorridor","path":"objects/obj_WitchCorridor/obj_WitchCorridor.yy",},"order":6,},
     {"id":{"name":"obj_Wall2","path":"objects/obj_Wall2/obj_Wall2.yy",},"order":28,},
     {"id":{"name":"obj_BloodWitchDoor","path":"objects/obj_BloodWitchDoor/obj_BloodWitchDoor.yy",},"order":0,},
     {"id":{"name":"obj_DoorBloodWitchEnter","path":"objects/obj_DoorBloodWitchEnter/obj_DoorBloodWitchEnter.yy",},"order":5,},
@@ -170,6 +172,7 @@
     {"roomId":{"name":"r_Tutorial","path":"rooms/r_Tutorial/r_Tutorial.yy",},},
     {"roomId":{"name":"r_Boss","path":"rooms/r_Boss/r_Boss.yy",},},
     {"roomId":{"name":"r_OptionsMenu","path":"rooms/r_OptionsMenu/r_OptionsMenu.yy",},},
+    {"roomId":{"name":"r_Witch_Corridor","path":"rooms/r_Witch_Corridor/r_Witch_Corridor.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},
