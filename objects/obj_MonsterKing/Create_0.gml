@@ -24,8 +24,8 @@ enum monsterKingState
 	// fire laser at player
 	laser,
 	// create rock underneath player
-	rock
-	// maybe armor?
+	rock,
+	// flame directed at player
 }
 
 stance = attackState.idle;
