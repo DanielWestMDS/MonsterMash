@@ -31,7 +31,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			}
 			
 			// number is how long laser lasts
-			if (laserCooldown >= 40)
+			if (laserCooldown >= 20)
 			{
 				// reset members after attack finishes
 				time = 50;
@@ -72,10 +72,11 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			if (!instance_exists(obj_RockAttack))
 			{
 				instance_create_layer(obj_Player.x, obj_Player.y, "Instances", obj_RockAttack);
+				stance = monsterKingState.laser;
 			}
 			
 			// number is how long laser lasts
-			if (rockCooldown >= 40)
+			if (rockCooldown >= 80)
 			{
 				// reset members after attack finishes
 				rockTime = 60;
@@ -93,6 +94,10 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		rockStartup = 15;
 		rockTimer--;
 	} 
+				// -- rock attack -- //
+				
+				// -- flame attack -- //	
+	
 	
 	if (armorHp <= 0)
 	{
