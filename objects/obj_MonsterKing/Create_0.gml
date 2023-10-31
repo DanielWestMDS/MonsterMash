@@ -4,7 +4,7 @@
 // timers
 time = 24;
 laserTimer = time;
-laserCooldown = 40;
+laserCooldown = 0;
 laserStartup = 0;
 
 rockTime = 50;
@@ -12,10 +12,16 @@ rockTimer = 50;
 rockStartup = 0;
 rockCooldown = 40;
 
+flameTime = 14;
+flameTimer = time;
+flameCooldown = 100;
+flameStartup = 0;
+
 colliding = false;
 
 laserOn = false;
 rockOn = false;
+flameOn = false;
 armor = true;
 
 enum monsterKingState
@@ -26,6 +32,7 @@ enum monsterKingState
 	// create rock underneath player
 	rock,
 	// flame directed at player
+	flame
 }
 
 stance = attackState.idle;
