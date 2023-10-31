@@ -109,6 +109,7 @@
     {"id":{"name":"spr_Sire","path":"sprites/spr_Sire/spr_Sire.yy",},"order":0,},
     {"id":{"name":"fnt_MenuText","path":"fonts/fnt_MenuText/fnt_MenuText.yy",},"order":0,},
     {"id":{"name":"spr_BloodWitchDeath","path":"sprites/spr_BloodWitchDeath/spr_BloodWitchDeath.yy",},"order":7,},
+    {"id":{"name":"spr_GaryAttack","path":"sprites/spr_GaryAttack/spr_GaryAttack.yy",},"order":13,},
     {"id":{"name":"spr_Flame","path":"sprites/spr_Flame/spr_Flame.yy",},"order":7,},
     {"id":{"name":"obj_Golem","path":"objects/obj_Golem/obj_Golem.yy",},"order":5,},
     {"id":{"name":"obj_TestEnemy","path":"objects/obj_TestEnemy/obj_TestEnemy.yy",},"order":4,},
@@ -226,6 +227,6 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.0.0.19",
+    "IDEVersion": "2022.0.1.31",
   },
 }
