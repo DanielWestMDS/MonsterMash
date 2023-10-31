@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_WitchCorridor",
+  "name": "obj_BlobbyCorridorDoor",
   "spriteId": {
     "name": "spr_DoorCollision",
     "path": "sprites/spr_DoorCollision/spr_DoorCollision.yy",
