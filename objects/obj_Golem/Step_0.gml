@@ -14,7 +14,7 @@ if (global.bGameRunning)
 		{
 			speed = 0;
 		}
-		else if (distance_to_object(obj_Player) > 60)
+		else if (distance_to_object(obj_Player) > 0)
 		{
 			speed = 0.8;
 			direction = point_direction(x, y, obj_Player.x, obj_Player.y);
