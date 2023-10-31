@@ -12,15 +12,15 @@ if (randSprite == 1)
 {
 	sprite = spr_GolemMini0;
 }
-else if (randSprite == 1)
+else if (randSprite == 2)
 {
 	sprite = spr_GolemMini1;
 }
-else if (randSprite == 1)
+else if (randSprite == 3)
 {
 	sprite = spr_GolemMini2;	
 }
-else if (randSprite == 1)
+else if (randSprite == 4)
 {
 	sprite = spr_GolemMini3;	
 }
