@@ -68,8 +68,11 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		if (rockOn)
 		{
 			rockCooldown++;
-
-			instance_create_layer(obj_Player.x, obj_Player.y, "Instances", obj_RockAttack);
+			
+			if (!instance_exists(obj_RockAttack))
+			{
+				instance_create_layer(obj_Player.x, obj_Player.y, "Instances", obj_RockAttack);
+			}
 			
 			// number is how long laser lasts
 			if (rockCooldown >= 40)
