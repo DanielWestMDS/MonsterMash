@@ -13,4 +13,3 @@ for (var i = 1; i <= _playerHealthMax; i++)
 	UI_MARGIN + ((i-1) * UI_HEALTHSEPARATION),
 	UI_MARGIN)
 }
-

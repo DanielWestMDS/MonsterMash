@@ -17,4 +17,5 @@ global.blobbyDead = false;
 global.golemDead = false;
 global.monsterKingDead = false;
 
-
+pauseOption = ["Continue", "Options", "Save & Quit"];
+pauseOptionSelected = 0;

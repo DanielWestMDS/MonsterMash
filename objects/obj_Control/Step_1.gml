@@ -13,8 +13,6 @@ if (keyboard_check_released(vk_escape))
 		gamePause = false;
 		instance_activate_layer("Instances");
 		instance_activate_layer("Magic");
-		instance_destroy(obj_Button_Quit);
-		instance_destroy(obj_MenuBackground);
 		}
 	}
 	else
@@ -23,8 +21,8 @@ if (keyboard_check_released(vk_escape))
 		gamePause = true;
 		instance_deactivate_layer("Instances");
 		instance_deactivate_layer("Magic");
-		instance_create_layer(vx + 170, vy + 100, "Obstacles", obj_Button_Quit);
-		instance_create_layer(vx, vy, "Obstacles", obj_MenuBackground);
+		//instance_create_layer(vx + 170, vy + 100, "Obstacles", obj_Button_Quit);
+		//instance_create_layer(vx, vy, "Obstacles", obj_MenuBackground);
 		//draw_sprite(spr_PauseBackground, 1, camera_get_view_border_x(view_camera[0]) - 400, camera_get_view_border_y(view_camera[0]) - 400);
 	}
 }
