@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Hearts",
+  "name": "obj_PlayerUI",
   "spriteId": null,
   "solid": false,
   "visible": true,
