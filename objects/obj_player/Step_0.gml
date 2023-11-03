@@ -117,22 +117,26 @@ if (keyboard_check(ord("C")))
 			
 			if(blobbyAttack != noone)
 			{	
-				show_debug_message("bone shoot");
+				show_debug_message("punch");
 				//audio_play_sound(sfx_pew, 1, false, 1);
 				if (sprite_index == spr_PlayerDown)
 				{
+					blobbyAttack.direction = 270;
 					blobbyAttack.y += 25;
 				}
 				else if (sprite_index == spr_PlayerUp)
 				{
+					blobbyAttack.direction = 90;
 					blobbyAttack.y += -25;
 				}
 				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
 				{
+					blobbyAttack.direction = 180;
 					blobbyAttack.x += -25;
 				}
 				else if (sprite_index == spr_PlayerSide)
 				{
+					blobbyAttack.direction = 0;
 					blobbyAttack.x += 25;
 				}
 				else
