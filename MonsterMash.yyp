@@ -46,6 +46,7 @@
     {"id":{"name":"snd_combat_theme","path":"sounds/snd_combat_theme/snd_combat_theme.yy",},"order":7,},
     {"id":{"name":"obj_Button_SFXSlider","path":"objects/obj_Button_SFXSlider/obj_Button_SFXSlider.yy",},"order":4,},
     {"id":{"name":"obj_Button_VolumeSlider","path":"objects/obj_Button_VolumeSlider/obj_Button_VolumeSlider.yy",},"order":2,},
+    {"id":{"name":"spr_MonsterKing_Door","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"order":22,},
     {"id":{"name":"spr_DoorCollision","path":"sprites/spr_DoorCollision/spr_DoorCollision.yy",},"order":3,},
     {"id":{"name":"spr_PlayerDown","path":"sprites/spr_PlayerDown/spr_PlayerDown.yy",},"order":2,},
     {"id":{"name":"spr_BlobEnemy","path":"sprites/spr_BlobEnemy/spr_BlobEnemy.yy",},"order":0,},
