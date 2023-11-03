@@ -28,6 +28,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6744B9ED","properties":[],"isDnd":false,"objectId":{"name":"obj_WitchCorridorDoor","path":"objects/obj_WitchCorridorDoor/obj_WitchCorridorDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":240.0,"y":-16.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_109F306E","properties":[],"isDnd":false,"objectId":{"name":"obj_GolemCorridorDoor","path":"objects/obj_GolemCorridorDoor/obj_GolemCorridorDoor.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-24.0,"y":112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_54887CE6","properties":[],"isDnd":false,"objectId":{"name":"obj_PlayerUI","path":"objects/obj_PlayerUI/obj_PlayerUI.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":384.0,"y":96.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_40EDE99C","properties":[],"isDnd":false,"objectId":{"name":"obj_BloodMagic","path":"objects/obj_BloodMagic/obj_BloodMagic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":168.0,"y":144.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":8,"gridY":8,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Obstacles","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_695A0114","properties":[],"isDnd":false,"objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.25,"scaleY":2.5,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,},
@@ -94,6 +95,7 @@
     {"name":"inst_734F9226","path":"rooms/r_Hub/r_Hub.yy",},
     {"name":"inst_4FB8227A","path":"rooms/r_Hub/r_Hub.yy",},
     {"name":"inst_54887CE6","path":"rooms/r_Hub/r_Hub.yy",},
+    {"name":"inst_40EDE99C","path":"rooms/r_Hub/r_Hub.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
