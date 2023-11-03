@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_MonsterKingDoor",
   "spriteId": {
-    "name": "spr_DoorCollision",
-    "path": "sprites/spr_DoorCollision/spr_DoorCollision.yy",
+    "name": "spr_MonsterKing_Door",
+    "path": "sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,6 +26,8 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
