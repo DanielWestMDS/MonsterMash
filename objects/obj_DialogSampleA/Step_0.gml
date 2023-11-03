@@ -2,15 +2,10 @@
 // You can write your code in this editor
 
 
-
 // Inherit the parent event
 event_inherited();
 
-if (global.TutorialFinished)
+if (current_dialog.message == "I will give you everything I have")
 {
-	room_goto(r_Hub);
-}
-else
-{
-	room_goto(r_Tutorial);
+	obj_bird.sprite_index = spr_Character_BirdBoss;
 }

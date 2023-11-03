@@ -30,3 +30,6 @@ if (being_hit)
 draw_self();
 
 shader_reset();
+
+// shadow
+scr_shadow();
