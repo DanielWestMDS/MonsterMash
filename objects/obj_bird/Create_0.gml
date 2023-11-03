@@ -12,3 +12,5 @@ event_inherited();
 
 hp = 2; 
 maxHp = 2;
+
+global.TutorialFinished = false;

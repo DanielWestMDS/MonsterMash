@@ -95,6 +95,7 @@
     {"id":{"name":"spr_Golem","path":"sprites/spr_Golem/spr_Golem.yy",},"order":3,},
     {"id":{"name":"snd_Irongolem_theme","path":"sounds/snd_Irongolem_theme/snd_Irongolem_theme.yy",},"order":1,},
     {"id":{"name":"obj_LockEffect","path":"objects/obj_LockEffect/obj_LockEffect.yy",},"order":21,},
+    {"id":{"name":"scr_shadow","path":"scripts/scr_shadow/scr_shadow.yy",},"order":2,},
     {"id":{"name":"spr_Hearts","path":"sprites/spr_Hearts/spr_Hearts.yy",},"order":0,},
     {"id":{"name":"spr_GolemSide","path":"sprites/spr_GolemSide/spr_GolemSide.yy",},"order":0,},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":0,},
