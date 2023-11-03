@@ -45,6 +45,7 @@ enum armState
 		global.torso = torsoState.base;
 		global.leg = legState.base;
 		global.invincible = false;
+		global.bossesDefeated = 0;
 	}
 
 //hit flash
