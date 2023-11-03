@@ -62,6 +62,7 @@ if (global.bGameRunning && global.bloodWitchDead == false)
 		//global.maxSpeed = 4;
 		health = global.maxhp;
 		instance_create_layer(x,y, "Instances", obj_DeadBloodWitch);
+		global.bossesDefeated += 1;
 	}
 	
 	// hit flash

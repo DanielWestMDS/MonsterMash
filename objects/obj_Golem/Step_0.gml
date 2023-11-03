@@ -90,6 +90,7 @@ if (global.bGameRunning)
 		health = global.maxhp;
 		instance_destroy();
 		global.golemDead = true;
+		global.bossesDefeated += 1;
 	}
 	
 	// hit flash

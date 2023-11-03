@@ -112,6 +112,7 @@ if (global.bGameRunning && global.blobbyDead == false)
 		global.blobbyDead = true;
 		global.arm = armState.blobby;
 		health = global.maxhp;
+		global.bossesDefeated += 1;
 	}
 }
 else if (global.blobbyDead)
