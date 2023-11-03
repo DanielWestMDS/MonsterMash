@@ -24,7 +24,7 @@ if (gamePause == true)
 	draw_set_valign(fa_middle)
 	
 	draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.3,"...Game Paused...");
-	instance_create_layer(RESOLUTION_W * 0.5,RESOLUTION_H * 0.4, "Obstacles", obj_Button_PauseMusic);
+
 	for(var i = 0; i < array_length(pauseOption); i++)
 	{
 		var _print = "";
@@ -40,5 +40,7 @@ if (gamePause == true)
 		draw_text(RESOLUTION_W * 0.5, RESOLUTION_H * 0.5 + 60 + (i *  60) , _print)
 		draw_set_alpha(1.0)
 	}	
+	
+	//instance_create_layer(get_Middle_X, get_Middle_Y, "Instances", obj_Button_PauseMusic);
 }
 	//draw_text(get_Middle_X, get_Middle_Y, "Game Paused");
