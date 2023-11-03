@@ -16,25 +16,23 @@ for (var i = 1; i <= _playerHealthMax; i++)
 
 if (global.arm == armState.blobby)
 {
-    // Define a variable to keep track of the current sprite index
-
+    // Add a boolean flag to control input
     
-    current_sprite_index = 0; // Initialize to the first sprite
-
-    
-   draw_sprite(spr_PunchIcon, current_sprite_index, 65, 640);
-   
-   //instance_create_layer(65, 640, "Instances", spr_PunchIcon);
-    
-    if (keyboard_check_pressed(ord("C")))
+    if (keyboard_check_pressed(ord("C")) && canPunch)
     {
-        // Increment the current sprite index
-        current_sprite_index += 1;
-        
-        //// Check if it goes beyond sprite 5, and reset to 1
-        if (current_sprite_index > 4)
-        {
-            current_sprite_index = 1;
-        }
+        PunchTimer = 10;
+        canPunch = false; // Disable input
     }
+
+    if (PunchTimer > 0)
+    {
+        current_sprite_index += 0.5;
+        PunchTimer--;
+    }
+    else
+    {
+        canPunch = true; // Enable input when the iteration is complete
+    }
+
+    draw_sprite(spr_PunchIcon, current_sprite_index, 65, 640);
 }
