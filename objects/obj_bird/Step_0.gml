@@ -15,8 +15,9 @@ if (global.bGameRunning && sprite_index == spr_Character_BirdBoss)
 	
 	if (hp == 0)
 	{
+		being_hit = false;
+		global.TutorialFinished = true;
 		sprite_index = spr_BirdDead;
 		instance_create_layer(obj_bird.x, obj_bird.y + 150, "Instances", obj_MainRoomDoor);
 	}
 }
-

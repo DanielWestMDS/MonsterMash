@@ -6,4 +6,11 @@
 // Inherit the parent event
 event_inherited();
 
-room_goto(r_Hub);
+if (global.TutorialFinished)
+{
+	room_goto(r_Hub);
+}
+else
+{
+	room_goto(r_Tutorial);
+}
