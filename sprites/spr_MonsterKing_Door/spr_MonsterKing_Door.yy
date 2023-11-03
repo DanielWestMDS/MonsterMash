@@ -10,10 +10,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 7,
-  "bbox_right": 55,
-  "bbox_top": 11,
-  "bbox_bottom": 61,
+  "bbox_left": 0,
+  "bbox_right": 58,
+  "bbox_top": 2,
+  "bbox_bottom": 60,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -28,10 +28,10 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fae9e98b-cadf-4c3b-8cd3-6cffadcac2f2",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bcc72b6a-6cb3-47f8-8237-a73b7d7e8d29",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fabff08c-ef9b-4bee-9e4c-2c1b67b8b030",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8d7d5e8c-b5fd-4835-927d-13c4cec14110",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"76128b79-cc61-476a-964b-3ed058cab798",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fb524f4c-22b7-45f5-9a7c-1e1aac61dbeb",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9069a829-fdc1-4f90-aae8-84fa19b3f947",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cf1186b7-3df3-4e52-ba56-ba06065a0746",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"4bdf0762-6cfb-431f-b62e-1989b1f607eb","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fae9e98b-cadf-4c3b-8cd3-6cffadcac2f2","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"3d74c50b-6cb5-4970-9689-dacf7451ad36","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"bcc72b6a-6cb3-47f8-8237-a73b7d7e8d29","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"6bfefef2-082c-4d1b-a489-2c491b793f28","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fabff08c-ef9b-4bee-9e4c-2c1b67b8b030","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"281246c9-d96e-4369-b496-f149d027f17f","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"8d7d5e8c-b5fd-4835-927d-13c4cec14110","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"2e34e236-42cf-48eb-b317-32c9bbd46158","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76128b79-cc61-476a-964b-3ed058cab798","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6b2d8174-36c0-477d-b7b4-de7632b93ed0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fb524f4c-22b7-45f5-9a7c-1e1aac61dbeb","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"38e65b20-ea36-44e2-a8ce-2fee81b2a7ba","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9069a829-fdc1-4f90-aae8-84fa19b3f947","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"4fad75cd-a08d-42b4-b6aa-844386bf0c93","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cf1186b7-3df3-4e52-ba56-ba06065a0746","path":"sprites/spr_MonsterKing_Door/spr_MonsterKing_Door.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -70,7 +70,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b8c87d68-a484-43d7-a0bc-c19e76718a34","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ad93be72-8675-4b38-a0d2-a2112abd96f1","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
