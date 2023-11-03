@@ -122,22 +122,22 @@ if (keyboard_check(ord("C")))
 				if (sprite_index == spr_PlayerDown)
 				{
 					blobbyAttack.direction = 270;
-					blobbyAttack.y += 25;
+					blobbyAttack.y += 50;
 				}
 				else if (sprite_index == spr_PlayerUp)
 				{
 					blobbyAttack.direction = 90;
-					blobbyAttack.y += -25;
+					blobbyAttack.y += -50;
 				}
 				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
 				{
 					blobbyAttack.direction = 180;
-					blobbyAttack.x += -25;
+					blobbyAttack.x += -50;
 				}
 				else if (sprite_index == spr_PlayerSide)
 				{
 					blobbyAttack.direction = 0;
-					blobbyAttack.x += 25;
+					blobbyAttack.x += 50;
 				}
 				else
 				{
