@@ -225,6 +225,13 @@ if (being_hit)
 	}
 }
 
+// play hurt sound if hurt
+if (previousHealth > health)
+{
+	audio_play_sound(snd_PlayerHurt, 1, false);
+	previousHealth = health;
+}
+
 if (health <= 0)
 {
 	global.bGameRunning = false;
