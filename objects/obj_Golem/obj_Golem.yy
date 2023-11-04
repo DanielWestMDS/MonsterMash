@@ -6,7 +6,7 @@
     "name": "spr_Golem",
     "path": "sprites/spr_Golem/spr_Golem.yy",
   },
-  "solid": true,
+  "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
