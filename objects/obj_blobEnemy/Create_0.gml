@@ -17,6 +17,7 @@ downSprite = spr_BlobEnemy;
 upSprite = spr_BlobEnemy;
 idleSprite = spr_BlobEnemy;
 
+colliding = false;
 
 
 

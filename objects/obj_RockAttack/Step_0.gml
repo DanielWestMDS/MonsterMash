@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-// hurt player once
+/*// hurt player once
 var player = instance_place(x, y, obj_Player);
 
 if (player != noone)
@@ -14,7 +14,7 @@ if (player != noone)
 		obj_Player.hit_timer = 10;
 	}
 	colliding = true;
-}
+}*/
 
 if (lifespan <= 0)
 {

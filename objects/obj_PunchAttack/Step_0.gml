@@ -4,6 +4,7 @@
 // deal damage if colliding with enemy
 var Enemy = instance_place(x, y, obj_EnemyParent);
 var Golem = instance_place(x,y, obj_Golem);
+var MonsterKing = instance_place(x,y, obj_MonsterKing);
 
 if (Enemy != noone)
 {
@@ -16,6 +17,17 @@ if (Enemy != noone)
 			Golem.hp -= 10;
 			Golem.being_hit = true;
 			Golem.hit_timer = 10;	
+		}
+		else if (MonsterKing != noone)
+		{
+			if (MonsterKing.armor)
+			{
+				MonsterKing.armorHp -= 5;
+			}
+			else
+			{
+				MonsterKing.hp -= 3;
+			}
 		}
 		else
 		{

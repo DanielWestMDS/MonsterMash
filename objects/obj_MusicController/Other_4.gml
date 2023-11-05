@@ -43,15 +43,15 @@ if (room == r_Boss && global.musicisplaying == true)
 
 if (room == r_Blobby_Corridor && global.musicisplaying == true)
 {
-	audio_play_sound(snd_combat_theme, 0, true);
+	audio_play_sound(snd_idlemusic, 0, true);
 }
 
 if (room == r_Golem_Corridor && global.musicisplaying == true)
 {
-	audio_play_sound(snd_combat_theme, 0, true);
+	audio_play_sound(snd_idlemusic, 0, true);
 }
 
 if (room == r_Witch_Corridor && global.musicisplaying == true)
 {
-	audio_play_sound(snd_combat_theme, 0, true);
+	audio_play_sound(snd_idlemusic, 0, true);
 }

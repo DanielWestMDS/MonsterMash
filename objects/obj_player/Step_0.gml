@@ -225,11 +225,18 @@ if (being_hit)
 	}
 }
 
+// invicible for a short period after being hurt
+if (audio_is_playing(snd_PlayerHurt))
+{
+	health = previousHealth
+}
+
 // play hurt sound if hurt
 if (previousHealth > health)
 {
 	audio_play_sound(snd_PlayerHurt, 1, false);
 	previousHealth = health;
+
 }
 
 if (health <= 0)
