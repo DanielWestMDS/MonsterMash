@@ -26,7 +26,7 @@ if (global.arm == armState.blobby)
 
     if (PunchTimer > 0)
     {
-        current_sprite_index += 0.5;
+        punch_current_sprite_index += 0.5;
         PunchTimer--;
     }
     else
@@ -34,5 +34,35 @@ if (global.arm == armState.blobby)
         canPunch = true; // Enable input when the iteration is complete
     }
 
-    draw_sprite(spr_PunchIcon, current_sprite_index, 65, 640);
+    draw_sprite(spr_PunchIcon, punch_current_sprite_index, 65, 640);
+}
+
+if (global.torso = torsoState.iron_golem)
+{
+	if (keyboard_check_pressed(ord("Z")) && canGoInvincible)
+    {
+        invincibleTimer = 90;
+        canGoInvincible = false; // Disable input
+    }
+
+    if (invincibleTimer > 0)
+    {
+        invincible_current_sprite_index += 0.1;
+        invincibleTimer--;
+    }
+    else
+    {
+        canGoInvincible = true; // Enable input when the iteration is complete
+    }
+
+    draw_sprite(spr_InvincibleIconFinal, invincible_current_sprite_index, 200, 640);
+}
+
+if (canGoInvincible == true)
+{
+	invincible_current_sprite_index = 0;
+}
+if (canGoInvincible = true)
+{
+	invincible_current_sprite_index = 0;
 }
