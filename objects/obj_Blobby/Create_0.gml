@@ -4,7 +4,7 @@
 // timers
 time = 24;
 blobTimer = 0;
-chargeTimer = time;
+chargeTimer = 150;
 chargeCooldown = 200;
 
 charging = false;

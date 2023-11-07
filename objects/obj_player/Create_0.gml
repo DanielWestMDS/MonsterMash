@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-global.maxhp = 3;
+if (!variable_global_exists("maxhp"))
+{
+	global.maxhp = 3;
+}
 
 global.bGameRunning = true;
 
@@ -37,15 +40,18 @@ enum armState
 	currentXSpeed = 0;
 	currentYSpeed = 0;
 	
+	previousHealth = health;
+	hitInvicibility = false;
+	
 	if (health == 100)
 	{
 		health = global.maxhp;
 		global.maxSpeed = 2.0;
 		global.arm = armState.blobby;
-		global.torso = torsoState.base;
-		global.leg = legState.base;
+		global.torso = torsoState.iron_golem;
+		global.leg = legState.witch;
 		global.invincible = false;
-		global.bossesDefeated = 0;
+		global.bossesDefeated = 3;
 	}
 
 //hit flash
