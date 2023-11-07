@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Button_Play",
   "spriteId": {
-    "name": "spr_button",
-    "path": "sprites/spr_button/spr_button.yy",
+    "name": "spr_button_play",
+    "path": "sprites/spr_button_play/spr_button_play.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,11 +29,10 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":4,"eventType":6,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Play",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Main Menu",
     "path": "folders/Objects/Menu Stuff/Main Menu.yy",
