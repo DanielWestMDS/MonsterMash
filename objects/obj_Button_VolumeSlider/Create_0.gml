@@ -1,5 +1,5 @@
 /// Variables
-volumevalue = 0.5;
+value = 0.5;
 max_value = 1;
 selected = false;
 image_speed = 0;
