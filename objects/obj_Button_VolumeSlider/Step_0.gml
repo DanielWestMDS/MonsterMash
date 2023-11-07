@@ -16,5 +16,5 @@ show_debug_message(value);
 
 if selected {
     value = clamp((mouse_x - x) / sprite_width, 0, max_value);
-	audio_group_set_gain(agSFX, value, 0);
+	audio_group_set_gain(audiogroup_default, value, 0);
 }
