@@ -34,7 +34,7 @@ if (global.arm == armState.blobby)
         canPunch = true; // Enable input when the iteration is complete
     }
 
-    draw_sprite(spr_PunchIcon, punch_current_sprite_index, 65, 640);
+    draw_sprite(spr_PunchIcon, punch_current_sprite_index, 200, 640);
 }
 
 if (global.torso = torsoState.iron_golem)
@@ -55,7 +55,7 @@ if (global.torso = torsoState.iron_golem)
         canGoInvincible = true; // Enable input when the iteration is complete
     }
 
-    draw_sprite(spr_InvincibleIconFinal, invincible_current_sprite_index, 200, 640);
+    draw_sprite(spr_InvincibleIconFinal, invincible_current_sprite_index, 335, 640);
 }
 
 if (canGoInvincible == true)
@@ -65,4 +65,20 @@ if (canGoInvincible == true)
 if (canGoInvincible = true)
 {
 	invincible_current_sprite_index = 0;
+}
+
+if (global.leg = legState.witch)
+{
+	
+	if (keyboard_check(vk_shift))
+    {
+		leg_current_sprite_index = 1;
+    }
+	
+	if (!keyboard_check(vk_shift))
+    {
+		leg_current_sprite_index = 0;
+    }
+	
+	draw_sprite(spr_LegIcon, leg_current_sprite_index, 65, 640);
 }
