@@ -18,7 +18,7 @@ if (global.arm == armState.blobby)
 {
     // Add a boolean flag to control input
     
-    if (keyboard_check_pressed(ord("C")) && canPunch)
+    if (keyboard_check_pressed(ord("C")) && canPunch) 
     {
         PunchTimer = 10;
         canPunch = false; // Disable input
