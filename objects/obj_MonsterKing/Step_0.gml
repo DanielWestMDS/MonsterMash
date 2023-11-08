@@ -116,6 +116,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		
 		if (flameOn)
 		{
+			sprite_index = spr_MonsterKing;
 			flameCooldown++;
 
 			instance_create_layer(x, y, "Magic", obj_Flame);
@@ -147,8 +148,21 @@ if (global.bGameRunning && global.monsterKingDead == false)
 	{
 		armor = false;	
 	}
+	
+		// die if hp below or at 0
+	if (hp <= 0)
+	{
+		instance_destroy();
+	}
+	
+	// hit flash
+	if (being_hit)
+	{
+		hit_timer--;
+		if (hit_timer <= 0)
+		{
+			being_hit = false;
+		}
+	}
 }
-
-// Inherit the parent event
-event_inherited();
 
