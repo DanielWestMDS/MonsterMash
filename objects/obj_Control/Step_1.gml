@@ -34,8 +34,11 @@ if (health <= 0)
 	//{
 	//	happenOnce = false;
 		global.bGameRunning = false;
+		instance_deactivate_layer("Instances");
+		instance_deactivate_layer("Magic");
 		instance_create_layer(vx, vy, "Obstacles", obj_MenuBackground);
-		instance_create_layer(vx + 170, vy + 100, "Obstacles", obj_Button_PlayAgain);
+		instance_create_layer(vx + 170, vy + 145, "Obstacles", obj_Button_PlayAgain);
+		instance_create_layer(vx + 70, vy + 20, "Obstacles", obj_gameover);
 		//health = 3;
 		//draw_sprite(spr_PauseBackground, 1, camera_get_view_border_x(view_camera[0]) - 400, camera_get_view_border_y(view_camera[0]) - 400);
 	//}

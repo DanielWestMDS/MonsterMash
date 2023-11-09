@@ -20,13 +20,13 @@ if (global.arm == armState.blobby)
     
     if (keyboard_check_pressed(ord("C")) && canPunch) 
     {
-        PunchTimer = 10;
+        PunchTimer = 20;
         canPunch = false; // Disable input
     }
 
     if (PunchTimer > 0)
     {
-        punch_current_sprite_index += 0.5;
+        punch_current_sprite_index += 0.25;
         PunchTimer--;
     }
     else
