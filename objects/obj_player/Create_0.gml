@@ -24,6 +24,21 @@ enum armState
 	base,
 	blobby
 };
+
+enum charDirection
+{
+	Up,
+	Up_Right,
+	Right,
+	Down_Right,
+	Down,
+	Down_Left,
+	Left,
+	Up_Left
+};
+
+facing = charDirection.Down;
+
 	RunStamina = 0;
 	
 	BlobbyAttackTimer = 3;
