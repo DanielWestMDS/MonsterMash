@@ -53,29 +53,29 @@ if (currentYSpeed < 0 && currentXSpeed > 0)
 if (currentXSpeed > 0 && currentYSpeed == 0)
 {
 	//image_angle = 0;
-	sprite_index = spr_PlayerSide;
-	image_xscale = -1;
+	sprite_index = spr_PlayerWalkSide;
+	image_xscale = 1;
 	facing = charDirection.Right;
 }
 
 if (currentXSpeed > 0 && currentYSpeed > 0)
 {
 	//image_angle = 0;
-	sprite_index = spr_PlayerDown;
+	sprite_index = spr_PlayerWalkDown;
 	image_xscale = -1;
 	facing = charDirection.Down_Right;
 }
 
 if (currentYSpeed > 0 && currentXSpeed == 0)
 {
-	sprite_index = spr_PlayerDown;
+	sprite_index = spr_PlayerWalkDown;
 	image_xscale = 1;
 	facing = charDirection.Down;
 }
 
 if (currentYSpeed > 0 && currentXSpeed < 0)
 {
-	sprite_index = spr_PlayerDown;
+	sprite_index = spr_PlayerWalkDown;
 	image_xscale = 1;
 	facing = charDirection.Down_Left;
 }
@@ -84,8 +84,8 @@ if (currentXSpeed < 0 && currentYSpeed == 0)
 {
 	//image_angle = 180;
 	//image_yscale = -1;
-	sprite_index = spr_PlayerSide;
-	image_xscale = 1;
+	sprite_index = spr_PlayerWalkSide;
+	image_xscale = -1;
 	facing = charDirection.Left;
 }
 
@@ -96,11 +96,14 @@ if (currentXSpeed < 0 && currentYSpeed < 0)
 	sprite_index = spr_PlayerUp;
 	image_xscale = 1;
 	facing = charDirection.Up_Left;
-	if (facing == charDirection.Up_Left)
-	{
-		show_debug_message("Up_Left");
-	}
 }
+
+if (currentXSpeed == 0 && currentYSpeed == 0)
+{	
+	sprite_index = spr_PlayerIdle;
+	image_xscale = 1;
+	facing = charDirection.Up_Left;
+}	
 
 
 
@@ -191,24 +194,24 @@ if (keyboard_check(ord("C")))
 			{	
 				show_debug_message("punch");
 				//audio_play_sound(sfx_pew, 1, false, 1);
-				if (sprite_index == spr_PlayerDown)
+				if (sprite_index == spr_PlayerWalkDown)
 				{
 					blobbyAttack.direction = 270;
 					blobbyAttack.y += 45;
 				}
-				else if (sprite_index == spr_PlayerUp)
+				else if (sprite_index == spr_PlayerWalkUp)
 				{
 					blobbyAttack.direction = 90;
 					blobbyAttack.y += -45;
 				}
-				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
-				{
-					blobbyAttack.direction = 180;
-					blobbyAttack.x += -35;
-				}
-				else if (sprite_index == spr_PlayerSide)
+				else if (sprite_index == spr_PlayerWalkSide && image_xscale == 1)
 				{
 					blobbyAttack.direction = 0;
+					blobbyAttack.x += -35;
+				}
+				else if (sprite_index == spr_PlayerWalkSide)
+				{
+					blobbyAttack.direction = 180;
 					blobbyAttack.x += 35;
 				}
 				else
