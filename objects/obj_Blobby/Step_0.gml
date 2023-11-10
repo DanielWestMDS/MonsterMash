@@ -115,6 +115,14 @@ if (global.bGameRunning && global.blobbyDead == false)
 		global.bossesDefeated += 1;
 		instance_create_layer(x,y, "Instances", obj_DeadBlobby);
 	}
+	
+		// play hurt sound if hurt
+	if (previousHealth > hp)
+	{
+		being_hit = true;
+		audio_play_sound(snd_GolemHit, 1, false);
+		previousHealth = hp;
+	}
 }
 else if (global.blobbyDead)
 {

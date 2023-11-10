@@ -24,6 +24,7 @@ event_inherited();
 maxHp = 100;
 hp = 100;
 tempHP = hp;
+previousHealth = hp;
 
 sideSprite = spr_GolemSide;
 upSprite = spr_GolemUp;

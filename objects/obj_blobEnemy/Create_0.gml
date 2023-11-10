@@ -19,5 +19,6 @@ idleSprite = spr_BlobEnemy;
 
 colliding = false;
 
+previousHealth = hp;
 
 

@@ -7,7 +7,7 @@ scr_shadow();
 draw_self();
 if (global.leg == legState.witch)
 {
-	draw_healthbar(x-27, y-22, x+27, y-20, (RunStamina/50)*100, c_black, c_red, c_green, 0, true, true);
+	//draw_healthbar(x+1, y+1, x+1000, y+1000, (RunStamina/50)*100, c_black, c_red, c_green, 3, true, true);
 }
 
 // invicible shader

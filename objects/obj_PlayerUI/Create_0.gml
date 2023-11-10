@@ -9,3 +9,5 @@ canGoInvincible = true;
 sprinttimer = 0;
 cansprint = true;
 leg_current_sprite_index = 0;
+
+RunStamina = 0;
