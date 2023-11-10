@@ -8,3 +8,4 @@ sideSprite = spr_BloodMini;
 downSprite = spr_BloodMini;
 upSprite = spr_BloodMini;
 idleSprite = spr_BloodMini;
+

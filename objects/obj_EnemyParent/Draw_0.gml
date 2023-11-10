@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+scr_shadow();
+
 // health bar
 draw_self();
 if (hp < maxHp) {

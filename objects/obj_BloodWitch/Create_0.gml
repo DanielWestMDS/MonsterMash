@@ -27,3 +27,5 @@ sideSprite = spr_BloodWitchSide;
 upSprite = spr_BloodWitchBack;
 downSprite = spr_BloodWitchForward;
 idleSprite = spr_BloodWitch;
+
+previousHealth = hp;

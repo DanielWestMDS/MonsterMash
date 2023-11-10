@@ -87,3 +87,19 @@ else
 
 // Inherit the parent event
 event_inherited();
+
+	// play hurt sound if hurt
+if (previousHealth > hp)
+{
+	being_hit = true;
+	audio_play_sound(snd_WitchHurt, 1, false, 1, 10.2);
+	previousHealth = hp;
+}
+
+if (audio_exists(snd_WitchHurt))
+{
+	if (audio_sound_get_track_position(snd_WitchHurt) > 11.5)
+	{
+		audio_stop_sound(snd_WitchHurt);
+	}
+}

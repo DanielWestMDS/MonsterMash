@@ -171,6 +171,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		if (hit_timer <= 0)
 		{
 			being_hit = false;
+			hit_timer = 10;
 		}
 	}
 	

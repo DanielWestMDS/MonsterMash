@@ -45,7 +45,7 @@ hp = 100;
 maxHp = 100;
 previousHealth = hp;
 
-hit_timer = 100;
+hit_timer = 10;
 
 armorHp = 30;
 maxArmorHp = 30;
