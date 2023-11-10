@@ -3,7 +3,7 @@
 
 if (!variable_global_exists("TutorialFinished"))
 {
-	global.TutorialFinished = true;
+	global.TutorialFinished = false;
 }
 
 // Inherit the parent event
