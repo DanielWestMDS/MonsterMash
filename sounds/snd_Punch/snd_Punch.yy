@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_Punch",
-  "duration": 0.0,
+  "soundFile": "snd_Punch.mp3",
+  "duration": 1.750167,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

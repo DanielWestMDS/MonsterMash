@@ -183,7 +183,7 @@ if (keyboard_check(ord("C")))
 	{
 		if (BlobbyAttackTimerCurrent > BlobbyAttackTimer)
 		{
-			audio_play_sound(snd_ZaHando, 1, false);
+			audio_play_sound(snd_Punch, 1, false);
 			BlobbyAttackTimerCurrent = 0;
 			blobbyAttack = instance_create_layer(x, y, layer,obj_PunchAttack)
 			
