@@ -8,6 +8,7 @@
     {"id":{"name":"obj_PlayerUI","path":"objects/obj_PlayerUI/obj_PlayerUI.yy",},"order":4,},
     {"id":{"name":"ts_Golem_Terrain","path":"tilesets/ts_Golem_Terrain/ts_Golem_Terrain.yy",},"order":2,},
     {"id":{"name":"snd_GameOver","path":"sounds/snd_GameOver/snd_GameOver.yy",},"order":6,},
+    {"id":{"name":"spr_RockBreak","path":"sprites/spr_RockBreak/spr_RockBreak.yy",},"order":8,},
     {"id":{"name":"snd_FireUp","path":"sounds/snd_FireUp/snd_FireUp.yy",},"order":4,},
     {"id":{"name":"spr_Bird","path":"sprites/spr_Bird/spr_Bird.yy",},"order":13,},
     {"id":{"name":"ts_terrain","path":"tilesets/ts_terrain/ts_terrain.yy",},"order":0,},

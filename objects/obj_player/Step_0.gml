@@ -297,7 +297,7 @@ if (being_hit)
 }
 
 // invicible for a short period after being hurt
-if (audio_is_playing(snd_PlayerHurt))
+if (audio_is_playing(snd_DamageTaken))
 {
 	health = previousHealth
 }

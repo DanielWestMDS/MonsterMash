@@ -6,7 +6,7 @@
     "name": "spr_MonsterKing",
     "path": "sprites/spr_MonsterKing/spr_MonsterKing.yy",
   },
-  "solid": false,
+  "solid": true,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
