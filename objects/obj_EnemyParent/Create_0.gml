@@ -13,4 +13,4 @@ downSprite = spr_Sire;
 upSprite = spr_Sire;
 idleSprite = spr_Sire;
 
-
+previousHealth = hp

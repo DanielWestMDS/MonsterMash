@@ -240,7 +240,6 @@ if (keyboard_check(vk_shift))
 		if (global.leg == legState.witch)
 		{
 			global.maxSpeed = 3;
-
 		}
 		else
 		{
@@ -308,7 +307,17 @@ if (previousHealth > health)
 {
 	if (room != r_Tutorial)
 	{
-		audio_play_sound(snd_PlayerHurt, 1, false);
+		audio_play_sound(snd_DamageTaken, 1.5, false);
+		previousHealth = health;
+	}
+}
+
+// play hurt sound if hurt
+if (previousHealth < health)
+{
+	if (room != r_Tutorial)
+	{
+		audio_play_sound(snd_HealthUp, 1, false);
 		previousHealth = health;
 	}
 }

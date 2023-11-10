@@ -143,3 +143,11 @@ else
 	sprite_index = idleSprite;
 	speed = 0;
 }
+
+	// play hurt sound if hurt
+if (previousHealth > hp)
+{
+	being_hit = true;
+	audio_play_sound(snd_GolemHit, 1, false, 1, 10.2);
+	previousHealth = hp;
+}

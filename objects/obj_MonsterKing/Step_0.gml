@@ -13,10 +13,15 @@ if (global.bGameRunning && global.monsterKingDead == false)
 	{	
 		if (time >= 0)
 		{
-			audio_play_sound(snd_look, 1, false, 1, 0.5);
+			//audio_play_sound(snd_look, 1, false, 1, 0.5);
 		}
 		else if (time <= 0)
 		{
+			if !(audio_is_playing(snd_Lazer))
+			{
+				
+			}
+			audio_play_sound(snd_Lazer, 1, false, 0.5, 0,);
 			laserOn = true;
 		}
 		time--;
@@ -31,10 +36,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			}
 			else
 			{
-				if !(audio_is_playing(snd_Lazer))
-				{
-					audio_play_sound(snd_Lazer, 1, false, 1, 0);
-				}
+
 			}
 			
 			// number is how long laser lasts
@@ -105,13 +107,12 @@ if (global.bGameRunning && global.monsterKingDead == false)
 				// -- flame attack -- //	
 	if (stance == monsterKingState.flame)
 	{	
-		//stance = monsterKingState.idle;
 		if (flameTime >= 0 && flameStartup >= 0)
 		{
 			if (flameSound = false)
 			{
 				sprite_index = spr_MonsterKingFlame;
-				audio_play_sound(snd_FireUp, 1, false, 1, 0.5);
+				//audio_play_sound(snd_FireUp, 1, false, 1, 0.5);
 				flameSound = true;
 			}
 		}
@@ -125,7 +126,6 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		{
 			sprite_index = spr_MonsterKing;
 			flameCooldown++;
-
 
 			/* if flame does not exist stop playing sound */
 			instance_create_layer(x, y, "Magic", obj_Flame);
@@ -171,7 +171,29 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		if (hit_timer <= 0)
 		{
 			being_hit = false;
+			hit_timer = 10;
 		}
+	}
+	
+	// flame shoot sound
+	if (object_exists(obj_Flame) && flameOn)
+	{
+		if !(audio_is_playing(snd_Flame))
+		{
+			audio_play_sound(snd_Flame, 1, false)
+		}
+	}
+	else
+	{
+		audio_stop_sound(snd_Flame);
+	}
+	
+	// play hurt sound if hurt
+	if (previousHealth > hp)
+	{
+		being_hit = true;
+		audio_play_sound(snd_GolemHit, 1, false);
+		previousHealth = hp;
 	}
 }
 
