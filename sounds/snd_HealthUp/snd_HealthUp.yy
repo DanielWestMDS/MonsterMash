@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_HealthUp",
-  "duration": 0.0,
+  "soundFile": "snd_HealthUp.mp3",
+  "duration": 4.153458,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

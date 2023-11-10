@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_Lazer",
-  "duration": 0.0,
+  "soundFile": "snd_Lazer.mp3",
+  "duration": 6.896292,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

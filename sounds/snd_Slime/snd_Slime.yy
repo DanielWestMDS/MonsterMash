@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_Slime",
-  "duration": 0.0,
+  "soundFile": "snd_Slime.mp3",
+  "duration": 0.888125,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",

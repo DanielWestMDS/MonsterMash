@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_WitchHurt",
-  "duration": 0.0,
+  "soundFile": "snd_WitchHurt.mp3",
+  "duration": 17.031834,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
