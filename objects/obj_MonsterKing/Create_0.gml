@@ -43,6 +43,9 @@ event_inherited();
 
 hp = 100;
 maxHp = 100;
+previousHealth = hp;
+
+hit_timer = 100;
 
 armorHp = 30;
 maxArmorHp = 30;
