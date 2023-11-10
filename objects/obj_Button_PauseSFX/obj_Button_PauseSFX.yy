@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Button_PauseSFX",
   "spriteId": {
-    "name": "spr_musicbutton",
-    "path": "sprites/spr_musicbutton/spr_musicbutton.yy",
+    "name": "spr_SFXbutton",
+    "path": "sprites/spr_SFXbutton/spr_SFXbutton.yy",
   },
   "solid": true,
   "visible": true,
