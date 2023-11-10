@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
 var _playerHealth = health;
 var _playerHealthMax = global.maxhp;
 var _playerHealthFrac = frac(_playerHealth);
@@ -34,7 +33,7 @@ if (global.arm == armState.blobby)
         canPunch = true; // Enable input when the iteration is complete
     }
 
-    draw_sprite(spr_PunchIcon, punch_current_sprite_index, 200, 640);
+    draw_sprite(spr_PunchIconFinal, punch_current_sprite_index, 200, 640);
 }
 
 if (global.torso = torsoState.iron_golem)
