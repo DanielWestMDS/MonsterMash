@@ -5,7 +5,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (current_dialog.message == "I will give you everything I have")
+if (current_dialog.message == "by giving you everything I have")
 {
 	obj_bird.sprite_index = spr_Character_BirdBoss;
 }
