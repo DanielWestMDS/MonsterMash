@@ -119,6 +119,8 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			sprite_index = spr_MonsterKing;
 			flameCooldown++;
 
+
+			/* if flame does not exist stop playing sound */
 			instance_create_layer(x, y, "Magic", obj_Flame);
 			
 			// number is how long flame lasts

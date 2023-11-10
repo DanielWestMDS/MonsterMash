@@ -294,9 +294,11 @@ if (audio_is_playing(snd_PlayerHurt))
 // play hurt sound if hurt
 if (previousHealth > health)
 {
-	audio_play_sound(snd_PlayerHurt, 1, false);
-	previousHealth = health;
-
+	if (room != r_Tutorial)
+	{
+		audio_play_sound(snd_PlayerHurt, 1, false);
+		previousHealth = health;
+	}
 }
 
 if (health <= 0)

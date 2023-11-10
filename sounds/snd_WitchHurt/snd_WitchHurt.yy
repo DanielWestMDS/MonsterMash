@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_bone",
+  "name": "snd_WitchHurt",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -11,11 +11,11 @@
   "type": 0,
   "bitDepth": 1,
   "audioGroupId": {
-    "name": "agSFX",
-    "path": "audiogroups/agSFX",
+    "name": "audiogroup_default",
+    "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_bone.mp3",
-  "duration": 0.261208,
+  "soundFile": "snd_WitchHurt",
+  "duration": 0.0,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
