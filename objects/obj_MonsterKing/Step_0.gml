@@ -29,6 +29,13 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			{
 				instance_create_layer(x, y, "Magic", obj_Laser);
 			}
+			else
+			{
+				if !(audio_is_playing(snd_Lazer))
+				{
+					audio_play_sound(snd_Lazer, 1, false, 1, 0);
+				}
+			}
 			
 			// number is how long laser lasts
 			if (laserCooldown >= 20)
@@ -119,6 +126,8 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			sprite_index = spr_MonsterKing;
 			flameCooldown++;
 
+
+			/* if flame does not exist stop playing sound */
 			instance_create_layer(x, y, "Magic", obj_Flame);
 			
 			// number is how long flame lasts

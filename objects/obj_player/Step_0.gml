@@ -183,7 +183,7 @@ if (keyboard_check(ord("C")))
 	{
 		if (BlobbyAttackTimerCurrent > BlobbyAttackTimer)
 		{
-			audio_play_sound(snd_ZaHando, 1, false);
+			audio_play_sound(snd_Punch, 1, false);
 			BlobbyAttackTimerCurrent = 0;
 			blobbyAttack = instance_create_layer(x, y, layer,obj_PunchAttack)
 			
@@ -306,9 +306,11 @@ if (audio_is_playing(snd_PlayerHurt))
 // play hurt sound if hurt
 if (previousHealth > health)
 {
-	audio_play_sound(snd_PlayerHurt, 1, false);
-	previousHealth = health;
-
+	if (room != r_Tutorial)
+	{
+		audio_play_sound(snd_PlayerHurt, 1, false);
+		previousHealth = health;
+	}
 }
 
 if (health <= 0)
