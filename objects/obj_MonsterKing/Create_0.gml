@@ -12,10 +12,11 @@ rockTimer = 50;
 rockStartup = 0;
 rockCooldown = 40;
 
-flameTime = 14;
+flameTime = 60;
 flameTimer = time;
 flameCooldown = 100;
 flameStartup = 0;
+flameSound = false;
 
 colliding = false;
 
@@ -28,11 +29,11 @@ enum monsterKingState
 {
 	idle,
 	// fire laser at player
-	laser,
+	flame,
 	// create rock underneath player
 	rock,
 	// flame directed at player
-	flame
+	laser
 }
 
 stance = attackState.idle;
@@ -46,7 +47,9 @@ maxHp = 100;
 armorHp = 30;
 maxArmorHp = 30;
 
-sideSprite = spr_MonsterKingSide;
-downSprite = spr_MonsterKingDown;
-upSprite = spr_MonsterKingUp;
+sideSprite = spr_MonsterKing;
+downSprite = spr_MonsterKing;
+upSprite = spr_MonsterKing;
 idleSprite = spr_MonsterKing;
+
+global.flameColliding = false;

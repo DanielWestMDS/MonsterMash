@@ -52,7 +52,6 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			// -- Laser attack -- //
 			
 			// -- rock attack -- //
-	
 	if (stance == monsterKingState.rock)
 	{	
 		if (rockTime >= 0 && rockStartup >= 0)
@@ -69,7 +68,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		{
 			rockCooldown++;
 			
-			if (!instance_exists(obj_RockAttack))
+			if (!instance_exists(obj_RockAttack) && !(instance_exists(obj_Flame)))
 			{
 				instance_create_layer(obj_Player.x, obj_Player.y, "Instances", obj_RockAttack);
 				stance = monsterKingState.laser;
@@ -97,11 +96,17 @@ if (global.bGameRunning && global.monsterKingDead == false)
 				// -- rock attack -- //
 				
 				// -- flame attack -- //	
-	if (stance == monsterKingState.laser)
+	if (stance == monsterKingState.flame)
 	{	
+		//stance = monsterKingState.idle;
 		if (flameTime >= 0 && flameStartup >= 0)
 		{
-			audio_play_sound(snd_look, 1, false, 1, 0.5);
+			if (flameSound = false)
+			{
+				sprite_index = spr_MonsterKingFlame;
+				audio_play_sound(snd_FireUp, 1, false, 1, 0.5);
+				flameSound = true;
+			}
 		}
 		else if (flameTime <= 0)
 		{
@@ -111,15 +116,16 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		
 		if (flameOn)
 		{
+			sprite_index = spr_MonsterKing;
 			flameCooldown++;
 
 			instance_create_layer(x, y, "Magic", obj_Flame);
 			
-			// number is how long laser lasts
-			if (flameCooldown >= 20)
+			// number is how long flame lasts
+			if (flameCooldown >= 50)
 			{
 				// reset members after attack finishes
-				flameTime = 14;
+				flameTime = 60;
 				flameTimer = 100;
 				flameCooldown = 0;
 				stance = monsterKingState.idle;
@@ -128,12 +134,13 @@ if (global.bGameRunning && global.monsterKingDead == false)
 	}
 	else
 	{
-		instance_destroy(obj_Laser);
+		global.flameColliding = false;
 		flameOn = false;
 		flameStartup = 15;
 		flameTimer--;
+		flameSound = false;
 	}
-	rockTimer--;
+	rockTimer--; 
 			// -- flame attack -- //
 	
 	// only get damaged if armor broken
@@ -141,8 +148,21 @@ if (global.bGameRunning && global.monsterKingDead == false)
 	{
 		armor = false;	
 	}
+	
+		// die if hp below or at 0
+	if (hp <= 0)
+	{
+		instance_destroy();
+	}
+	
+	// hit flash
+	if (being_hit)
+	{
+		hit_timer--;
+		if (hit_timer <= 0)
+		{
+			being_hit = false;
+		}
+	}
 }
-
-// Inherit the parent event
-event_inherited();
 

@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+// shadow
+scr_shadow();
+
 draw_self();
 if (global.leg == legState.witch)
 {
@@ -30,6 +33,3 @@ if (being_hit)
 draw_self();
 
 shader_reset();
-
-// shadow
-scr_shadow();

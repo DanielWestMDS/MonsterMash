@@ -35,32 +35,75 @@ if (place_free(x, y + currentYSpeed))
 	y += currentYSpeed;
 }
 
-if (currentXSpeed < 0)
+
+if (currentYSpeed < 0 && currentXSpeed == 0)
+{
+	sprite_index = spr_PlayerUp;
+	image_xscale = 1;
+	facing = charDirection.Up;
+}
+
+if (currentYSpeed < 0 && currentXSpeed > 0)
+{
+	sprite_index = spr_PlayerUp;
+	image_xscale = 1;
+	facing = charDirection.Up_Right;
+}
+
+if (currentXSpeed > 0 && currentYSpeed == 0)
+{
+	//image_angle = 0;
+	sprite_index = spr_PlayerSide;
+	image_xscale = -1;
+	facing = charDirection.Right;
+}
+
+if (currentXSpeed > 0 && currentYSpeed > 0)
+{
+	//image_angle = 0;
+	sprite_index = spr_PlayerDown;
+	image_xscale = -1;
+	facing = charDirection.Down_Right;
+}
+
+if (currentYSpeed > 0 && currentXSpeed == 0)
+{
+	sprite_index = spr_PlayerDown;
+	image_xscale = 1;
+	facing = charDirection.Down;
+}
+
+if (currentYSpeed > 0 && currentXSpeed < 0)
+{
+	sprite_index = spr_PlayerDown;
+	image_xscale = 1;
+	facing = charDirection.Down_Left;
+}
+
+if (currentXSpeed < 0 && currentYSpeed == 0)
 {
 	//image_angle = 180;
 	//image_yscale = -1;
 	sprite_index = spr_PlayerSide;
 	image_xscale = 1;
+	facing = charDirection.Left;
 }
 
-if (currentXSpeed > 0)
+if (currentXSpeed < 0 && currentYSpeed < 0)
 {
-	//image_angle = 0;
-	sprite_index = spr_PlayerSide;
-	image_xscale = -1;
-}
-
-if (currentYSpeed < 0)
-{
+	//image_angle = 180;
+	//image_yscale = -1;
 	sprite_index = spr_PlayerUp;
 	image_xscale = 1;
+	facing = charDirection.Up_Left;
+	if (facing == charDirection.Up_Left)
+	{
+		show_debug_message("Up_Left");
+	}
 }
 
-if (currentYSpeed > 0)
-{
-	sprite_index = spr_PlayerDown;
-	image_xscale = 1;
-}
+
+
 
 
 // bone shooting
@@ -76,26 +119,43 @@ if (keyboard_check(vk_space))
 		{	
 			show_debug_message("bone shoot");
 			//audio_play_sound(sfx_pew, 1, false, 1);
-			if (sprite_index == spr_PlayerDown)
-			{
-				bone.direction = 270;
-			}
-			else if (sprite_index == spr_PlayerUp)
+			
+			
+			if (facing == charDirection.Up)
 			{
 				bone.direction = 90;
 			}
-			else if (sprite_index == spr_PlayerSide && image_xscale == 1)
+			if (facing == charDirection.Up_Left)
+			{
+				show_debug_message("Shoot Up_Left");
+				bone.direction = 135;
+			}
+			if (facing == charDirection.Left)
 			{
 				bone.direction = 180;
 			}
-			else if (sprite_index == spr_PlayerSide)
+			if (facing == charDirection.Down_Left)
 			{
-				bone.direction = 0;
+				bone.direction = 225;
 			}
-			else
+			if (facing == charDirection.Down)
 			{
 				bone.direction = 270;
 			}
+			if (facing == charDirection.Down_Right)
+			{
+				bone.direction = 315;
+			}
+			if (facing == charDirection.Right)
+			{
+				bone.direction = 360;
+			}
+			if (facing == charDirection.Up_Right)
+			{
+				bone.direction = 45;
+			}
+			
+			
 			//bone.direction = image_angle;
 			bone.image_angle = bone.direction;
 			bone.speed = 5;
@@ -113,7 +173,7 @@ if (keyboard_check(ord("C")))
 		{
 			audio_play_sound(snd_ZaHando, 1, false);
 			BlobbyAttackTimerCurrent = 0;
-			blobbyAttack = instance_create_layer(x, y, layer,obj_BlobbyAttack)
+			blobbyAttack = instance_create_layer(x, y, layer,obj_PunchAttack)
 			
 			if(blobbyAttack != noone)
 			{	
@@ -122,22 +182,22 @@ if (keyboard_check(ord("C")))
 				if (sprite_index == spr_PlayerDown)
 				{
 					blobbyAttack.direction = 270;
-					blobbyAttack.y += 50;
+					blobbyAttack.y += 45;
 				}
 				else if (sprite_index == spr_PlayerUp)
 				{
 					blobbyAttack.direction = 90;
-					blobbyAttack.y += -50;
+					blobbyAttack.y += -45;
 				}
 				else if (sprite_index == spr_PlayerSide && image_xscale == 1)
 				{
 					blobbyAttack.direction = 180;
-					blobbyAttack.x += -50;
+					blobbyAttack.x += -35;
 				}
 				else if (sprite_index == spr_PlayerSide)
 				{
 					blobbyAttack.direction = 0;
-					blobbyAttack.x += 50;
+					blobbyAttack.x += 35;
 				}
 				else
 				{
@@ -223,6 +283,20 @@ if (being_hit)
 	{
 		being_hit = false;
 	}
+}
+
+// invicible for a short period after being hurt
+if (audio_is_playing(snd_PlayerHurt))
+{
+	health = previousHealth
+}
+
+// play hurt sound if hurt
+if (previousHealth > health)
+{
+	audio_play_sound(snd_PlayerHurt, 1, false);
+	previousHealth = health;
+
 }
 
 if (health <= 0)

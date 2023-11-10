@@ -107,16 +107,18 @@ if (global.bGameRunning && global.blobbyDead == false)
 		colliding = false;
 	}
 	
-	if (hp == 0)
+	if (hp <= 0)
 	{
 		global.blobbyDead = true;
 		global.arm = armState.blobby;
 		health = global.maxhp;
 		global.bossesDefeated += 1;
+		instance_create_layer(x,y, "Instances", obj_DeadBlobby);
 	}
 }
 else if (global.blobbyDead)
 {
+	instance_create_layer(x,y, "Instances", obj_DeadBlobby);
 	hp = 0;	
 }
 // Inherit the parent event

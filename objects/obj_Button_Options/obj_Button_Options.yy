@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Button_Options",
   "spriteId": {
-    "name": "spr_button",
-    "path": "sprites/spr_button/spr_button.yy",
+    "name": "spr_button_options",
+    "path": "sprites/spr_button_options/spr_button_options.yy",
   },
   "solid": false,
   "visible": true,
@@ -32,9 +32,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"button_text","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"objectId":{"name":"obj_MenuManager","path":"objects/obj_MenuManager/obj_MenuManager.yy",},"value":"Options",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "Main Menu",
     "path": "folders/Objects/Menu Stuff/Main Menu.yy",

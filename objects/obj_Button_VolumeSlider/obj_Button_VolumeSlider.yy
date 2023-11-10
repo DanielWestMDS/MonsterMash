@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Button_VolumeSlider",
   "spriteId": {
-    "name": "spr_VolumeSlider",
-    "path": "sprites/spr_VolumeSlider/spr_VolumeSlider.yy",
+    "name": "spr_slidebackground",
+    "path": "sprites/spr_slidebackground/spr_slidebackground.yy",
   },
   "solid": false,
   "visible": true,

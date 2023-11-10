@@ -13,7 +13,7 @@ if (global.bGameRunning && sprite_index == spr_Character_BirdBoss)
 		}
 	}
 	
-	if (hp == 0)
+	if (hp <= 0)
 	{
 		being_hit = false;
 		global.TutorialFinished = true;
