@@ -84,6 +84,7 @@
     {"id":{"name":"spr_Character_Player","path":"sprites/spr_Character_Player/spr_Character_Player.yy",},"order":17,},
     {"id":{"name":"spr_BloodWitchSign","path":"sprites/spr_BloodWitchSign/spr_BloodWitchSign.yy",},"order":10,},
     {"id":{"name":"ts_Blobby_Terrain","path":"tilesets/ts_Blobby_Terrain/ts_Blobby_Terrain.yy",},"order":5,},
+    {"id":{"name":"spr_HeartsFinal","path":"sprites/spr_HeartsFinal/spr_HeartsFinal.yy",},"order":6,},
     {"id":{"name":"spr_BloodWitchForward","path":"sprites/spr_BloodWitchForward/spr_BloodWitchForward.yy",},"order":4,},
     {"id":{"name":"snd_DamageTaken","path":"sounds/snd_DamageTaken/snd_DamageTaken.yy",},"order":13,},
     {"id":{"name":"spr_MonsterKingFlame","path":"sprites/spr_MonsterKingFlame/spr_MonsterKingFlame.yy",},"order":1,},
