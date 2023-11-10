@@ -47,6 +47,7 @@
     {"name":"inst_4D3FCA9D","path":"rooms/r_Boss/r_Boss.yy",},
     {"name":"inst_5F5F0DB2","path":"rooms/r_Boss/r_Boss.yy",},
     {"name":"inst_403D4D24","path":"rooms/r_Boss/r_Boss.yy",},
+    {"name":"inst_403D4D24","path":"rooms/r_Boss/r_Boss.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
