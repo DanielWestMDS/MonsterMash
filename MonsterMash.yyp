@@ -206,6 +206,7 @@
     {"id":{"name":"obj_GolemCorridorDoor","path":"objects/obj_GolemCorridorDoor/obj_GolemCorridorDoor.yy",},"order":6,},
     {"id":{"name":"obj_Wall2","path":"objects/obj_Wall2/obj_Wall2.yy",},"order":28,},
     {"id":{"name":"obj_BloodWitchDoor","path":"objects/obj_BloodWitchDoor/obj_BloodWitchDoor.yy",},"order":0,},
+    {"id":{"name":"spr_FlameDestroy","path":"sprites/spr_FlameDestroy/spr_FlameDestroy.yy",},"order":9,},
     {"id":{"name":"obj_DoorBloodWitchEnter","path":"objects/obj_DoorBloodWitchEnter/obj_DoorBloodWitchEnter.yy",},"order":5,},
     {"id":{"name":"spr_Lives","path":"sprites/spr_Lives/spr_Lives.yy",},"order":10,},
     {"id":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},"order":0,},
@@ -266,6 +267,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"BloodWitch","folderPath":"folders/Sprites/BloodWitch.yy","order":11,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Golem","folderPath":"folders/Sprites/Golem.yy","order":12,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MenuStuff","folderPath":"folders/Sprites/MenuStuff.yy","order":6,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GameOver","folderPath":"folders/Sprites/MenuStuff/GameOver.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"MainMenu","folderPath":"folders/Sprites/MenuStuff/MainMenu.yy","order":2,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"PauseMenu","folderPath":"folders/Sprites/MenuStuff/PauseMenu.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Mini","folderPath":"folders/Sprites/Mini.yy","order":19,},
@@ -274,7 +276,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"player","folderPath":"folders/Sprites/player.yy","order":8,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy","order":7,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"GameOver","folderPath":"folders/Sprites/MenuStuff/GameOver.yy","order":3,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
