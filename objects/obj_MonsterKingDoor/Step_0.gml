@@ -13,7 +13,7 @@ else if (global.bossesDefeated == 2)
 {
 	image_index = 2;
 }
-else if (global.bossesDefeated == 3)
+else if (global.bossesDefeated >= 3)
 {
 	image_index = 3;
 }

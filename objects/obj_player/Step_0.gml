@@ -125,35 +125,47 @@ if (keyboard_check(vk_space))
 			{
 				bone.direction = 90;
 			}
+			
+			if (facing == charDirection.Up_Right)
+			{
+				bone.direction = 45;
+			}
+			
+			if (facing == charDirection.Right)
+			{
+				bone.direction = 360;
+			}
+			
+			if (facing == charDirection.Down_Right)
+			{
+				bone.direction = 315;
+			}
+			
+			if (facing == charDirection.Down)
+			{
+				bone.direction = 270;
+			}
+			
+			if (facing == charDirection.Down_Left)
+			{
+				bone.direction = 225;
+			}
+			
+			if (facing == charDirection.Left)
+			{
+				bone.direction = 180;
+			}
+			
 			if (facing == charDirection.Up_Left)
 			{
 				show_debug_message("Shoot Up_Left");
 				bone.direction = 135;
 			}
-			if (facing == charDirection.Left)
-			{
-				bone.direction = 180;
-			}
-			if (facing == charDirection.Down_Left)
-			{
-				bone.direction = 225;
-			}
-			if (facing == charDirection.Down)
-			{
-				bone.direction = 270;
-			}
-			if (facing == charDirection.Down_Right)
-			{
-				bone.direction = 315;
-			}
-			if (facing == charDirection.Right)
-			{
-				bone.direction = 360;
-			}
-			if (facing == charDirection.Up_Right)
-			{
-				bone.direction = 45;
-			}
+
+
+
+
+
 			
 			
 			//bone.direction = image_angle;

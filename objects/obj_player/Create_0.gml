@@ -34,7 +34,8 @@ enum charDirection
 	Down,
 	Down_Left,
 	Left,
-	Up_Left
+	Up_Left,
+	None
 };
 
 facing = charDirection.Down;
