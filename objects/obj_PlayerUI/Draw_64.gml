@@ -7,7 +7,7 @@ _playerHealth -= _playerHealthFrac;
 
 for (var i = 1; i <= _playerHealthMax; i++)
 {
-	draw_sprite(spr_Hearts,
+	draw_sprite(spr_HeartsFinal,
 	(i > _playerHealth) + ((i == _playerHealth+1) && (_playerHealthFrac > 0)),
 	UI_MARGIN + ((i-1) * UI_HEALTHSEPARATION),
 	UI_MARGIN)
