@@ -206,6 +206,7 @@
     {"id":{"name":"obj_GolemCorridorDoor","path":"objects/obj_GolemCorridorDoor/obj_GolemCorridorDoor.yy",},"order":6,},
     {"id":{"name":"obj_Wall2","path":"objects/obj_Wall2/obj_Wall2.yy",},"order":28,},
     {"id":{"name":"obj_BloodWitchDoor","path":"objects/obj_BloodWitchDoor/obj_BloodWitchDoor.yy",},"order":0,},
+    {"id":{"name":"spr_FlameDestroy","path":"sprites/spr_FlameDestroy/spr_FlameDestroy.yy",},"order":9,},
     {"id":{"name":"obj_DoorBloodWitchEnter","path":"objects/obj_DoorBloodWitchEnter/obj_DoorBloodWitchEnter.yy",},"order":5,},
     {"id":{"name":"spr_Lives","path":"sprites/spr_Lives/spr_Lives.yy",},"order":10,},
     {"id":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},"order":0,},
