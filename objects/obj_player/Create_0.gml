@@ -3,7 +3,7 @@
 
 if (!variable_global_exists("maxhp"))
 {
-	global.maxhp = 1;
+	global.maxhp = 3;
 }
 
 global.bGameRunning = true;

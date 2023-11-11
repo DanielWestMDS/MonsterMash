@@ -37,7 +37,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Menu Stuff",
-    "path": "folders/Objects/Menu Stuff.yy",
+    "name": "GameOver",
+    "path": "folders/Objects/Menu Stuff/GameOver.yy",
   },
 }

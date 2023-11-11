@@ -30,6 +30,7 @@ if (keyboard_check_released(vk_escape))
 
 if (health <= 0)
 {
+
 	//if (happenOnce)
 	//{
 	//	happenOnce = false;
@@ -40,7 +41,10 @@ if (health <= 0)
 		//instance_create_layer(vx, vy, "Obstacles", obj_MenuBackground);
 		instance_create_layer(vx + 315, vy + 180, "Obstacles", obj_Button_PlayAgain);
 		instance_create_layer(vx, vy, "Obstacles", obj_GameOverFinal);
-		//health = 3;
+		audio_stop_all();	
+		audio_play_sound(snd_GameOver, 100, false);
+		instance_create_layer(vx + 145, vy + 30, "Obstacles", obj_GaryDeathAnim);
+		health = 3;
 		//draw_sprite(spr_PauseBackground, 1, camera_get_view_border_x(view_camera[0]) - 400, camera_get_view_border_y(view_camera[0]) - 400);
 	//}
 }
