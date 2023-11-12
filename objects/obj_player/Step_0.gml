@@ -38,15 +38,20 @@ if (place_free(x, y + currentYSpeed))
 
 if (currentYSpeed < 0 && currentXSpeed == 0)
 {
-	sprite_index = spr_PlayerUp;
+	
 	image_xscale = 1;
 	facing = charDirection.Up;
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+		sprite_index = spr_PlayerUp;
 }
 else if (currentYSpeed < 0 && currentXSpeed > 0)
 {
 	sprite_index = spr_PlayerUp;
 	image_xscale = 1;
 	facing = charDirection.Up_Right;
+	
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+		sprite_index = spr_PlayerUp;
 }
 else if (currentXSpeed > 0 && currentYSpeed == 0)
 {
@@ -54,65 +59,78 @@ else if (currentXSpeed > 0 && currentYSpeed == 0)
 	sprite_index = spr_PlayerWalkSide;
 	image_xscale = 1;
 	facing = charDirection.Right;
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+		sprite_index = spr_PlayerWalkSide;
 }
 else if (currentXSpeed > 0 && currentYSpeed > 0)
 {
 	//image_angle = 0;
-	sprite_index = spr_PlayerWalkDown;
 	image_xscale = -1;
 	facing = charDirection.Down_Right;
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+		sprite_index = spr_PlayerWalkDown;
 }
 else if (currentYSpeed > 0 && currentXSpeed == 0)
 {
-	sprite_index = spr_PlayerWalkDown;
 	image_xscale = 1;
 	facing = charDirection.Down;
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+		sprite_index = spr_PlayerWalkDown;
 }
 else if (currentYSpeed > 0 && currentXSpeed < 0)
 {
-	sprite_index = spr_PlayerWalkDown;
 	image_xscale = 1;
 	facing = charDirection.Down_Left;
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+		sprite_index = spr_PlayerWalkDown;
 }
 else if (currentXSpeed < 0 && currentYSpeed == 0)
 {
 	//image_angle = 180;
 	//image_yscale = -1;
-	sprite_index = spr_PlayerWalkSide;
 	image_xscale = -1;
+
 	facing = charDirection.Left;
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+			sprite_index = spr_PlayerWalkSide;
+			
 }
 else if (currentXSpeed < 0 && currentYSpeed < 0)
 {
 	//image_angle = 180;
 	//image_yscale = -1;
-	sprite_index = spr_PlayerUp;
+	
 	image_xscale = 1;
 	facing = charDirection.Up_Left;
-	show_debug_message("facing Up_Left");
+	//show_debug_message("facing Up_Left");
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+		sprite_index = spr_PlayerUp;
 }
 else if (currentXSpeed == 0 && currentYSpeed == 0)
-{	
-	if (facing == charDirection.Up or facing == charDirection.Up_Left or facing == charDirection.Up_Right)
-	{
-		image_xscale = 1;
-		show_debug_message("facing Up Idle");
-		sprite_index = spr_PlayerUp;
-	}
-	if (facing == charDirection.Down or facing == charDirection.Down_Left or facing == charDirection.Down_Right)
-	{
-		image_xscale = 1;
-		sprite_index = spr_PlayerDown;
-	}
-	if (facing == charDirection.Left)
-	{
-		image_xscale = 1;
-		sprite_index = spr_PlayerSide;
-	}
+{
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	{		
+		if (facing == charDirection.Up or facing == charDirection.Up_Left or facing == charDirection.Up_Right)
+		{
+			image_xscale = 1;
+			//show_debug_message("facing Up Idle");
+			sprite_index = spr_PlayerUp;
+		}
+		if (facing == charDirection.Down or facing == charDirection.Down_Left or facing == charDirection.Down_Right)
+		{
+			image_xscale = 1;
+			sprite_index = spr_PlayerDown;
+		}
+		if (facing == charDirection.Left)
+		{
+			image_xscale = 1;
+			sprite_index = spr_PlayerSide;
+		}
 		if (facing == charDirection.Right)
-	{
-		image_xscale = -1;
-		sprite_index = spr_PlayerSide;
+		{
+			image_xscale = -1;
+			sprite_index = spr_PlayerSide;
+		}
 	}
 }	
 
@@ -127,7 +145,7 @@ if (keyboard_check(ord("X")))
 {
 	if (facing == charDirection.Up_Left)
 	{
-		show_debug_message("facing Up_Left again");
+		//show_debug_message("facing Up_Left again");
 	}
 	
 	if (BoneAttackTimerCurrent > BoneAttackTimer)
@@ -179,7 +197,7 @@ if (keyboard_check(ord("X")))
 			else if (facing == charDirection.Up_Left)
 			{
 				bone.direction = 135;
-				show_debug_message("Shoot Up_Left");
+				//show_debug_message("Shoot Up_Left");
 			}
 			//bone.direction = image_angle;
 			bone.image_angle = bone.direction;
@@ -348,7 +366,30 @@ if (previousHealth > health)
 	{
 		audio_play_sound(snd_DamageTaken, 1.5, false);
 		previousHealth = health;
-	}
+		show_debug_message("Hurt");
+		if (facing == charDirection.Up or facing == charDirection.Up_Left or facing == charDirection.Up_Right)
+		{
+			image_xscale = 1;
+			show_debug_message("facing Up Idle Hurt");
+			sprite_index = spr_PlayerHurt;
+		}
+		if (facing == charDirection.Down or facing == charDirection.Down_Left or facing == charDirection.Down_Right)
+		{
+			image_xscale = 1;
+			sprite_index = spr_PlayerHurt;
+		}
+		if (facing == charDirection.Left)
+		{
+			image_xscale = 1;
+			sprite_index = spr_PlayerHurt;
+		}
+			if (facing == charDirection.Right)
+		{
+			image_xscale = -1;
+			sprite_index = spr_PlayerHurt;
+		}
+		
+		}
 }
 
 // play hurt sound if hurt
