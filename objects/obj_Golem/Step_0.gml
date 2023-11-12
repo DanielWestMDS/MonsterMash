@@ -88,7 +88,7 @@ if (global.bGameRunning)
 		global.torso = torsoState.iron_golem;	
 		global.maxhp++;
 		health = global.maxhp;
-		instance_destroy();
+		instance_change(obj_DeadGolem, false);
 		global.golemDead = true;
 		global.bossesDefeated += 1;
 	}
