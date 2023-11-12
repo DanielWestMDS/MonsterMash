@@ -6,3 +6,12 @@ if (sprite_index == spr_PlayerHurt or sprite_index == spr_PlayerHurtSide or spri
 	sprite_index = spr_PlayerIdle;
 }
 
+if (sprite_index == spr_GaryAttackUp or sprite_index == spr_GaryAttackDown)
+{
+	sprite_index = spr_PlayerIdle;
+}
+
+if (sprite_index == spr_PlayerArmorDown)
+{
+	sprite_index = spr_PlayerIdle;
+}

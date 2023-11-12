@@ -41,59 +41,72 @@ if (currentYSpeed < 0 && currentXSpeed == 0)
 	
 	image_xscale = 1;
 	facing = charDirection.Up;
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
 		sprite_index = spr_PlayerUp;
 }
 else if (currentYSpeed < 0 && currentXSpeed > 0)
 {
-	sprite_index = spr_PlayerUp;
+	//sprite_index = spr_PlayerUp;
 	image_xscale = 1;
 	facing = charDirection.Up_Right;
 	
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
 		sprite_index = spr_PlayerUp;
 }
 else if (currentXSpeed > 0 && currentYSpeed == 0)
 {
 	//image_angle = 0;
-	sprite_index = spr_PlayerWalkSide;
-	image_xscale = 1;
+	//sprite_index = spr_PlayerWalkSide;
+	
 	facing = charDirection.Right;
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
+	{
+		image_xscale = 1;
 		sprite_index = spr_PlayerWalkSide;
+	}
+		
 }
 else if (currentXSpeed > 0 && currentYSpeed > 0)
 {
 	//image_angle = 0;
 	image_xscale = -1;
 	facing = charDirection.Down_Right;
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
 		sprite_index = spr_PlayerWalkDown;
 }
 else if (currentYSpeed > 0 && currentXSpeed == 0)
 {
 	image_xscale = 1;
 	facing = charDirection.Down;
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
 		sprite_index = spr_PlayerWalkDown;
 }
 else if (currentYSpeed > 0 && currentXSpeed < 0)
 {
 	image_xscale = 1;
 	facing = charDirection.Down_Left;
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
 		sprite_index = spr_PlayerWalkDown;
 }
 else if (currentXSpeed < 0 && currentYSpeed == 0)
 {
 	//image_angle = 180;
 	//image_yscale = -1;
-	image_xscale = -1;
+	
 
 	facing = charDirection.Left;
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
-			sprite_index = spr_PlayerWalkSide;
-			
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
+	{
+		image_xscale = -1;
+		sprite_index = spr_PlayerWalkSide;
+	}		
 }
 else if (currentXSpeed < 0 && currentYSpeed < 0)
 {
@@ -103,12 +116,14 @@ else if (currentXSpeed < 0 && currentYSpeed < 0)
 	image_xscale = 1;
 	facing = charDirection.Up_Left;
 	//show_debug_message("facing Up_Left");
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
 		sprite_index = spr_PlayerUp;
 }
 else if (currentXSpeed == 0 && currentYSpeed == 0)
 {
-	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp)
+	if (sprite_index != spr_PlayerHurt and sprite_index != spr_PlayerHurtSide and sprite_index != spr_PlayerHurtUp
+	and sprite_index != spr_GaryAttackUp and sprite_index != spr_GaryAttackDown and sprite_index != spr_PlayerArmorDown)
 	{		
 		if (facing == charDirection.Up or facing == charDirection.Up_Left or facing == charDirection.Up_Right)
 		{
@@ -202,6 +217,28 @@ if (keyboard_check(ord("X")))
 			//bone.direction = image_angle;
 			bone.image_angle = bone.direction;
 			bone.speed = 5;
+			
+			if (facing == charDirection.Up or facing == charDirection.Up_Left or facing == charDirection.Up_Right)
+			{
+				image_xscale = 1;
+				show_debug_message("facing Up Idle Hurt");
+				sprite_index = spr_GaryAttackUp;
+			}
+			if (facing == charDirection.Down or facing == charDirection.Down_Left or facing == charDirection.Down_Right)
+			{
+				image_xscale = 1;
+				sprite_index = spr_GaryAttackDown;
+			}
+			if (facing == charDirection.Left)
+			{
+				image_xscale = -1;
+				sprite_index = spr_GaryAttackDown;
+			}
+			if (facing == charDirection.Right)
+			{
+				image_xscale = 1;
+				sprite_index = spr_GaryAttackDown;
+			}
 		}
 	}
 }
@@ -275,6 +312,28 @@ if (keyboard_check(ord("C")))
 				//bone.direction = image_angle;
 				blobbyAttack.image_angle = blobbyAttack.direction;
 				//golemAttack.speed = 1;
+				
+				if (facing == charDirection.Up or facing == charDirection.Up_Left or facing == charDirection.Up_Right)
+				{
+					image_xscale = 1;
+					show_debug_message("facing Up Idle Hurt");
+					sprite_index = spr_GaryAttackUp;
+				}
+				if (facing == charDirection.Down or facing == charDirection.Down_Left or facing == charDirection.Down_Right)
+				{
+					image_xscale = 1;
+					sprite_index = spr_GaryAttackDown;
+				}
+				if (facing == charDirection.Left)
+				{
+					image_xscale = -1;
+					sprite_index = spr_GaryAttackDown;
+				}
+				if (facing == charDirection.Right)
+				{
+					image_xscale = 1;
+					sprite_index = spr_GaryAttackDown;
+				}
 			}
 		}
 	}
@@ -324,6 +383,8 @@ if (keyboard_check(ord("Z")))
 			//show_debug_message("invincibility");
 			global.invincible = true;
 			InvincibleTimerDurationCurrent = 0;
+			image_xscale = 1;
+			sprite_index = spr_PlayerArmorDown;
 		}
 	}
 }
@@ -371,7 +432,7 @@ if (previousHealth > health)
 		{
 			image_xscale = 1;
 			show_debug_message("facing Up Idle Hurt");
-			sprite_index = spr_PlayerHurt;
+			sprite_index = spr_PlayerHurtUp;
 		}
 		if (facing == charDirection.Down or facing == charDirection.Down_Left or facing == charDirection.Down_Right)
 		{
@@ -381,15 +442,15 @@ if (previousHealth > health)
 		if (facing == charDirection.Left)
 		{
 			image_xscale = 1;
-			sprite_index = spr_PlayerHurt;
+			sprite_index = spr_PlayerHurtSide;
 		}
-			if (facing == charDirection.Right)
+		if (facing == charDirection.Right)
 		{
 			image_xscale = -1;
-			sprite_index = spr_PlayerHurt;
+			sprite_index = spr_PlayerHurtSide;
 		}
 		
-		}
+	}
 }
 
 // play hurt sound if hurt

@@ -46,6 +46,7 @@
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4fb7f5df-30ac-43d0-b394-60fe06c1f47e",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ee05be09-5ac6-4461-84ae-fa505ce822bb",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a572ac33-d03c-40a0-9f0f-2fdde082ad44",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dbf41c1f-ab3d-4daa-95cc-0d5bb9bd7eeb",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -57,7 +58,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 18.0,
+    "length": 19.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -80,6 +81,7 @@
             {"id":"48808d8f-d3e4-4c27-b122-f0d4c2e9335a","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4fb7f5df-30ac-43d0-b394-60fe06c1f47e","path":"sprites/spr_PlayerDeath/spr_PlayerDeath.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"911c286e-af17-498b-bb35-ac1e0290286c","Key":16.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ee05be09-5ac6-4461-84ae-fa505ce822bb","path":"sprites/spr_PlayerDeath/spr_PlayerDeath.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"f897c9a7-5a79-4ba4-bc08-6c411ee8d6a2","Key":17.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a572ac33-d03c-40a0-9f0f-2fdde082ad44","path":"sprites/spr_PlayerDeath/spr_PlayerDeath.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9446a9fe-44d5-4cec-b989-f8a2bc22ee46","Key":18.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dbf41c1f-ab3d-4daa-95cc-0d5bb9bd7eeb","path":"sprites/spr_PlayerDeath/spr_PlayerDeath.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

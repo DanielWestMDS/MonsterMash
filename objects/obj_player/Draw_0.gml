@@ -27,7 +27,7 @@ if (global.invincible)
 // hit flash
 if (being_hit)
 {
-	//shader_set(sha_Flash);
+	shader_set(sha_Flash);
 }
 
 draw_self();
