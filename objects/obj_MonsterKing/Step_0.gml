@@ -65,7 +65,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 	{	
 		if (rockTime >= 0 && rockStartup >= 0)
 		{
-			audio_play_sound(snd_look, 1, false, 1, 0.5);
+			//audio_play_sound(snd_look, 1, false, 1, 0.5);
 		}
 		else if (rockTime <= 0)
 		{
@@ -112,7 +112,7 @@ if (global.bGameRunning && global.monsterKingDead == false)
 			if (flameSound = false)
 			{
 				sprite_index = spr_MonsterKingFlame;
-				//audio_play_sound(snd_FireUp, 1, false, 1, 0.5);
+				audio_play_sound(snd_FireUp, 1, false, 1, 0.5);
 				flameSound = true;
 			}
 		}
@@ -158,12 +158,6 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		armor = false;	
 	}
 	
-		// die if hp below or at 0
-	if (hp <= 0)
-	{
-		instance_destroy();
-	}
-	
 	// hit flash
 	if (being_hit)
 	{
@@ -194,6 +188,12 @@ if (global.bGameRunning && global.monsterKingDead == false)
 		being_hit = true;
 		audio_play_sound(snd_GolemHit, 1, false);
 		previousHealth = hp;
+	}
+	
+	// die if hp below or at 0
+	if (hp <= 0)
+	{
+		instance_change(obj_DeadMonsterKing, false);
 	}
 }
 

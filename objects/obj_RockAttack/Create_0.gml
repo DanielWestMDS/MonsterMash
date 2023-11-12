@@ -5,6 +5,6 @@ colliding = false;
 
 depth = 100;
 
-lifespan = 100;
+lifespan = 60;
 
 

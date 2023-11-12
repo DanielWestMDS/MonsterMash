@@ -68,7 +68,7 @@ facing = charDirection.Down;
 		global.torso = torsoState.base;
 		global.leg = legState.witch;
 		global.invincible = false;
-		global.bossesDefeated = 3;
+		global.bossesDefeated = 2;
 	}
 
 //hit flash

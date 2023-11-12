@@ -5,7 +5,7 @@ if (global.bGameRunning)
 {	
 	if (global.golemDead)
 	{
-		hp = 0;
+		instance_change(obj_DeadGolem, false);
 	}
 	// follow player if they run away
 	if (!attacking)
@@ -83,16 +83,7 @@ if (global.bGameRunning)
 		}
 	}
 	
-	if (hp <= 0)
-	{
-		global.torso = torsoState.iron_golem;	
-		global.maxhp++;
-		health = global.maxhp;
-		instance_change(obj_DeadGolem, false);
-		global.golemDead = true;
-		global.bossesDefeated += 1;
-	}
-	
+
 	// hit flash
 	if (being_hit)
 	{
@@ -137,6 +128,16 @@ if (global.bGameRunning)
 			image_xscale = 1;
 		}
 	}
+	if (hp <= 0)
+	{
+		global.torso = torsoState.iron_golem;	
+		global.maxhp++;
+		health = global.maxhp;
+		instance_change(obj_DeadGolem, false);
+		global.golemDead = true;
+		global.bossesDefeated += 1;
+	}
+	
 }
 else
 {

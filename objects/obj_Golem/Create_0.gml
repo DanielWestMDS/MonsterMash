@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+depth = 200;
+
 // larger number = longer wait between invincibility
 InvincibleTimer = 400;
 InvincibleTimerCurrent = 0;
