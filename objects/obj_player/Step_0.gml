@@ -93,9 +93,27 @@ else if (currentXSpeed < 0 && currentYSpeed < 0)
 }
 else if (currentXSpeed == 0 && currentYSpeed == 0)
 {	
-	sprite_index = spr_PlayerIdle;
-	image_xscale = 1;
-	//facing = charDirection.Up_Left;	
+	if (facing == charDirection.Up or facing == charDirection.Up_Left or facing == charDirection.Up_Right)
+	{
+		image_xscale = 1;
+		show_debug_message("facing Up Idle");
+		sprite_index = spr_PlayerUp;
+	}
+	if (facing == charDirection.Down or facing == charDirection.Down_Left or facing == charDirection.Down_Right)
+	{
+		image_xscale = 1;
+		sprite_index = spr_PlayerDown;
+	}
+	if (facing == charDirection.Left)
+	{
+		image_xscale = 1;
+		sprite_index = spr_PlayerSide;
+	}
+		if (facing == charDirection.Right)
+	{
+		image_xscale = -1;
+		sprite_index = spr_PlayerSide;
+	}
 }	
 
 
@@ -186,25 +204,51 @@ if (keyboard_check(ord("C")))
 			{	
 				show_debug_message("punch");
 				//audio_play_sound(sfx_pew, 1, false, 1);
-				if (sprite_index == spr_PlayerWalkDown)
-				{
-					blobbyAttack.direction = 270;
-					blobbyAttack.y += 45;
-				}
-				else if (sprite_index == spr_PlayerWalkUp)
+				if (facing == charDirection.Up)
 				{
 					blobbyAttack.direction = 90;
 					blobbyAttack.y += -45;
 				}
-				else if (sprite_index == spr_PlayerWalkSide && image_xscale == 1)
+				
+				else if (facing == charDirection.Up_Right)
+				{
+					blobbyAttack.direction = 45;
+					blobbyAttack.y += -25;
+					blobbyAttack.x += 35;
+				}
+				else if (facing == charDirection.Right)
 				{
 					blobbyAttack.direction = 0;
+					blobbyAttack.x += 35;
+				}
+				else if (facing == charDirection.Down_Right)
+				{
+					blobbyAttack.direction = 315;
+					blobbyAttack.x += 35;
+					blobbyAttack.y += 25;
+				}
+				else if (facing == charDirection.Down)
+				{
+					blobbyAttack.direction = 270;
+					blobbyAttack.y += 45;
+				}
+				else if (facing == charDirection.Down_Left)
+				{
+					blobbyAttack.direction = 225;
+					blobbyAttack.y += 25;
 					blobbyAttack.x += -35;
 				}
-				else if (sprite_index == spr_PlayerWalkSide)
+
+				else if (facing == charDirection.Left)
 				{
 					blobbyAttack.direction = 180;
-					blobbyAttack.x += 35;
+					blobbyAttack.x += -35;
+				}
+				else if (facing == charDirection.Up_Left)
+				{
+					blobbyAttack.direction = 135;
+					blobbyAttack.x += -35;
+					blobbyAttack.y += -25;
 				}
 				else
 				{
