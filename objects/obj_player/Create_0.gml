@@ -29,13 +29,13 @@ enum armState
 enum charDirection
 {
 	Up,
-	Up_Right,
+	Up_Left,
 	Right,
 	Down_Right,
 	Down,
 	Down_Left,
 	Left,
-	Up_Left,
+	Up_Right,
 	None
 };
 

@@ -42,45 +42,39 @@ if (currentYSpeed < 0 && currentXSpeed == 0)
 	image_xscale = 1;
 	facing = charDirection.Up;
 }
-
-if (currentYSpeed < 0 && currentXSpeed > 0)
+else if (currentYSpeed < 0 && currentXSpeed > 0)
 {
 	sprite_index = spr_PlayerUp;
 	image_xscale = 1;
 	facing = charDirection.Up_Right;
 }
-
-if (currentXSpeed > 0 && currentYSpeed == 0)
+else if (currentXSpeed > 0 && currentYSpeed == 0)
 {
 	//image_angle = 0;
 	sprite_index = spr_PlayerWalkSide;
 	image_xscale = 1;
 	facing = charDirection.Right;
 }
-
-if (currentXSpeed > 0 && currentYSpeed > 0)
+else if (currentXSpeed > 0 && currentYSpeed > 0)
 {
 	//image_angle = 0;
 	sprite_index = spr_PlayerWalkDown;
 	image_xscale = -1;
 	facing = charDirection.Down_Right;
 }
-
-if (currentYSpeed > 0 && currentXSpeed == 0)
+else if (currentYSpeed > 0 && currentXSpeed == 0)
 {
 	sprite_index = spr_PlayerWalkDown;
 	image_xscale = 1;
 	facing = charDirection.Down;
 }
-
-if (currentYSpeed > 0 && currentXSpeed < 0)
+else if (currentYSpeed > 0 && currentXSpeed < 0)
 {
 	sprite_index = spr_PlayerWalkDown;
 	image_xscale = 1;
 	facing = charDirection.Down_Left;
 }
-
-if (currentXSpeed < 0 && currentYSpeed == 0)
+else if (currentXSpeed < 0 && currentYSpeed == 0)
 {
 	//image_angle = 180;
 	//image_yscale = -1;
@@ -88,31 +82,36 @@ if (currentXSpeed < 0 && currentYSpeed == 0)
 	image_xscale = -1;
 	facing = charDirection.Left;
 }
-
-if (currentXSpeed < 0 && currentYSpeed < 0)
+else if (currentXSpeed < 0 && currentYSpeed < 0)
 {
 	//image_angle = 180;
 	//image_yscale = -1;
 	sprite_index = spr_PlayerUp;
 	image_xscale = 1;
 	facing = charDirection.Up_Left;
+	show_debug_message("facing Up_Left");
 }
-
-if (currentXSpeed == 0 && currentYSpeed == 0)
+else if (currentXSpeed == 0 && currentYSpeed == 0)
 {	
 	sprite_index = spr_PlayerIdle;
 	image_xscale = 1;
-	facing = charDirection.Up_Left;
+	//facing = charDirection.Up_Left;	
 }	
-
-
-
 
 
 // bone shooting
 BoneAttackTimerCurrent += 0.1;
-if (keyboard_check(vk_space))
+//if (keyboard_check(vk_space))
+// when it is as space you can't move or shoot up left while holding space??
+// X probably makes more sense but ask hugo maybe
+
+if (keyboard_check(ord("X")))
 {
+	if (facing == charDirection.Up_Left)
+	{
+		show_debug_message("facing Up_Left again");
+	}
+	
 	if (BoneAttackTimerCurrent > BoneAttackTimer)
 	{
 		BoneAttackTimerCurrent = 0;
@@ -129,48 +128,41 @@ if (keyboard_check(vk_space))
 				bone.direction = 90;
 			}
 			
-			if (facing == charDirection.Up_Right)
+			else if (facing == charDirection.Up_Right)
 			{
 				bone.direction = 45;
 			}
 			
-			if (facing == charDirection.Right)
+			else if (facing == charDirection.Right)
 			{
 				bone.direction = 360;
 			}
 			
-			if (facing == charDirection.Down_Right)
+			else if (facing == charDirection.Down_Right)
 			{
 				bone.direction = 315;
 			}
 			
-			if (facing == charDirection.Down)
+			else if (facing == charDirection.Down)
 			{
 				bone.direction = 270;
 			}
 			
-			if (facing == charDirection.Down_Left)
+			else if (facing == charDirection.Down_Left)
 			{
 				bone.direction = 225;
 			}
 			
-			if (facing == charDirection.Left)
+			else if (facing == charDirection.Left)
 			{
 				bone.direction = 180;
 			}
 			
-			if (facing == charDirection.Up_Left)
+			else if (facing == charDirection.Up_Left)
 			{
-				show_debug_message("Shoot Up_Left");
 				bone.direction = 135;
+				show_debug_message("Shoot Up_Left");
 			}
-
-
-
-
-
-			
-			
 			//bone.direction = image_angle;
 			bone.image_angle = bone.direction;
 			bone.speed = 5;
@@ -267,7 +259,7 @@ if (keyboard_check(ord("Z")))
 		if (InvincibleTimerCurrent > InvincibleTimer)
 		{
 			InvincibleTimerCurrent = 0;
-			show_debug_message("invincibility");
+			//show_debug_message("invincibility");
 			global.invincible = true;
 			InvincibleTimerDurationCurrent = 0;
 		}
@@ -276,17 +268,17 @@ if (keyboard_check(ord("Z")))
 
 if (global.invincible == true)
 {
-	show_debug_message("invincibility true");
+	//show_debug_message("invincibility true");
 	InvincibleTimerDurationCurrent += 0.1;
 	if (InvincibleTimerDurationCurrent > InvincibleTimerDuration)
 	{
 		global.invincible = false;
-		show_debug_message("invincibility ran out");
+		//show_debug_message("invincibility ran out");
 	}
 }
 else
 {
-	show_debug_message("invincibility false");
+	//show_debug_message("invincibility false");
 }
 
 // hit flash
