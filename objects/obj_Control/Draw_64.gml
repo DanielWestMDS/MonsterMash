@@ -44,3 +44,54 @@ if (gamePause == true)
 	//instance_create_layer(get_Middle_X, get_Middle_Y, "Instances", obj_Button_PauseMusic);
 }
 	//draw_text(get_Middle_X, get_Middle_Y, "Game Paused");
+
+if (room == r_BloodWitch && global.bloodWitchDead)
+{
+	if (!legsDone)
+	{
+		draw_set_color(c_black)
+		draw_set_alpha(0.75)
+		draw_rectangle(0,0,RESOLUTION_W,RESOLUTION_H,false)
+		draw_set_alpha(1.0)
+		draw_set_color(c_white)
+		draw_set_font(fnt_MenuText)
+		draw_set_halign(fa_center)
+		draw_set_valign(fa_middle)
+		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.5,"use SHIFT to sprint");
+		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.8,"press ESC to continue");
+	}
+}
+
+if (room == r_Blobby && global.blobbyDead)
+{
+	if (!legsDone)
+	{
+		draw_set_color(c_black)
+		draw_set_alpha(0.75)
+		draw_rectangle(0,0,RESOLUTION_W,RESOLUTION_H,false)
+		draw_set_alpha(1.0)
+		draw_set_color(c_white)
+		draw_set_font(fnt_MenuText)
+		draw_set_halign(fa_center)
+		draw_set_valign(fa_middle)
+		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.5,"use C to punch");
+		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.8,"press ESC to continue");
+	}
+}
+
+if (room == r_Golem && global.golemDead)
+{
+	if (!legsDone)
+	{
+		draw_set_color(c_black)
+		draw_set_alpha(0.75)
+		draw_rectangle(0,0,RESOLUTION_W,RESOLUTION_H,false)
+		draw_set_alpha(1.0)
+		draw_set_color(c_white)
+		draw_set_font(fnt_MenuText)
+		draw_set_halign(fa_center)
+		draw_set_valign(fa_middle)
+		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.5,"use Z to beocome invincible");
+		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.8,"press ESC to continue");
+	}
+}

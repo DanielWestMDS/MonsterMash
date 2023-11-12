@@ -19,3 +19,7 @@ global.monsterKingDead = false;
 
 pauseOption = ["Continue", "Save & Quit"];
 pauseOptionSelected = 0;
+
+legsDone = false;
+armsDone = false;
+chestDone = false;
