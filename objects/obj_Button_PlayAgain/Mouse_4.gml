@@ -7,4 +7,4 @@
 event_inherited();
 
 health = 3;
-room_goto(r_Hub);
+room_goto(r_MainMenu);

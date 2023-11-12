@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Button_PlayAgain",
   "spriteId": {
-    "name": "spr_button",
-    "path": "sprites/spr_button/spr_button.yy",
+    "name": "spr_backbutton",
+    "path": "sprites/spr_backbutton/spr_backbutton.yy",
   },
   "solid": false,
   "visible": true,

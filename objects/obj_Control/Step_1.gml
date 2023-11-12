@@ -39,7 +39,7 @@ if (health <= 0)
 		instance_deactivate_layer("Instances");
 		instance_deactivate_layer("Magic");
 		//instance_create_layer(vx, vy, "Obstacles", obj_MenuBackground);
-		instance_create_layer(vx + 315, vy + 180, "Obstacles", obj_Button_PlayAgain);
+		instance_create_layer(vx + 310, vy + 160, "Obstacles", obj_Button_PlayAgain);
 		instance_create_layer(vx, vy, "Obstacles", obj_GameOverFinal);
 		audio_stop_all();	
 		audio_play_sound(snd_GameOver, 100, false);
