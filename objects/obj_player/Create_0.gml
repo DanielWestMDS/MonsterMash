@@ -64,11 +64,11 @@ facing = charDirection.Down;
 	{
 		health = global.maxhp;
 		global.maxSpeed = 2.0;
-		global.arm = armState.base;
+		global.arm = armState.blobby;
 		global.torso = torsoState.base;
-		global.leg = legState.base;
+		global.leg = legState.witch;
 		global.invincible = false;
-		global.bossesDefeated = 0;
+		global.bossesDefeated = 3;
 	}
 
 //hit flash

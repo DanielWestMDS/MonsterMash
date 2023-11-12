@@ -41,8 +41,8 @@ stance = attackState.idle;
 // Inherit the parent event
 event_inherited();
 
-hp = 100;
-maxHp = 100;
+hp = 70;
+maxHp = 70;
 previousHealth = hp;
 
 hit_timer = 10;

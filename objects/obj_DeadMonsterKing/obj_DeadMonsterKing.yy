@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_DeadMonsterKing",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_DeadMonsterKing",
+    "path": "sprites/spr_DeadMonsterKing/spr_DeadMonsterKing.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
