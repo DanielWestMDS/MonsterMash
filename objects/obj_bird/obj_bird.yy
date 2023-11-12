@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_bird",
   "spriteId": {
-    "name": "spr_Character_Bird",
-    "path": "sprites/spr_Character_Bird/spr_Character_Bird.yy",
+    "name": "spr_Bird",
+    "path": "sprites/spr_Bird/spr_Bird.yy",
   },
   "solid": false,
   "visible": true,
