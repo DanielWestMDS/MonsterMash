@@ -3,6 +3,4 @@
 
 sprite_index = spr_DeadGolemChest;
 
-
-
-
+speed = 0;

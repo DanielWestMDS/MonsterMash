@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (global.bGameRunning && sprite_index == spr_Character_BirdBoss)
+if (global.bGameRunning)
 {
 	// hit flash
 	if (being_hit)

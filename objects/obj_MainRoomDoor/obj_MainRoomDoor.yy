@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_MainRoomDoor",
   "spriteId": {
-    "name": "spr_DoorCollision",
-    "path": "sprites/spr_DoorCollision/spr_DoorCollision.yy",
+    "name": "spr_DoorBloodWitchEnter",
+    "path": "sprites/spr_DoorBloodWitchEnter/spr_DoorBloodWitchEnter.yy",
   },
   "solid": false,
   "visible": true,

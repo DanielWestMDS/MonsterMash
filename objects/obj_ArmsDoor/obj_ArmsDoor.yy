@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ArmsDoor",
   "spriteId": {
-    "name": "spr_DoorCollision",
-    "path": "sprites/spr_DoorCollision/spr_DoorCollision.yy",
+    "name": "spr_DoorBlobby",
+    "path": "sprites/spr_DoorBlobby/spr_DoorBlobby.yy",
   },
   "solid": false,
   "visible": true,

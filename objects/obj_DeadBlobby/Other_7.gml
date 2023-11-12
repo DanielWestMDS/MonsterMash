@@ -4,4 +4,6 @@
 if (sprite_index == spr_DeadBlobby)
 {
 	sprite_index = spr_BlobbyDeadArmless;
+	
+	speed = 0;
 }

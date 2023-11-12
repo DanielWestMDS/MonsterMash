@@ -64,7 +64,7 @@ if (room == r_BloodWitch && global.bloodWitchDead)
 
 if (room == r_Blobby && global.blobbyDead)
 {
-	if (!legsDone)
+	if (!armsDone)
 	{
 		draw_set_color(c_black)
 		draw_set_alpha(0.75)
@@ -81,7 +81,7 @@ if (room == r_Blobby && global.blobbyDead)
 
 if (room == r_Golem && global.golemDead)
 {
-	if (!legsDone)
+	if (!chestDone)
 	{
 		draw_set_color(c_black)
 		draw_set_alpha(0.75)
@@ -91,7 +91,7 @@ if (room == r_Golem && global.golemDead)
 		draw_set_font(fnt_MenuText)
 		draw_set_halign(fa_center)
 		draw_set_valign(fa_middle)
-		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.5,"use Z to beocome invincible");
+		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.5,"use Z to become invincible");
 		draw_text(RESOLUTION_W * 0.5,RESOLUTION_H * 0.8,"press ESC to continue");
 	}
 }
