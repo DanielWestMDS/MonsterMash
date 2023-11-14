@@ -173,6 +173,7 @@
     {"id":{"name":"r_Tutorial","path":"rooms/r_Tutorial/r_Tutorial.yy",},"order":8,},
     {"id":{"name":"obj_MenuBackground","path":"objects/obj_MenuBackground/obj_MenuBackground.yy",},"order":1,},
     {"id":{"name":"spr_GameOverArt","path":"sprites/spr_GameOverArt/spr_GameOverArt.yy",},"order":0,},
+    {"id":{"name":"r_Win","path":"rooms/r_Win/r_Win.yy",},"order":15,},
     {"id":{"name":"spr_GolemAttack","path":"sprites/spr_GolemAttack/spr_GolemAttack.yy",},"order":5,},
     {"id":{"name":"r_Pause","path":"rooms/r_Pause/r_Pause.yy",},"order":4,},
     {"id":{"name":"obj_BloodMagic","path":"objects/obj_BloodMagic/obj_BloodMagic.yy",},"order":3,},
@@ -253,6 +254,7 @@
     {"roomId":{"name":"r_Blobby_Corridor","path":"rooms/r_Blobby_Corridor/r_Blobby_Corridor.yy",},},
     {"roomId":{"name":"r_Golem_Corridor","path":"rooms/r_Golem_Corridor/r_Golem_Corridor.yy",},},
     {"roomId":{"name":"r_GameOver","path":"rooms/r_GameOver/r_GameOver.yy",},},
+    {"roomId":{"name":"r_Win","path":"rooms/r_Win/r_Win.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":11,},

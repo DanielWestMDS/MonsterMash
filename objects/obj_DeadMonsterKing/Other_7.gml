@@ -6,5 +6,6 @@
 image_speed = 0;
 image_index = 9;
 
+room_goto(r_Win);
 // put win screen stuff here
 
