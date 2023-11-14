@@ -65,10 +65,10 @@ facing = charDirection.Down;
 		health = global.maxhp;
 		global.maxSpeed = 2.0;
 		global.arm = armState.blobby;
-		global.torso = torsoState.base;
+		global.torso = torsoState.iron_golem;
 		global.leg = legState.witch;
 		global.invincible = false;
-		global.bossesDefeated = 2;
+		global.bossesDefeated = 3;
 	}
 
 //hit flash

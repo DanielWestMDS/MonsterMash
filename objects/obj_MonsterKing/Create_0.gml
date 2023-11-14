@@ -41,13 +41,13 @@ stance = attackState.idle;
 // Inherit the parent event
 event_inherited();
 
-hp = 70;
+hp = 10;
 maxHp = 70;
 previousHealth = hp;
 
 hit_timer = 10;
 
-armorHp = 30;
+armorHp = 10;
 maxArmorHp = 30;
 
 sideSprite = spr_MonsterKing;

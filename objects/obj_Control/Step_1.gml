@@ -48,3 +48,8 @@ if (health <= 0)
 		//draw_sprite(spr_PauseBackground, 1, camera_get_view_border_x(view_camera[0]) - 400, camera_get_view_border_y(view_camera[0]) - 400);
 	//}
 }
+
+if (room == r_Win)
+{
+	instance_deactivate_object(obj_PlayerUI);
+}

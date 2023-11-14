@@ -4,6 +4,7 @@
 
 if (room == r_MainMenu)
 {
+	audio_stop_all();
 	if (MainMenuMusic == true)
 	{
 	audio_play_sound(snd_mainmenu, 0, true);
