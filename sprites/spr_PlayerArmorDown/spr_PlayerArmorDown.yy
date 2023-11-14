@@ -28,7 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"18972897-5b08-402b-9f80-f04e7892cb8a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"587236d9-22e8-4a62-839f-cbe6dc69221e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9cc2b108-f62d-4ba1-9f0c-aac7a194190d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ea07d9ba-9499-4715-95da-72a493843cdd",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"aeca492b-ba13-46d5-9282-b671c1dd4d89",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"14c41367-49a6-48ee-a72b-9a64e8a0d94f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"261a8ddf-41b3-4a74-8a22-f0639faebc3c",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -36,16 +41,21 @@
     "name": "spr_PlayerArmorDown",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 1.0,
+    "length": 6.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"cc706404-eb4b-4395-aa9d-2e7b4798cd2f","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"18972897-5b08-402b-9f80-f04e7892cb8a","path":"sprites/spr_PlayerArmorDown/spr_PlayerArmorDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"079a4cf9-f8a0-428d-a82f-4e27f0452713","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"587236d9-22e8-4a62-839f-cbe6dc69221e","path":"sprites/spr_PlayerArmorDown/spr_PlayerArmorDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"71fe2d2a-646b-443c-bfa7-eb4790f04362","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9cc2b108-f62d-4ba1-9f0c-aac7a194190d","path":"sprites/spr_PlayerArmorDown/spr_PlayerArmorDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"547450b9-6cdf-4b32-91e5-abfc1f68c793","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"ea07d9ba-9499-4715-95da-72a493843cdd","path":"sprites/spr_PlayerArmorDown/spr_PlayerArmorDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"d9960e20-a624-4f35-ba4e-91696e516ceb","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"aeca492b-ba13-46d5-9282-b671c1dd4d89","path":"sprites/spr_PlayerArmorDown/spr_PlayerArmorDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"9bd1eda6-e1b4-4231-be1b-5cceece27509","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"14c41367-49a6-48ee-a72b-9a64e8a0d94f","path":"sprites/spr_PlayerArmorDown/spr_PlayerArmorDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e935f8df-0fc3-47f0-8cae-93ed9f27cf3d","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"261a8ddf-41b3-4a74-8a22-f0639faebc3c","path":"sprites/spr_PlayerArmorDown/spr_PlayerArmorDown.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -64,7 +74,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"50d42eee-3b7b-41cc-a339-f606c8907764","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"14c3cd25-bb99-4f62-bbae-1d56e9c79847","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
