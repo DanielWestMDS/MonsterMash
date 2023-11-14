@@ -246,10 +246,10 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"r_MainMenu","path":"rooms/r_MainMenu/r_MainMenu.yy",},},
+    {"roomId":{"name":"r_Blobby","path":"rooms/r_Blobby/r_Blobby.yy",},},
     {"roomId":{"name":"r_Hub","path":"rooms/r_Hub/r_Hub.yy",},},
     {"roomId":{"name":"r_BloodWitch","path":"rooms/r_BloodWitch/r_BloodWitch.yy",},},
     {"roomId":{"name":"r_Pause","path":"rooms/r_Pause/r_Pause.yy",},},
-    {"roomId":{"name":"r_Blobby","path":"rooms/r_Blobby/r_Blobby.yy",},},
     {"roomId":{"name":"r_Golem","path":"rooms/r_Golem/r_Golem.yy",},},
     {"roomId":{"name":"r_Tutorial","path":"rooms/r_Tutorial/r_Tutorial.yy",},},
     {"roomId":{"name":"r_Boss","path":"rooms/r_Boss/r_Boss.yy",},},
