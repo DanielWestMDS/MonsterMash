@@ -5,9 +5,11 @@ if (!instance_exists(obj_MonsterKing))
 {
 	instance_destroy();
 }
-
-x = obj_MonsterKing.x;
-y = obj_MonsterKing.y;
+else
+{
+	x = obj_MonsterKing.x;
+	y = obj_MonsterKing.y;
+}
 
 direction = point_direction(x, y, xPlayer, yPlayer);
 
