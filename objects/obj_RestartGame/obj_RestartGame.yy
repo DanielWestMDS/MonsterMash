@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_RestartGame",
   "spriteId": {
-    "name": "spr_thankforplay",
-    "path": "sprites/spr_thankforplay/spr_thankforplay.yy",
+    "name": "spr_backbutton",
+    "path": "sprites/spr_backbutton/spr_backbutton.yy",
   },
   "solid": false,
   "visible": true,

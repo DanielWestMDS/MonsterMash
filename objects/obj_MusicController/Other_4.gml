@@ -1,10 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+audio_pause_sound(snd_combat_theme);
+audio_pause_sound(snd_slime_boss);
+audio_pause_sound(snd_witch_theme);
+audio_pause_sound(snd_Irongolem_theme);
+audio_pause_sound(final_boss_rec);
+audio_pause_sound(snd_idlemusic);
 
 if (room == r_MainMenu)
 {
-	audio_stop_all();
+	
 	if (MainMenuMusic == true)
 	{
 	audio_play_sound(snd_mainmenu, 0, true);
