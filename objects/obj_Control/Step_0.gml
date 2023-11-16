@@ -44,5 +44,19 @@ if (room == r_Golem && global.golemDead)
 }
 
 
+if (!global.golemDead)
+{
+	chestDone = false;
+}
+
+if (!global.bloodWitchDead)
+{
+	legsDone = false;
+}
+
+if (!global.blobbyDead)
+{
+	armsDone = false;
+}
 
 
