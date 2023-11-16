@@ -149,6 +149,6 @@ else
 if (previousHealth > hp)
 {
 	being_hit = true;
-	audio_play_sound(snd_GolemHit, 1, false, 1, 10.2);
+	audio_play_sound(snd_GolemHit, 1, false, 1);
 	previousHealth = hp;
 }
